@@ -403,9 +403,35 @@ hr {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
+h1 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.33em;
+  line-height: 1.33em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+h3,
+h4,
+h5 {
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
 #page {
   width: 100%;
   max-width: 100%;
+}
+#main {
+  padding-top: 0px;
+}
+#content {
+  padding: 0px;
 }
 #header {
   width: 100%;
@@ -621,7 +647,7 @@ body.front .node-1 h2 {
   margin-bottom: 20px;
 }
 body.front .view-case-studies {
-  width: 980px;
+  width: 960px;
   height: 425px;
   margin: 0 auto;
 }
@@ -638,7 +664,7 @@ body.front .view-case-studies .views-row {
   width: 304px;
   float: left;
   height: 385px;
-  margin-right: 34px;
+  margin-right: 24px;
 }
 body.front .view-case-studies .views-row.views-row-last {
   margin-right: 0px;
@@ -783,12 +809,6 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
 body.front #block-views-articles-block .view-content .views-row .views-field-view-node a:hover {
   text-decoration: none;
 }
-#main {
-  padding-top: 0px;
-}
-#content {
-  padding: 0px;
-}
 .btn {
   color: #2a2a2a;
   display: inline-block;
@@ -897,7 +917,7 @@ blockquote {
   padding: 30px 0 75px;
 }
 .block-block.dark.about .block-content {
-  width: 980px;
+  width: 960px;
   margin: 0 auto;
   height: 300px;
   padding-top: 60px;
@@ -930,7 +950,7 @@ blockquote {
   line-height: 1.4em;
 }
 .block-views.team-members {
-  width: 980px;
+  width: 960px;
   margin: 0 auto;
 }
 .block-views.team-members h2.block-title {
@@ -959,6 +979,34 @@ blockquote {
 }
 .block-views.team-members .views-field-body {
   margin-left: 155px;
+}
+.region-sidebar-first {
+  padding-top: 40px;
+}
+.region-sidebar-first h2.block-title {
+  color: #47a9e1;
+  font-family: "adobe-caslon-pro";
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+.region-sidebar-first .block-block,
+.region-sidebar-first .block-views {
+  padding-right: 30px;
+}
+.region-sidebar-first .recent-posts .views-row {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .recent-posts .views-field-title a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #555555;
+}
+.region-sidebar-first .recent-posts .views-field-title a:hover {
+  color: #000000;
+  text-decoration: none;
 }
 .case-study .case-study-header {
   background-size: 100% auto;
@@ -1045,6 +1093,21 @@ blockquote {
 .case-study .second-row .content .sidebar.pos1,
 .case-study .fourth-row .content .sidebar.pos1 {
   margin-right: 50%;
+}
+.node-type-article #page {
+  background: #ffffff url(../images/bg-blog.jpg) no-repeat center bottom;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+.node-type-article #main {
+  width: 960px;
+  margin: 0 auto;
+}
+.node-type-article #content {
+  background: #fff;
+}
+.node-type-article #content .article {
+  padding: 40px 30px;
 }
 #footer-wrapper {
   background: #000000 url(../images/bg-footer.jpg) no-repeat center 25px;

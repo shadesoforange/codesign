@@ -5,7 +5,12 @@
 
 html, body { .raleway; .black; .lh(1.3em); .size(14px); }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
+h1 { .large; .raleway-bold; }
+h2 { .med; .raleway-med; }
+h3, h4, h5 { .reg; .raleway-med; }
 #page { .w100; max-width: 100%; }
+#main { .pt(0px); }
+#content { .p0; }
 
 // Header Region
 
@@ -77,9 +82,9 @@ body.front {
 	.node-1 { .w(860px); .auto; .tc; .p(20px 0 100px);
 		h2 { .xxlarge; .blue; .caslon; .mb20; }
 	}
-	.view-case-studies { .w(980px); .h(425px); .auto;
+	.view-case-studies { .w(960px); .h(425px); .auto;
 		h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
-		.views-row { .w(304px); .fl; .h(385px); .mr(34px); 
+		.views-row { .w(304px); .fl; .h(385px); .mr(24px); 
 			&.views-row-last { .mr(0px); }
 			.views-field-nothing { .rel;
 				img { .ab; z-index: 1; top: 0px; left: 0px; }
@@ -116,10 +121,11 @@ body.front {
 	}
 }
 
+
+
 // Basic Page Styles 
 
-#main { .pt(0px); }
-#content { .p0; }
+
 .btn { .dkgrey; .inline-block; .p(5px 15px); border: 1px solid @dkgrey; .small; .upper; .raleway-light;
 	&:hover { .td-none; }
 }
@@ -143,6 +149,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 .bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 100% auto; }
 .bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; }
 
+
 // Blocks
 
 .block-block { .mb(0px);
@@ -151,7 +158,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		h3 { .white; .med; .raleway-med; }
 		div, p { .white; .raleway-thin; .lh(1.5em); }
 		&.about { background: url(../images/bg-about-block.jpg) no-repeat center center; background-size: 100% auto; background-attackment: fixed; .p(30px 0 75px);
-			.block-content { .w(980px); .auto; .h(300px); .pt(60px); }
+			.block-content { .w(960px); .auto; .h(300px); .pt(60px); }
 		}
 	}
 	&.bricks { min-height: 300px; .p(50px 0 150px);   
@@ -163,7 +170,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 	.block-content { .w(940px); .auto; .lh(1.4em); }
 }
 .block-views {
-	&.team-members { .w(980px); .auto; 
+	&.team-members { .w(960px); .auto; 
 		h2.block-title { .xxlarge; .blue; .caslon; .tc; .mt(50px); }
 		td { .p(0 20px 40px); }
 		.views-field-field-image { .fl; }
@@ -173,7 +180,18 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 }
 
 
+// Sidebars
 
+.region-sidebar-first { .pt(40px);
+	h2.block-title { .blue; .caslon; .em; .large; .mb(20px); }
+	.block-block, .block-views { .pr(30px); }
+	.recent-posts {
+		.views-row { .mb(15px); }
+		.views-field-title a { .raleway-bold; .grey; 
+			&:hover { .black; .td-none; }
+		}
+	}
+}
 
 
 // Case Study Pages
@@ -202,6 +220,18 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 	}
 }
 
+
+// Blog Posts
+
+.node-type-article {
+	#page { background: #fff url(../images/bg-blog.jpg) no-repeat center bottom; background-size: 100% auto; background-attachment: fixed; }
+	#main { .w(960px); .auto; }
+	#content { background: #fff;
+		.article { .p(40px 30px); 
+			
+		}	
+	}
+}
 
 
 // Footer 

@@ -96,11 +96,11 @@
     <?php endif; ?>
 
   </div>
-  
-  <div id="footer-wrapper">
-  <?php print render($page['footer']); ?>
-  </div>
 
+</div>
+
+<div id="footer-wrapper">
+  <?php print render($page['footer']); ?>
 </div>
 
 <?php print render($page['bottom']); ?>
