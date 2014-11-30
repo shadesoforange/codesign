@@ -5,12 +5,12 @@
 
 html, body { .raleway; .black; .lh(1.3em); .size(14px); }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
-h1 { .large; .raleway-bold; .m(0 0 2em); }
-h2 { .med; .raleway-med; .m(0 0 1.5em); }
+h1 { .xxlarge; .caslon; .blue; .tc; .m(0 0 1em); }
+h2 { .med; .raleway-med; .m(0 0 1.25em); }
 h3, h4, h5 { .reg; .raleway-med; }
 #page { .w100; max-width: 100%; }
 #main { .pt(0px); }
-#content { .p0; .w(960px); .auto; }
+#content { .p0; min-height: 500px; }
 
 // Header Region
 
@@ -79,24 +79,8 @@ body.front {
 		}
 		.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px; }
 	}
-	#content { .p0; .bricks-top; .w(100%); }
-	.view-case-studies { .w(960px); .h(425px); .auto;
-		h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
-		.views-row { .w(304px); .fl; .h(385px); .mr(24px); 
-			&.views-row-last { .mr(0px); }
-			.views-field-nothing { .rel;
-				img { .ab; z-index: 1; top: 0px; left: 0px; }
-				.overlay { .tc; .white; background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(385px); .ab; z-index: 2;
-					.content { .ab; bottom: 0px; .p(0 15px 10px);
-						a { .btn-white; .mt(10px); }
-					}
-				}
-			}
-		}
-		.overlay { background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(186px); .ab; z-index: 2;
-						.content { .ab; bottom: 0px; .p(0 15px 10px); }
-					}
-	}
+	#content { .bricks-top; .w(100%); }
+	.view-case-studies { .mb(0px); }
 	.block-block.quote { .w(100%); .bricks; .mb(0px); .p(155px 0 220px);
 		.block-content { .w(680px); .auto; background: transparent url(../images/quotes-home.png) no-repeat center 10px; .p(0px 140px); }
 	}
@@ -123,11 +107,9 @@ body.front {
 
 // Basic Page Styles 
 
-#page {
-	article, .node-page { .w(960px); .auto; .p(40px 0); 
-		&.node-1 { .w(860px); .tc; .pb(80px); 
-			h2 { .blue; .xxlarge; .caslon; }
-		}
+article, .node-page { .w(960px); .auto; .p(40px 0 0); 
+	&.node-1 { .w(860px); .tc; .pb(80px); 
+		h2 { .blue; .xxlarge; .caslon; }
 	}
 }
 .btn { .dkgrey; .inline-block; .p(5px 15px); border: 1px solid @dkgrey; .small; .upper; .raleway-light;
@@ -174,13 +156,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 	.block-content { .w(960px); .auto; .lh(1.4em); }
 }
 .block-views {
-	&.team-members { .w(960px); .auto; 
-		h2.block-title { .xxlarge; .blue; .caslon; .tc; .mt(50px); }
-		td { .p(0 20px 40px); }
-		.views-field-field-image { .fl; }
-		.views-field-title { .m(1em 0 1em 155px); .raleway-med; .black; .large; }
-		.views-field-body { .ml(155px); }
-	}
+	
 }
 
 
@@ -201,11 +177,12 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 }
 
 
-// Case Study Pages
+// Case Study Pages and Blocks
 
-.case-study {
+.node-type-case-study {
+	.node-case-study { .w(100%); }
 	.case-study-header { background-size: 100% auto; .p(150px 0 1em); .mt(1px);
-		h1 { .size(60px); .white; .upper; .raleway-med; .ls(4px); .mb(0px); }
+		h1 { .size(60px); .white; .upper; .raleway-med; .ls(4px); .mb(0px); .normal; }
 		h2 { .raleway-thin; .xlarge; .em; .pb(80px); .w(460px); .auto; .white; }
 		.category { background: @blue; .p(8px 0); .w(320px); .auto; .white; 
 			strong { .raleway-med; }
@@ -224,6 +201,23 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 				&.pos1 { .mr(50%); }
 			}
 		}
+	}
+}
+.view-case-studies { .w(960px); .auto; .mb(80px);
+	h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
+	.views-row { .w(304px); .fl; .h(385px); .m(0 24px 24px 0); 
+		&.views-row-3, &.views-row-6, &.views-row-9, &.views-row-12, &.views-row-15 { .mr(0px); }
+		.views-field-nothing { .rel;
+			img { .ab; z-index: 1; top: 0px; left: 0px; }
+			.overlay { .tc; .white; background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(385px); .ab; z-index: 2;
+				.content { .ab; bottom: 0px; .p(0 15px 10px);
+					a { .btn-white; .mt(10px); }
+				}
+			}
+		}
+	}
+	.overlay { background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(186px); .ab; z-index: 2;
+		.content { .ab; bottom: 0px; .p(0 15px 10px); }
 	}
 }
 
@@ -261,10 +255,21 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 }
 
 
+// About Us Page
+
+.team-members { .w(960px); .auto; 
+	h2.block-title { .xxlarge; .blue; .caslon; .tc; .mt(50px); }
+	td { .p0; vertical-align: top; .w50; }
+	.views-field-field-image { .fl; .ml(20px); }
+	.views-field-title { .m(1em 20px 1em 175px); .raleway-med; .black; .large; }
+	.views-field-body { .m(0 20px 30px 175px); }
+}
+
+
 // Footer 
 
 #footer-wrapper { background: #000 url(../images/bg-footer.jpg) no-repeat center 25px; .pb(50px); }
-#footer { .p(80px 0 20px); .w(932px); .m(0 auto); border-bottom: 1px solid #2c2a2a; .ltgrey;
+#footer { .p(80px 0 20px); .w(932px); .m(0 auto); border-bottom: 1px solid #2c2a2a; .ltgrey; 
 	.menu-services { .m(0 0 0 50px); .fl; .w(400px);
 		h2 { .reg; .m(0 0 12px);
 			a { .upper; .raleway-med; .white; .reg; .ls(2px); }
