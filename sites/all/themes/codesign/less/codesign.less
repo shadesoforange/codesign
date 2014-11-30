@@ -79,9 +79,6 @@ body.front {
 		.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px; }
 	}
 	#content { .p0; .bricks-top; }
-	.node-1 { .w(860px); .auto; .tc; .p(20px 0 100px);
-		h2 { .xxlarge; .blue; .caslon; .mb20; }
-	}
 	.view-case-studies { .w(960px); .h(425px); .auto;
 		h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
 		.views-row { .w(304px); .fl; .h(385px); .mr(24px); 
@@ -125,7 +122,13 @@ body.front {
 
 // Basic Page Styles 
 
-
+#page {
+	article, .node-page { .w(960px); .auto; .p(40px 0); 
+		&.node-1 { .w(860px); .tc; .pb(80px); 
+			h2 { .blue; .xxlarge; .caslon; }
+		}
+	}
+}
 .btn { .dkgrey; .inline-block; .p(5px 15px); border: 1px solid @dkgrey; .small; .upper; .raleway-light;
 	&:hover { .td-none; }
 }
@@ -144,7 +147,7 @@ img {
 	&.image-left { .fl; .m(15px 25px 25px 0px); }
 }
 blockquote { .xlarge; .black; .em; .m(2em 0); }
-.column-half { .w(44%); .fl; .m(0 3%); }
+.column-half { .w(46%); .fl; .m(0 2%); }
 .column-third { .w(27.33%); .fl; .m(0 3%); }
 .bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 100% auto; }
 .bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; }
@@ -182,14 +185,17 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 
 // Sidebars
 
-.region-sidebar-first { .pt(40px);
-	h2.block-title { .blue; .caslon; .em; .large; .mb(20px); }
-	.block-block, .block-views { .pr(30px); }
+.region-sidebar-first { .pt(60px);
+	h2.block-title { .blue; .caslon; .em; .xlarge; .mb(30px); }
+	.block-block, .block-views { .pr(25px); }
 	.recent-posts {
-		.views-row { .mb(15px); }
-		.views-field-title a { .raleway-bold; .grey; 
-			&:hover { .black; .td-none; }
+		.views-row { .mb(20px); }
+		.views-field-title { .mb(5px); 
+			a { .raleway-bold; .grey; .med;
+				&:hover { .black; .td-none; }
+			}
 		}
+		.views-field-field-author { .raleway-light; .em; }
 	}
 }
 
@@ -218,6 +224,26 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 			}
 		}
 	}
+}
+
+
+// Services Pages
+
+.services-one { background: #fff url(../images/bg-bricks-lamp.jpg) no-repeat left center; background-size: 100% auto; .p(30px 0 100px);
+	.indent { .ml(74px); 
+		h2 { .mt(0px); }
+	}
+	.service-innovation { background: url(../images/icon-innovation-black.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+	.service-accelerated-design { background: url(../images/icon-accelerated-design-black.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+	.service-design-thinking { background: url(../images/icon-design-thinking-black.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+	.service-futures { background: url(../images/icon-futures-black.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+}
+.services-two { background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center; .white; .p(60px 0 80px);
+	.indent { .ml(74px);
+		h2 { .mt(0px); }
+	}
+	.service-graphics { background: url(../images/icon-graphics.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+	.service-events { background: url(../images/icon-events.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 }
 
 
