@@ -421,10 +421,9 @@ hr {
 h1 {
   font-size: 3em;
   line-height: 1.25em;
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
-  color: #47a9e1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #2a2a2a;
   text-align: center;
   margin: 0 0 1em;
 }
@@ -449,9 +448,11 @@ h5 {
 }
 #main {
   padding-top: 0px;
+  width: 960px;
+  margin: 0 auto;
 }
 #content {
-  padding: 0px;
+  padding: 40px 0 0;
   min-height: 500px;
 }
 #header {
@@ -595,8 +596,11 @@ h5 {
 #navigation .region-navigation .block ul.menu li a.active .tag {
   display: block;
 }
-body.front h1 {
-  display: none;
+#navigation .region-navigation .block ul.menu li a.active-trail .tag {
+  display: block;
+}
+body.front #main {
+  width: 100%;
 }
 body.front #header {
   background: #000;
@@ -654,6 +658,12 @@ body.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
   width: 100%;
+}
+body.front .node-page {
+  width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0 80px;
 }
 body.front .view-case-studies {
   margin-bottom: 0px;
@@ -745,27 +755,6 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
 }
 body.front #block-views-articles-block .view-content .views-row .views-field-view-node a:hover {
   text-decoration: none;
-}
-article,
-.node-page {
-  width: 960px;
-  margin: 0 auto;
-  padding: 40px 0 0;
-}
-article.node-1,
-.node-page.node-1 {
-  width: 860px;
-  text-align: center;
-  padding-bottom: 80px;
-}
-article.node-1 h2,
-.node-page.node-1 h2 {
-  color: #47a9e1;
-  font-size: 3em;
-  line-height: 1.25em;
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
 }
 .btn {
   color: #2a2a2a;
@@ -884,24 +873,6 @@ blockquote {
   min-height: 300px;
   padding: 50px 0 150px;
 }
-.block-block.bricks h1 {
-  text-align: center;
-  font-size: 3em;
-  line-height: 1.25em;
-  color: #47a9e1;
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
-}
-.block-block.bricks-top h1 {
-  text-align: center;
-  font-size: 3em;
-  line-height: 1.25em;
-  color: #47a9e1;
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
-}
 .block-block .block-content {
   width: 960px;
   margin: 0 auto;
@@ -944,6 +915,9 @@ blockquote {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+.node-type-case-study #main {
+  width: 100%;
 }
 .node-type-case-study .node-case-study {
   width: 100%;
@@ -1114,6 +1088,17 @@ blockquote {
   bottom: 0px;
   padding: 0 15px 10px;
 }
+.page-node-2 #main {
+  width: 100%;
+}
+.page-node-2 h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 3em;
+  line-height: 1.25em;
+  font-style: normal;
+  color: #2a2a2a;
+}
 .services-one {
   background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom;
   background-size: 100% auto;
@@ -1125,26 +1110,6 @@ blockquote {
 }
 .services-one .indent h2 {
   margin: 0px 0px 1em;
-}
-.services-one .service-innovation {
-  background: url(../images/icon-innovation-orange.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
-}
-.services-one .service-accelerated-design {
-  background: url(../images/icon-accelerated-design-orange.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
-}
-.services-one .service-design-thinking {
-  background: url(../images/icon-design-thinking-orange.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
-}
-.services-one .service-futures {
-  background: url(../images/icon-futures-orange.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
 }
 .services-two {
   background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center;
@@ -1158,24 +1123,52 @@ blockquote {
 .services-two .indent h2 {
   margin: 0px 0px 1em;
 }
-.services-two .service-graphics {
-  background: url(../images/icon-graphics.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
+.page-node-7 h1 {
+  color: #eeb51c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-.services-two .service-events {
-  background: url(../images/icon-events.svg) no-repeat left top;
-  background-size: 60px 60px;
-  padding-bottom: 30px;
+.page-node-8 h1 {
+  color: #d45000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.page-node-9 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.page-node-10 h1 {
+  color: #d83577;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.page-node-11 h1 {
+  color: #8b67ba;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.page-node-12 h1 {
+  color: #47a9e1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.page-node-30 h1 {
+  color: #d45000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .node-type-article #page {
   background: #ffffff url(../images/bg-blog.jpg) no-repeat center bottom;
   background-size: 100% auto;
   background-attachment: fixed;
-}
-.node-type-article #main {
-  width: 960px;
-  margin: 0 auto;
 }
 .node-type-article #content {
   background: #fff;
@@ -1183,19 +1176,22 @@ blockquote {
 .node-type-article #content .article {
   padding: 40px 30px;
 }
+.page-node-5 #main {
+  width: 100%;
+}
 .team-members {
   width: 960px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 .team-members h2.block-title {
-  font-size: 3em;
-  line-height: 1.25em;
-  color: #47a9e1;
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
   text-align: center;
-  margin-top: 50px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: transparent url(../images/double-line-title.png) no-repeat center 3px;
+  margin-bottom: 40px;
 }
 .team-members td {
   padding: 0px;

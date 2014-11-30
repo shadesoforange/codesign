@@ -49,10 +49,8 @@
     <?php print render($page['header']); ?>
 
   </header>
-
-  <div id="main">
-  	
-  	<?php 
+  
+  <?php 
 	  	$nav = render($page['navigation']);
 	  	if($nav): ?>
   	<div id="navigation">
@@ -62,6 +60,10 @@
     </div>
     
     <?php endif; ?>
+  
+  <div id="main">
+  	
+  	
   	
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
@@ -69,7 +71,7 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-       <!-- <h1 class="page__title title" id="page-title"><?php print $title; ?></h1> -->
+	  <!--<h1 class="page__title title" id="page-title"><?php print $title; ?></h1>-->
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
