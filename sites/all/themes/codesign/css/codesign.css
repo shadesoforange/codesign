@@ -430,7 +430,7 @@ h2 {
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  margin: 0 0 2em;
+  margin: 0 0 1.5em;
 }
 h3,
 h4,
@@ -1131,33 +1131,34 @@ blockquote {
   margin-right: 50%;
 }
 .services-one {
-  background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat left center;
+  background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding: 30px 0 100px;
+  margin-bottom: 0px;
 }
 .services-one .indent {
   margin-left: 74px;
 }
 .services-one .indent h2 {
-  margin-top: 0px;
+  margin: 0px 0px 1em;
 }
 .services-one .service-innovation {
-  background: url(../images/icon-innovation-black.svg) no-repeat left top;
+  background: url(../images/icon-innovation-orange.svg) no-repeat left top;
   background-size: 60px 60px;
   padding-bottom: 30px;
 }
 .services-one .service-accelerated-design {
-  background: url(../images/icon-accelerated-design-black.svg) no-repeat left top;
+  background: url(../images/icon-accelerated-design-orange.svg) no-repeat left top;
   background-size: 60px 60px;
   padding-bottom: 30px;
 }
 .services-one .service-design-thinking {
-  background: url(../images/icon-design-thinking-black.svg) no-repeat left top;
+  background: url(../images/icon-design-thinking-orange.svg) no-repeat left top;
   background-size: 60px 60px;
   padding-bottom: 30px;
 }
 .services-one .service-futures {
-  background: url(../images/icon-futures-black.svg) no-repeat left top;
+  background: url(../images/icon-futures-orange.svg) no-repeat left top;
   background-size: 60px 60px;
   padding-bottom: 30px;
 }
@@ -1165,12 +1166,13 @@ blockquote {
   background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center;
   color: #ffffff;
   padding: 60px 0 80px;
+  margin-bottom: 0px;
 }
 .services-two .indent {
   margin-left: 74px;
 }
 .services-two .indent h2 {
-  margin-top: 0px;
+  margin: 0px 0px 1em;
 }
 .services-two .service-graphics {
   background: url(../images/icon-graphics.svg) no-repeat left top;
