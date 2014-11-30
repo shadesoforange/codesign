@@ -449,6 +449,8 @@ h5 {
 }
 #content {
   padding: 0px;
+  width: 960px;
+  margin: 0 auto;
 }
 #header {
   width: 100%;
@@ -650,6 +652,7 @@ body.front #content {
   padding: 0px;
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
+  width: 100%;
 }
 body.front .view-case-studies {
   width: 960px;
@@ -971,7 +974,7 @@ blockquote {
   font-weight: 600;
 }
 .block-block .block-content {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   line-height: 1.4em;
 }

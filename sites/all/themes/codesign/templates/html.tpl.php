@@ -16,11 +16,15 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-
-  <?php if ($default_mobile_metatags): ?>
+  
+  <?php include_once ($_SERVER['DOCUMENT_ROOT'].'/sites/all/themes/codesign/mobile-detect/Mobile_Detect.php');
+	  $detect = new Mobile_Detect;
+	  if($detect->isMobile()): ?>
+	  	
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
   <?php endif; ?>
   <meta http-equiv="cleartype" content="on">
 
