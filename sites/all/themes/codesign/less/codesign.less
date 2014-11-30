@@ -5,8 +5,8 @@
 
 html, body { .raleway; .black; .lh(1.3em); .size(14px); }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
-h1 { .large; .raleway-bold; }
-h2 { .med; .raleway-med; }
+h1 { .large; .raleway-bold; .m(0 0 2em); }
+h2 { .med; .raleway-med; .m(0 0 2em); }
 h3, h4, h5 { .reg; .raleway-med; }
 #page { .w100; max-width: 100%; }
 #main { .pt(0px); }
@@ -57,6 +57,7 @@ h3, h4, h5 { .reg; .raleway-med; }
 					}
 					&:hover { .td-none; }
 					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .none; }
+					&.active .tag { .block; }
 				}
 			}
 		}
