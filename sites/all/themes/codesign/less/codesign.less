@@ -138,7 +138,10 @@ body.front {
 		#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; }
 		.node-page { .w100; }
 		.view-case-studies { .w100; }
-		.block-block .block-content { .w100; }
+		.quote { .w100; 
+			.block-content { .w(94%); .p(0 3%); }
+		}
+		.block-content { .w100; }
 		#block-views-articles-block .view-content { .w100; }
 	}
 }
@@ -336,7 +339,11 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 
 // Footer 
 
-#footer-wrapper { background: #000 url(../images/bg-footer.jpg) no-repeat center 25px; .pb(50px); }
+#footer-wrapper { background: #000 url(../images/bg-footer.jpg) no-repeat center 25px; .pb(50px); 
+	&.mobile #footer { .w100; 
+		.menu-services { .w(90%); .p(0 5%); .m0; }
+	}
+}
 #footer { .p(80px 0 20px); .w(932px); .m(0 auto); border-bottom: 1px solid #2c2a2a; .ltgrey; 
 	.menu-services { .m(0 0 0 50px); .fl; .w(400px);
 		h2 { .reg; .m(0 0 12px);
@@ -360,6 +367,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		input.form-text { background: #000; .ltgrey; border: none; .lh(14px); .size(14px); .p(8px); .w(150px); }
 		input.form-submit { .w(30px); .h(30px); .block; .fr; .p0; .ti; border: none; background: transparent url(../images/search-white.svg) no-repeat center center; background-size: 16px 16px; }
 	}
+	
 }
 
 

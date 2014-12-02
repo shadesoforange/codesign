@@ -850,7 +850,14 @@ body.front.mobile .node-page {
 body.front.mobile .view-case-studies {
   width: 100%;
 }
-body.front.mobile .block-block .block-content {
+body.front.mobile .quote {
+  width: 100%;
+}
+body.front.mobile .quote .block-content {
+  width: 94%;
+  padding: 0 3%;
+}
+body.front.mobile .block-content {
   width: 100%;
 }
 body.front.mobile #block-views-articles-block .view-content {
@@ -1437,6 +1444,14 @@ blockquote {
 #footer-wrapper {
   background: #000000 url(../images/bg-footer.jpg) no-repeat center 25px;
   padding-bottom: 50px;
+}
+#footer-wrapper.mobile #footer {
+  width: 100%;
+}
+#footer-wrapper.mobile #footer .menu-services {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0px;
 }
 #footer {
   padding: 80px 0 20px;
