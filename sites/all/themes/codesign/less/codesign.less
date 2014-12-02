@@ -12,6 +12,7 @@ h3, h4, h5 { .reg; .raleway-med; }
 #main { .pt(0px); .w(960px); .auto; }
 #content { .p(40px 0 0); min-height: 500px; }
 
+
 // Header Region
 
 #header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
@@ -27,7 +28,15 @@ h3, h4, h5 { .reg; .raleway-med; }
 			}
 		}
 	}
+	.mobile-main-menu { .rel; 
+		.menu-trigger { .ti; .w(30px); .h(30px); background: transparent url(../images/mobile-menu-icon.svg) no-repeat; background-size: 30px 30px; .ab; top: 12px; left: 10px; .block; }
+		.logo { .w(170px); .h(47px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 170px 47px; .block; .auto; .mt(10px); }  
+		.menu { .none; 
+			a { .white; }
+		}
+	}
 }
+
 
 // Navigation Region
 
@@ -60,6 +69,22 @@ h3, h4, h5 { .reg; .raleway-med; }
 					&.active .tag { .block; }
 					&.active-trail .tag { .block; }
 				}
+			}
+		}
+	}
+	&.mobile {
+		.region-navigation { .w100; 
+			ul.menu { .h(auto);
+				li { .w50; .m(0 0 10px); 
+					a { .p(4px 10px 4px 45px); .w(auto); .h(30px); .tl;
+						&.innovation-consulting { background-position: left center; background-size: 36px 36px; }
+						&.accelerated-design { background-position: left center; background-size: 36px 36px; }
+						&.design-thinking { background-position: left center; background-size: 36px 36px; }
+						&.futures { background-position: left center; background-size: 36px 36px; }
+						&.graphics { background-position: left center; background-size: 36px 36px; }
+						&.events { background-position: left center; background-size: 36px 36px; }
+					}
+				} 
 			}
 		}
 	}
@@ -103,6 +128,13 @@ body.front {
 				}
 			}
 		}
+	}
+	&.mobile {
+		#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; }
+		.node-page { .w100; }
+		.view-case-studies { .w100; }
+		.block-block .block-content { .w100; }
+		#block-views-articles-block .view-content { .w100; }
 	}
 }
 
@@ -322,5 +354,20 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		.container-inline { border: 1px solid @ltgrey; }
 		input.form-text { background: #000; .ltgrey; border: none; .lh(14px); .size(14px); .p(8px); .w(150px); }
 		input.form-submit { .w(30px); .h(30px); .block; .fr; .p0; .ti; border: none; background: transparent url(../images/search-white.svg) no-repeat center center; background-size: 16px 16px; }
+	}
+}
+
+
+// Mobile hide/show 
+
+body {
+	&.mobile { 
+		#header {
+			.main-menu { .none; }
+			#block-views-homepage-slides-block { .none; }
+		}
+	}
+	&.desktop {
+		#header .mobile-main-menu { .none; }
 	}
 }

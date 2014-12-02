@@ -33,6 +33,13 @@ Drupal.behaviors.my_custom_behavior = {
 		}	
 	);
 	
+	// Open the mobile menu
+	
+	$('.mobile-main-menu .menu-trigger').click(function(e){
+		e.preventDefault();
+		$('.mobile-main-menu .menu').slideToggle();
+	});
+	
   }
 };
 
