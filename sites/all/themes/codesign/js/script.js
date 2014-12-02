@@ -37,7 +37,7 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	$('.mobile-main-menu .menu-trigger').click(function(e){
 		e.preventDefault();
-		$('.mobile-main-menu .menu').slideToggle();
+		$('.mobile-main-menu .menu').slideToggle(200);
 	});
 	
   }

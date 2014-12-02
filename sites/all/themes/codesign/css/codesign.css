@@ -510,13 +510,14 @@ h5 {
 }
 #header .mobile-main-menu {
   position: relative;
+  display: none;
 }
 #header .mobile-main-menu .menu-trigger {
   text-indent: -5000px;
   width: 30px;
   height: 30px;
-  background: transparent url(../images/mobile-menu-icon.svg) no-repeat;
-  background-size: 30px 30px;
+  background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center;
+  background-size: 24px 24px;
   position: absolute;
   top: 12px;
   left: 10px;
@@ -536,6 +537,15 @@ h5 {
 }
 #header .mobile-main-menu .menu a {
   color: #ffffff;
+}
+#header.mobile .main-menu {
+  display: none;
+}
+#header.mobile .mobile-main-menu {
+  display: block;
+}
+#header.mobile #block-views-homepage-slides-block {
+  display: none;
 }
 #navigation {
   background: #2a2a2a;
@@ -639,34 +649,38 @@ h5 {
   margin: 0 0 10px;
 }
 #navigation.mobile .region-navigation ul.menu li a {
-  padding: 4px 10px 4px 45px;
+  padding: 4px 8px 4px 42px;
   width: auto;
-  height: 30px;
+  height: 28px;
   text-align: left;
+  font-size: 12px;
+  line-height: 14px;
 }
 #navigation.mobile .region-navigation ul.menu li a.innovation-consulting {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
 }
 #navigation.mobile .region-navigation ul.menu li a.accelerated-design {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
 }
 #navigation.mobile .region-navigation ul.menu li a.design-thinking {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
 }
 #navigation.mobile .region-navigation ul.menu li a.futures {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
+  height: 14px;
+  padding: 11px 8px 11px 42px;
 }
 #navigation.mobile .region-navigation ul.menu li a.graphics {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
 }
 #navigation.mobile .region-navigation ul.menu li a.events {
   background-position: left center;
-  background-size: 36px 36px;
+  background-size: 34px 34px;
 }
 body.front #main {
   width: 100%;
@@ -1521,12 +1535,7 @@ blockquote {
   background: transparent url(../images/search-white.svg) no-repeat center center;
   background-size: 16px 16px;
 }
-body.mobile #header .main-menu {
-  display: none;
-}
-body.mobile #header #block-views-homepage-slides-block {
-  display: none;
-}
-body.desktop #header .mobile-main-menu {
-  display: none;
+body.mobile h1 {
+  font-size: 2em;
+  line-height: 1.25em;
 }
