@@ -1176,6 +1176,127 @@ blockquote {
 .node-type-article #content .article {
   padding: 40px 30px;
 }
+.page-node-4 #main {
+  width: 100%;
+}
+.latest-blog {
+  width: 760px;
+  margin: 0 auto;
+  min-height: 304px;
+  margin-bottom: 40px;
+}
+.latest-blog .views-field-field-image {
+  float: left;
+}
+.latest-blog .views-field-title {
+  margin-left: 330px;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+.latest-blog .views-field-field-author {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-left: 330px;
+}
+.latest-blog .views-field-body {
+  margin: 24px 0 12px 330px;
+}
+.latest-blog .views-field-view-node {
+  margin-left: 330px;
+}
+.latest-blog .views-field-view-node a {
+  color: #2a2a2a;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #2a2a2a;
+  font-size: 12px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+.latest-blog .views-field-view-node a:hover {
+  text-decoration: none;
+}
+.all-past-blogs {
+  background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0 100px;
+  margin-bottom: 0px;
+}
+.all-past-blogs h2.block-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+.all-past-blogs .view-content {
+  width: 960px;
+  height: 400px;
+  margin: 0 auto;
+}
+.all-past-blogs .view-content .views-row {
+  width: 304px;
+  height: 400px;
+  background: #fff;
+  text-align: left;
+  float: left;
+  margin: 0 8px;
+}
+.all-past-blogs .view-content .views-row .views-field-nothing {
+  height: 186px;
+  position: relative;
+}
+.all-past-blogs .view-content .views-row .views-field-nothing img {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+.all-past-blogs .view-content .views-row .views-field-nothing .overlay {
+  background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom;
+  top: 0px;
+  width: 304px;
+  height: 186px;
+  position: absolute;
+  z-index: 2;
+}
+.all-past-blogs .view-content .views-row .views-field-nothing .overlay .content {
+  position: absolute;
+  bottom: 0px;
+  padding: 0 15px 10px;
+}
+.all-past-blogs .view-content .views-row .views-field-body {
+  padding: 20px 15px 20px;
+}
+.all-past-blogs .view-content .views-row .views-field-view-node {
+  margin: 0 15px;
+}
+.all-past-blogs .view-content .views-row .views-field-view-node a {
+  color: #2a2a2a;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #2a2a2a;
+  font-size: 12px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+.all-past-blogs .view-content .views-row .views-field-view-node a:hover {
+  text-decoration: none;
+}
 .page-node-5 #main {
   width: 100%;
 }
