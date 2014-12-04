@@ -40,6 +40,8 @@ Drupal.behaviors.my_custom_behavior = {
 		$('.mobile-main-menu .menu').slideToggle(200);
 	});
 	
+	$('#block-views-homepage-slides-block .slide:first').hide().delay(500).fadeIn(1000);
+	
   }
 };
 

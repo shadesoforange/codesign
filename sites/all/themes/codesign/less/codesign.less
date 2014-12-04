@@ -17,12 +17,16 @@ h3, h4, h5 { .reg; .raleway-med; }
 
 #header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
 	.region { max-width: 1200px; .auto; }
-	.main-menu { .m(3em 0); .pr(25px);
+	.main-menu { .m(3em 0);
 		h2.block-title { .none; }
 		ul.menu { .m0; .p0; 
-			li { .list-none; .inline-block; .h(60px); .m(0 15px);
-				a { .upper; .size(14px); .white; .lh(60px);
-					&.home { .inline-block; .ti; .w(217px); .h(60px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 217px 60px; }
+			li { .list-none; .inline-block; .h(60px); .m0;
+				a { .upper; .size(14px); .white; .lh(60px); .p(0 15px);
+					&.services { .p(0 25px 0 15px); }
+					&.home { .inline-block; .ti; .w(217px); .h(60px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 217px 60px; .p0; }
+					&.blog { .p(0 10px 0 20px);  }
+					&.about { .p(0 10px); }
+					&.contact { .p(0 10px); }
 					&.search { .inline-block; .ti; .w(16px); .h(60px); background: transparent url(../images/search-white.svg) no-repeat 0px 22px; background-size: 16px 16px; }
 				}
 			}
@@ -102,12 +106,11 @@ body.front {
 	#main { .w(100%); }
 	#header { background: #000; .p0;
 		.region { .w(100%); max-width: 100%; .rel; .tc; }
-		#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 500px; .m0;
+		#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 500px; .m0; background: #000;
 			.view-content { .h(500px); }
-			.views-field-field-slide-text { .h(500px); }
-			.slide { height: 500px; width: 100%; .m0; .p0; .tc;
-				.slide-copy { .white; .caslon; .size(42px); .lh(44px); .m0; .w(620px); .em; .pt(250px); .m(0 auto); }
-			}
+			.slide { .h(500px); .rel; .w(100%); .tc; }
+			.slide-bg { .h(500px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
+			.slide-copy { .white; .caslon; .size(42px); .lh(44px); .m0; .w(620px); .em; top: 250px; .ml(-310px); left: 50%; .ab; z-index: 2; }
 		}
 		.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px; }
 	}
