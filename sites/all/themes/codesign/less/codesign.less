@@ -225,7 +225,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 
 .region-sidebar-first { 
 	h2.block-title { .blue; .raleway-med; .large; .mb(30px); }
-	.block-block, .block-views { .p(0 25px 0 0); .mb(30px);
+	.block-block, .block-views { .p(0 30px 0 0); .mb(30px);
 		.block-content { .w(100%); }
 		&.first { .pt(60px); }
 	}
@@ -238,7 +238,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		}
 		.views-field-field-author { .raleway-light; .em; }
 	}
-	.block-menu-block { .p(0 25px 0 0); .mb(30px);
+	.block-menu-block { .p(0 30px 0 0); .mb(30px);
 		.block-content { .w(100%); }
 		ul.menu { .m0; .p0;
 			li { .list-none; .m0; .p0; border-bottom: 1px solid @xltgrey; 
@@ -268,7 +268,8 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		}
 	}
 }
-.sidebar-first #content { .p(40px 25px); }
+.sidebar-first #content { .p(40px 30px); }
+.section-services .region-sidebar-first .block-menu-block li.first { .none; }
 
 
 // Case Study Pages and Blocks
@@ -333,18 +334,20 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		&.accelerated-design { background: @orange url(../images/icon-accelerated-design.svg) no-repeat center 10px; background-size: 60px 60px; }
 		&.design-thinking { background: @red url(../images/icon-design-thinking.svg) no-repeat center 10px; background-size: 60px 60px; }
 		&.futures { background: @magenta url(../images/icon-futures.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.graphics { background: @violet url(../images/icon-graphics.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.events { background: @blue url(../images/icon-events.svg) no-repeat center 10px; background-size: 60px 60px; }
 	}
 	.column-half { .w(44%); .fl; .m(0 3% 40px); } 
-	//.service-innovation { background: url(../images/icon-innovation-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
-	//.service-accelerated-design { background: url(../images/icon-accelerated-design-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
-	//.service-design-thinking { background: url(../images/icon-design-thinking-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
-	//.service-futures { background: url(../images/icon-futures-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 }
 .services-two { background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center; .white; .p(60px 0 80px); .mb(0px);
 	h2 { .m(0px 0px 1em); }
-	.block-content { .w(900px); }
-	//.service-graphics { background: url(../images/icon-graphics.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
-	//.service-events { background: url(../images/icon-events.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
+	.block-content { .w(860px); }
+	.indent { .ml(115px); }
+	.flag { .w(90px); .p(80px 0 10px); .white; .raleway-light; .reg; .tc; .fl; .lh(1.1em); 
+		&.graphics { background: @violet url(../images/icon-graphics.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.events { background: @blue url(../images/icon-events.svg) no-repeat center 10px; background-size: 60px 60px; }
+	}
+	.column-half { .w(44%); .fl; .m(0 3% 40px); }
 }
 .section-services.sidebar-first h1 { .tl; }
 .page-node-7 h1 { .yellow; .raleway-light; .normal; }

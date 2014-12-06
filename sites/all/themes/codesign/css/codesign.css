@@ -69,7 +69,7 @@
 .raleway,
 .sans {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 .raleway-light {
   font-family: 'Raleway', sans-serif;
@@ -426,7 +426,7 @@ a {
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: #000000;
   line-height: 1.3em;
   font-size: 14px;
@@ -1083,7 +1083,7 @@ blockquote {
   line-height: 1.3em;
   letter-spacing: 1px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 30px;
   padding: 10px;
   width: 300px;
@@ -1134,7 +1134,7 @@ blockquote {
 }
 .region-sidebar-first .block-block,
 .region-sidebar-first .block-views {
-  padding: 0 25px 0 0;
+  padding: 0 30px 0 0;
   margin-bottom: 30px;
 }
 .region-sidebar-first .block-block .block-content,
@@ -1168,7 +1168,7 @@ blockquote {
   font-style: italic;
 }
 .region-sidebar-first .block-menu-block {
-  padding: 0 25px 0 0;
+  padding: 0 30px 0 0;
   margin-bottom: 30px;
 }
 .region-sidebar-first .block-menu-block .block-content {
@@ -1271,7 +1271,10 @@ blockquote {
   text-indent: -5000px;
 }
 .sidebar-first #content {
-  padding: 40px 25px;
+  padding: 40px 30px;
+}
+.section-services .region-sidebar-first .block-menu-block li.first {
+  display: none;
 }
 .node-type-case-study #main {
   width: 100%;
@@ -1504,6 +1507,14 @@ blockquote {
   background: #d83577 url(../images/icon-futures.svg) no-repeat center 10px;
   background-size: 60px 60px;
 }
+.services-one .flag.graphics {
+  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-one .flag.events {
+  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
 .services-one .column-half {
   width: 44%;
   float: left;
@@ -1519,7 +1530,35 @@ blockquote {
   margin: 0px 0px 1em;
 }
 .services-two .block-content {
-  width: 900px;
+  width: 860px;
+}
+.services-two .indent {
+  margin-left: 115px;
+}
+.services-two .flag {
+  width: 90px;
+  padding: 80px 0 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: center;
+  float: left;
+  line-height: 1.1em;
+}
+.services-two .flag.graphics {
+  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-two .flag.events {
+  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-two .column-half {
+  width: 44%;
+  float: left;
+  margin: 0 3% 40px;
 }
 .section-services.sidebar-first h1 {
   text-align: left;
@@ -1916,5 +1955,5 @@ body.mobile h1 {
   background: transparent;
   padding: 15px 10px 20px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
