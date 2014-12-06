@@ -23,14 +23,10 @@ Drupal.behaviors.my_custom_behavior = {
 	$('.nav-services ul.menu li a').append('<div class="tag"></div>');
 	$('.nav-services ul.menu li a').hover(
 		function(e){
-			if(!$(this).hasClass('active-trail')){
-				$(this).children('.tag').slideDown(200);
-			}
+			$(this).children('.tag').slideDown(200);
 		},
 		function(e){
-			if(!$(this).hasClass('active-trail')){
-				$(this).children('.tag').slideUp(200);
-			}
+			$(this).children('.tag').slideUp(200);
 		}	
 	);
 	

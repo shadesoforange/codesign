@@ -5,7 +5,7 @@
 
 html, body { .raleway; .black; .lh(1.3em); .size(14px); }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
-h1 { .xxlarge; .raleway-thin; .dkgrey; .tc; .m(0 0 1em); }
+h1 { .xxlarge; .raleway-light; .dkgrey; .tc; .m(0 0 1em); }
 h2 { .med; .raleway-med; .m(0 0 1.25em); }
 h3, h4, h5 { .reg; .raleway-med; }
 a { .blue;
@@ -21,7 +21,7 @@ a { .blue;
 // Header Region
 
 #header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
-	.region { max-width: 1200px; .auto; }
+	.region {  }
 	.main-menu { .m(3em 0);
 		h2.block-title { .none; }
 		ul.menu { .m0; .p0; 
@@ -52,6 +52,34 @@ a { .blue;
 		.mobile-main-menu { .block; }
 		#block-views-homepage-slides-block { .none; }
 	}
+	.nav-services { .w(876px); .auto; .mb(0px);
+		ul.menu { .h(152px); .p0; .m0;
+			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none;
+				a { .white; .p(100px 0px 0px); .block; .w(116px); .ls(0.5px); .h(52px); .size(14px); .rel;
+					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @yellow; }
+					}
+					&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @orange; }
+					}
+					&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @red; }
+					}
+					&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @magenta; }
+					}
+					&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @violet; }
+					}
+					&.events { background: transparent url(../images/icon-events.svg) no-repeat center top; background-size: 88px 88px; 
+						.tag { background: @blue; }
+					}
+					&:hover { .td-none; }
+					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .none; }
+				}
+			}
+		}	
+	}
 }
 
 
@@ -59,9 +87,8 @@ a { .blue;
 
 #navigation { background: #111; .h(178px); .rel; 
 	.region-navigation { .w(876px); .h(152px); .auto; .p(26px 0px 0px);
-		.block
 		ul.menu { .h(152px); .p0; .m0;
-			li { .w(116px); .fl; .m(0 15px); .p0; .tc; 
+			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none;
 				a { .ltgrey; .p(100px 0px 0px); .block; .w(116px); .ls(0.5px); .h(52px); .size(14px); .rel;
 					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center top; background-size: 88px 88px; 
 						.tag { background: @yellow; }
@@ -83,8 +110,6 @@ a { .blue;
 					}
 					&:hover { .td-none; }
 					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .none; }
-					&.active .tag { .block; }
-					&.active-trail .tag { .block; }
 				}
 			}
 		}
@@ -112,18 +137,19 @@ a { .blue;
 
 body.front {
 	#main { .w(100%); }
-	#header { background: #000; .p0;
-		.region { .w(100%); max-width: 100%; .rel; .tc; }
-		#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 500px; .m0; background: #000;
-			.view-content { .h(500px); }
-			.slide { .h(500px); .rel; .w(100%); .tc; }
-			.slide-bg { .h(500px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
-			.slide-copy { .white; .raleway-light; .xxlarge; .m0; .w(650px); top: 250px; .ml(-325px); left: 50%; .ab; z-index: 2; }
+	#header { background: #000; .p0; 
+		.region { .w(100%); max-width: 100%; .rel; .tc; .h(600px); }
+		#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 600px; .m0; background: #000;
+			.view-content { .h(600px); }
+			.slide { .h(600px); .rel; .w(100%); .tc; }
+			.slide-bg { .h(600px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
+			.slide-copy { .white; .raleway-light; .xxlarge; .m0; .w(650px); top: 230px; .ml(-325px); left: 50%; .ab; z-index: 2; }
 		}
 		.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px; }
+		.nav-services { .ab; bottom: 0px; z-index: 3; left: 50%; .ml(-438px); }
 	}
 	#content { .bricks-top; .w(100%); }
-	.node-page { .w(860px); .auto; .tc; .p(40px 0 80px); }
+	.node-page { .w(900px); .auto; .tc; .p(40px 0 80px); }
 	.view-case-studies { .mb(0px); }
 	.block-block.quote { .w(100%); .bricks; .mb(0px); .p(155px 0 220px);
 		.block-content { .w(680px); .auto; background: transparent url(../images/quotes-home.png) no-repeat center 10px; .p(0px 140px); }
@@ -173,7 +199,7 @@ img {
 	&.image-left { .fl; .m(15px 25px 25px 0px); }
 }
 blockquote { .xlarge; .black; .em; .m(2em 0); }
-.column-half { .w(46%); .fl; .m(0 2% 40px); }
+.column-half { .w(40%); .fl; .m(0 5% 40px); }
 .column-third { .w(27.33%); .fl; .m(0 3% 40px); }
 .bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 100% auto; }
 .bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; }
@@ -197,9 +223,12 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 
 // Sidebars
 
-.region-sidebar-first { .pt(60px);
-	h2.block-title { .blue; .raleway-med; .em; .xlarge; .mb(30px); }
-	.block-block, .block-views { .pr(25px); }
+.region-sidebar-first { 
+	h2.block-title { .blue; .raleway-med; .large; .mb(30px); }
+	.block-block, .block-views { .p(0 25px 0 0); .mb(30px);
+		.block-content { .w(100%); }
+		&.first { .pt(60px); }
+	}
 	.recent-posts {
 		.views-row { .mb(20px); }
 		.views-field-title { .mb(5px); 
@@ -209,7 +238,37 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 		}
 		.views-field-field-author { .raleway-light; .em; }
 	}
+	.block-menu-block { .p(0 25px 0 0); .mb(30px);
+		.block-content { .w(100%); }
+		ul.menu { .m0; .p0;
+			li { .list-none; .m0; .p0; border-bottom: 1px solid @xltgrey; 
+				a { .raleway-light; .reg; .block; .p(10px 0); .grey;
+					&:hover { background: #ddd; .dkgrey; }
+					&.active { color: #000; .raleway-bold; }
+				}
+			}
+		}
+		&.innovation-consulting h2.block-title { .mb(15px);
+			a { .block; background: @yellow url(../images/icon-innovation.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+		&.design-thinking h2.block-title { .mb(15px);
+			a { .block; background: @red url(../images/icon-design-thinking.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+		&.accelerated-design-events h2.block-title { .mb(15px);
+			a { .block; background: @orange url(../images/icon-accelerated-design.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+		&.futures h2.block-title { .mb(15px);
+			a { .block; background: @magenta url(../images/icon-futures.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+		&.graphics-facilitation h2.block-title { .mb(15px);
+			a { .block; background: @violet url(../images/icon-graphics.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+		&.events-conferences h2.block-title { .mb(15px);
+			a { .block; background: @blue url(../images/icon-events.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+		}
+	}
 }
+.sidebar-first #content { .p(40px 25px); }
 
 
 // Case Study Pages and Blocks
@@ -268,6 +327,14 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 .services-one { background: #fff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom; background-size: 100% auto; .p(30px 0 100px); .mb(0px);
 	h2 { .m(0px 0px 1em); }
 	.block-content { .w(860px); }
+	.indent { .ml(115px); }
+	.flag { .w(90px); .p(80px 0 10px); .white; .raleway-light; .reg; .tc; .fl; .lh(1.1em); 
+		&.innovation-consulting { background: @yellow url(../images/icon-innovation.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.accelerated-design { background: @orange url(../images/icon-accelerated-design.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.design-thinking { background: @red url(../images/icon-design-thinking.svg) no-repeat center 10px; background-size: 60px 60px; }
+		&.futures { background: @magenta url(../images/icon-futures.svg) no-repeat center 10px; background-size: 60px 60px; }
+	}
+	.column-half { .w(44%); .fl; .m(0 3% 40px); } 
 	//.service-innovation { background: url(../images/icon-innovation-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 	//.service-accelerated-design { background: url(../images/icon-accelerated-design-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 	//.service-design-thinking { background: url(../images/icon-design-thinking-orange.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
@@ -279,13 +346,14 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 	//.service-graphics { background: url(../images/icon-graphics.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 	//.service-events { background: url(../images/icon-events.svg) no-repeat left top; background-size: 60px 60px; .pb(30px); }
 }
-.page-node-7 h1 { .yellow; .raleway-med; .normal; }
-.page-node-8 h1 { .orange; .raleway-med; .normal; }
-.page-node-9 h1 { .red; .raleway-med; .normal; }
-.page-node-10 h1 { .magenta; .raleway-med; .normal; }
-.page-node-11 h1 { .violet; .raleway-med; .normal; }
-.page-node-12 h1 { .blue; .raleway-med; .normal; }
-.page-node-30 h1 { .orange; .raleway-med; .normal; }
+.section-services.sidebar-first h1 { .tl; }
+.page-node-7 h1 { .yellow; .raleway-light; .normal; }
+.page-node-8 h1 { .orange; .raleway-light; .normal; }
+.page-node-9 h1 { .red; .raleway-light; .normal; }
+.page-node-10 h1 { .magenta; .raleway-light; .normal; }
+.page-node-11 h1 { .violet; .raleway-light; .normal; }
+.page-node-12 h1 { .blue; .raleway-light; .normal; }
+.page-node-30 h1 { .orange; .raleway-light; .normal; }
 .design-thinking-programs { background: #fff url(../images/bg-design-thinking.jpg) no-repeat left 155px; background-size: 320px auto; min-height: 500px; .p(20px 0);
 	h2.block-title { .none; }
 	.block-content {
@@ -302,9 +370,7 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 
 .node-type-article {
 	#page { background: #fff url(../images/bg-blog.jpg) no-repeat center bottom; background-size: 100% auto; background-attachment: fixed; }
-	#content { background: #fff;
-		.article { .p(40px 30px); }	
-	}
+	#content { background: #fff; }
 }
 .page-node-4 {
 	#main { .w(100%); }

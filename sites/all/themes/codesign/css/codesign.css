@@ -441,7 +441,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: #2a2a2a;
   text-align: center;
   margin: 0 0 1em;
@@ -489,10 +489,6 @@ a:hover {
   color: #ffffff;
   text-align: center;
   padding: 0px;
-}
-#header .region {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 #header .main-menu {
   margin: 3em 0;
@@ -594,6 +590,88 @@ a:hover {
 #header.mobile #block-views-homepage-slides-block {
   display: none;
 }
+#header .nav-services {
+  width: 876px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+#header .nav-services ul.menu {
+  height: 152px;
+  padding: 0px;
+  margin: 0px;
+}
+#header .nav-services ul.menu li {
+  width: 116px;
+  float: left;
+  margin: 0 15px;
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+#header .nav-services ul.menu li a {
+  color: #ffffff;
+  padding: 100px 0px 0px;
+  display: block;
+  width: 116px;
+  letter-spacing: 0.5px;
+  height: 52px;
+  font-size: 14px;
+  position: relative;
+}
+#header .nav-services ul.menu li a.innovation-consulting {
+  background: transparent url(../images/icon-innovation.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.innovation-consulting .tag {
+  background: #eeb51c;
+}
+#header .nav-services ul.menu li a.accelerated-design {
+  background: transparent url(../images/icon-accelerated-design.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.accelerated-design .tag {
+  background: #d45000;
+}
+#header .nav-services ul.menu li a.design-thinking {
+  background: transparent url(../images/icon-design-thinking.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.design-thinking .tag {
+  background: #dc0000;
+}
+#header .nav-services ul.menu li a.futures {
+  background: transparent url(../images/icon-futures.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.futures .tag {
+  background: #d83577;
+}
+#header .nav-services ul.menu li a.graphics {
+  background: transparent url(../images/icon-graphics.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.graphics .tag {
+  background: #8b67ba;
+}
+#header .nav-services ul.menu li a.events {
+  background: transparent url(../images/icon-events.svg) no-repeat center top;
+  background-size: 88px 88px;
+}
+#header .nav-services ul.menu li a.events .tag {
+  background: #47a9e1;
+}
+#header .nav-services ul.menu li a:hover {
+  text-decoration: none;
+}
+#header .nav-services ul.menu li a .tag {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
 #navigation {
   background: #111;
   height: 178px;
@@ -605,19 +683,22 @@ a:hover {
   margin: 0 auto;
   padding: 26px 0px 0px;
 }
-#navigation .region-navigation .block ul.menu {
+#navigation .region-navigation ul.menu {
   height: 152px;
   padding: 0px;
   margin: 0px;
 }
-#navigation .region-navigation .block ul.menu li {
+#navigation .region-navigation ul.menu li {
   width: 116px;
   float: left;
   margin: 0 15px;
   padding: 0px;
   text-align: center;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
 }
-#navigation .region-navigation .block ul.menu li a {
+#navigation .region-navigation ul.menu li a {
   color: #aaaaaa;
   padding: 100px 0px 0px;
   display: block;
@@ -627,63 +708,57 @@ a:hover {
   font-size: 14px;
   position: relative;
 }
-#navigation .region-navigation .block ul.menu li a.innovation-consulting {
+#navigation .region-navigation ul.menu li a.innovation-consulting {
   background: transparent url(../images/icon-innovation.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.innovation-consulting .tag {
+#navigation .region-navigation ul.menu li a.innovation-consulting .tag {
   background: #eeb51c;
 }
-#navigation .region-navigation .block ul.menu li a.accelerated-design {
+#navigation .region-navigation ul.menu li a.accelerated-design {
   background: transparent url(../images/icon-accelerated-design.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.accelerated-design .tag {
+#navigation .region-navigation ul.menu li a.accelerated-design .tag {
   background: #d45000;
 }
-#navigation .region-navigation .block ul.menu li a.design-thinking {
+#navigation .region-navigation ul.menu li a.design-thinking {
   background: transparent url(../images/icon-design-thinking.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.design-thinking .tag {
+#navigation .region-navigation ul.menu li a.design-thinking .tag {
   background: #dc0000;
 }
-#navigation .region-navigation .block ul.menu li a.futures {
+#navigation .region-navigation ul.menu li a.futures {
   background: transparent url(../images/icon-futures.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.futures .tag {
+#navigation .region-navigation ul.menu li a.futures .tag {
   background: #d83577;
 }
-#navigation .region-navigation .block ul.menu li a.graphics {
+#navigation .region-navigation ul.menu li a.graphics {
   background: transparent url(../images/icon-graphics.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.graphics .tag {
+#navigation .region-navigation ul.menu li a.graphics .tag {
   background: #8b67ba;
 }
-#navigation .region-navigation .block ul.menu li a.events {
+#navigation .region-navigation ul.menu li a.events {
   background: transparent url(../images/icon-events.svg) no-repeat center top;
   background-size: 88px 88px;
 }
-#navigation .region-navigation .block ul.menu li a.events .tag {
+#navigation .region-navigation ul.menu li a.events .tag {
   background: #47a9e1;
 }
-#navigation .region-navigation .block ul.menu li a:hover {
+#navigation .region-navigation ul.menu li a:hover {
   text-decoration: none;
 }
-#navigation .region-navigation .block ul.menu li a .tag {
+#navigation .region-navigation ul.menu li a .tag {
   width: 100%;
   height: 10px;
   position: absolute;
   bottom: 0px;
   display: none;
-}
-#navigation .region-navigation .block ul.menu li a.active .tag {
-  display: block;
-}
-#navigation .region-navigation .block ul.menu li a.active-trail .tag {
-  display: block;
 }
 #navigation.mobile .region-navigation {
   width: 100%;
@@ -741,27 +816,28 @@ body.front #header .region {
   max-width: 100%;
   position: relative;
   text-align: center;
+  height: 600px;
 }
 body.front #header #block-views-homepage-slides-block {
   width: 100%;
   position: relative;
   top: 0px;
   z-index: 2;
-  height: 500px;
+  height: 600px;
   margin: 0px;
   background: #000;
 }
 body.front #header #block-views-homepage-slides-block .view-content {
-  height: 500px;
+  height: 600px;
 }
 body.front #header #block-views-homepage-slides-block .slide {
-  height: 500px;
+  height: 600px;
   position: relative;
   width: 100%;
   text-align: center;
 }
 body.front #header #block-views-homepage-slides-block .slide-bg {
-  height: 500px;
+  height: 600px;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -778,7 +854,7 @@ body.front #header #block-views-homepage-slides-block .slide-copy {
   line-height: 1.25em;
   margin: 0px;
   width: 650px;
-  top: 250px;
+  top: 230px;
   margin-left: -325px;
   left: 50%;
   position: absolute;
@@ -793,13 +869,20 @@ body.front #header .main-menu {
   z-index: 3;
   margin-left: -354px;
 }
+body.front #header .nav-services {
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+  left: 50%;
+  margin-left: -438px;
+}
 body.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
   width: 100%;
 }
 body.front .node-page {
-  width: 860px;
+  width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 40px 0 80px;
@@ -972,9 +1055,9 @@ blockquote {
   margin: 2em 0;
 }
 .column-half {
-  width: 46%;
+  width: 40%;
   float: left;
-  margin: 0 2% 40px;
+  margin: 0 5% 40px;
 }
 .column-third {
   width: 27.33%;
@@ -1041,21 +1124,26 @@ blockquote {
   margin: 0 auto;
   line-height: 1.4em;
 }
-.region-sidebar-first {
-  padding-top: 60px;
-}
 .region-sidebar-first h2.block-title {
   color: #47a9e1;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-style: italic;
-  font-size: 2.2em;
+  font-size: 1.6em;
   line-height: 1.25em;
   margin-bottom: 30px;
 }
 .region-sidebar-first .block-block,
 .region-sidebar-first .block-views {
-  padding-right: 25px;
+  padding: 0 25px 0 0;
+  margin-bottom: 30px;
+}
+.region-sidebar-first .block-block .block-content,
+.region-sidebar-first .block-views .block-content {
+  width: 100%;
+}
+.region-sidebar-first .block-block.first,
+.region-sidebar-first .block-views.first {
+  padding-top: 60px;
 }
 .region-sidebar-first .recent-posts .views-row {
   margin-bottom: 20px;
@@ -1078,6 +1166,112 @@ blockquote {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+.region-sidebar-first .block-menu-block {
+  padding: 0 25px 0 0;
+  margin-bottom: 30px;
+}
+.region-sidebar-first .block-menu-block .block-content {
+  width: 100%;
+}
+.region-sidebar-first .block-menu-block ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+.region-sidebar-first .block-menu-block ul.menu li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #cccccc;
+}
+.region-sidebar-first .block-menu-block ul.menu li a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  display: block;
+  padding: 10px 0;
+  color: #555555;
+}
+.region-sidebar-first .block-menu-block ul.menu li a:hover {
+  background: #ddd;
+  color: #2a2a2a;
+}
+.region-sidebar-first .block-menu-block ul.menu li a.active {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.region-sidebar-first .block-menu-block.innovation-consulting h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.innovation-consulting h2.block-title a {
+  display: block;
+  background: #eeb51c url(../images/icon-innovation.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.region-sidebar-first .block-menu-block.design-thinking h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.design-thinking h2.block-title a {
+  display: block;
+  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.region-sidebar-first .block-menu-block.accelerated-design-events h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.accelerated-design-events h2.block-title a {
+  display: block;
+  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.region-sidebar-first .block-menu-block.futures h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.futures h2.block-title a {
+  display: block;
+  background: #d83577 url(../images/icon-futures.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.region-sidebar-first .block-menu-block.graphics-facilitation h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.graphics-facilitation h2.block-title a {
+  display: block;
+  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.region-sidebar-first .block-menu-block.events-conferences h2.block-title {
+  margin-bottom: 15px;
+}
+.region-sidebar-first .block-menu-block.events-conferences h2.block-title a {
+  display: block;
+  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 50px;
+  background-size: 60px 60px;
+  width: 70px;
+  height: 115px;
+  text-indent: -5000px;
+}
+.sidebar-first #content {
+  padding: 40px 25px;
 }
 .node-type-case-study #main {
   width: 100%;
@@ -1279,6 +1473,42 @@ blockquote {
 .services-one .block-content {
   width: 860px;
 }
+.services-one .indent {
+  margin-left: 115px;
+}
+.services-one .flag {
+  width: 90px;
+  padding: 80px 0 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: center;
+  float: left;
+  line-height: 1.1em;
+}
+.services-one .flag.innovation-consulting {
+  background: #eeb51c url(../images/icon-innovation.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-one .flag.accelerated-design {
+  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-one .flag.design-thinking {
+  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-one .flag.futures {
+  background: #d83577 url(../images/icon-futures.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.services-one .column-half {
+  width: 44%;
+  float: left;
+  margin: 0 3% 40px;
+}
 .services-two {
   background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center;
   color: #ffffff;
@@ -1291,46 +1521,49 @@ blockquote {
 .services-two .block-content {
   width: 900px;
 }
+.section-services.sidebar-first h1 {
+  text-align: left;
+}
 .page-node-7 h1 {
   color: #eeb51c;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-8 h1 {
   color: #d45000;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-9 h1 {
   color: #dc0000;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-10 h1 {
   color: #d83577;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-11 h1 {
   color: #8b67ba;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-12 h1 {
   color: #47a9e1;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .page-node-30 h1 {
   color: #d45000;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 .design-thinking-programs {
@@ -1375,9 +1608,6 @@ blockquote {
 }
 .node-type-article #content {
   background: #fff;
-}
-.node-type-article #content .article {
-  padding: 40px 30px;
 }
 .page-node-4 #main {
   width: 100%;
