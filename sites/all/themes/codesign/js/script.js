@@ -19,6 +19,7 @@ Drupal.behaviors.my_custom_behavior = {
 
     // Place your code here.
 	
+	//$('.nav-services a.design-thinking').append('&trade;');
 	$('.nav-services ul.menu li a').append('<div class="tag"></div>');
 	$('.nav-services ul.menu li a').hover(
 		function(e){
@@ -33,6 +34,7 @@ Drupal.behaviors.my_custom_behavior = {
 		}	
 	);
 	
+	
 	// Open the mobile menu
 	
 	$('.mobile-main-menu .menu-trigger').click(function(e){
@@ -41,6 +43,10 @@ Drupal.behaviors.my_custom_behavior = {
 	});
 	
 	$('#block-views-homepage-slides-block .slide:first').hide().delay(500).fadeIn(1000);
+	
+	
+	// Make the programs table an accordion
+	$('#programmes').accordion({heightStyle:"content"});
 	
   }
 };

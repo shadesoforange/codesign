@@ -16,6 +16,30 @@
 .violet {
   color: #8b67ba;
 }
+.bg-blue {
+  color: #ffffff;
+  background: #47a9e1;
+}
+.bg-magenta {
+  color: #ffffff;
+  background: #d83577;
+}
+.bg-red {
+  color: #ffffff;
+  background: #dc0000;
+}
+.bg-yellow {
+  color: #ffffff;
+  background: #eeb51c;
+}
+.bg-orange {
+  color: #ffffff;
+  background: #d45000;
+}
+.bg-violet {
+  color: #ffffff;
+  background: #8b67ba;
+}
 .black {
   color: #000000;
 }
@@ -58,11 +82,6 @@
 .raleway-bold {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-}
-.caslon {
-  font-family: "adobe-caslon-pro";
-  font-style: italic;
-  font-weight: 600;
 }
 small,
 .small {
@@ -128,15 +147,15 @@ i,
   line-height: 1.3em;
 }
 .large {
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.25em;
 }
 .xlarge {
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 1.25em;
 }
 .xxlarge {
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 1.25em;
 }
 .small {
@@ -419,10 +438,10 @@ hr {
   border-bottom: 1px solid #cccccc;
 }
 h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   color: #2a2a2a;
   text-align: center;
   margin: 0 0 1em;
@@ -441,6 +460,14 @@ h5 {
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+}
+a {
+  color: #47a9e1;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #47a9e1;
 }
 #page {
   width: 100%;
@@ -504,6 +531,10 @@ h5 {
   background-size: 217px 60px;
   padding: 0px;
 }
+#header .main-menu ul.menu li a.home:hover {
+  background: transparent url(../images/logo-white.svg) no-repeat;
+  background-size: 217px 60px;
+}
 #header .main-menu ul.menu li a.blog {
   padding: 0 10px 0 20px;
 }
@@ -520,6 +551,9 @@ h5 {
   height: 60px;
   background: transparent url(../images/search-white.svg) no-repeat 0px 22px;
   background-size: 16px 16px;
+}
+#header .main-menu ul.menu li a:hover {
+  background: transparent;
 }
 #header .mobile-main-menu {
   position: relative;
@@ -561,7 +595,7 @@ h5 {
   display: none;
 }
 #navigation {
-  background: #2a2a2a;
+  background: #111;
   height: 178px;
   position: relative;
 }
@@ -738,15 +772,14 @@ body.front #header #block-views-homepage-slides-block .slide-bg {
 }
 body.front #header #block-views-homepage-slides-block .slide-copy {
   color: #ffffff;
-  font-family: "adobe-caslon-pro";
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 44px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 3.2em;
+  line-height: 1.25em;
   margin: 0px;
-  width: 620px;
-  font-style: italic;
+  width: 650px;
   top: 250px;
-  margin-left: -310px;
+  margin-left: -325px;
   left: 50%;
   position: absolute;
   z-index: 2;
@@ -861,6 +894,8 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
 }
 body.front #block-views-articles-block .view-content .views-row .views-field-view-node a:hover {
   text-decoration: none;
+  background: transparent;
+  color: #2a2a2a;
 }
 body.front.mobile #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;
@@ -899,6 +934,8 @@ body.front.mobile #block-views-articles-block .view-content {
 }
 .btn:hover {
   text-decoration: none;
+  background: transparent;
+  color: #2a2a2a;
 }
 .btn-white {
   color: #ffffff;
@@ -913,12 +950,8 @@ body.front.mobile #block-views-articles-block .view-content {
 }
 .btn-white:hover {
   text-decoration: none;
-}
-a {
-  color: #000;
-}
-a:hover {
-  text-decoration: underline;
+  background: transparent;
+  color: #ffffff;
 }
 p {
   margin: 0 0 1em;
@@ -932,7 +965,7 @@ img.image-left {
   margin: 15px 25px 25px 0px;
 }
 blockquote {
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 1.25em;
   color: #000000;
   font-style: italic;
@@ -941,12 +974,12 @@ blockquote {
 .column-half {
   width: 46%;
   float: left;
-  margin: 0 2%;
+  margin: 0 2% 40px;
 }
 .column-third {
   width: 27.33%;
   float: left;
-  margin: 0 3%;
+  margin: 0 3% 40px;
 }
 .bricks {
   background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
@@ -1013,10 +1046,10 @@ blockquote {
 }
 .region-sidebar-first h2.block-title {
   color: #47a9e1;
-  font-family: "adobe-caslon-pro";
-  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   font-style: italic;
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 1.25em;
   margin-bottom: 30px;
 }
@@ -1070,7 +1103,7 @@ blockquote {
 .node-type-case-study .case-study-header h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 1.25em;
   font-style: italic;
   padding-bottom: 80px;
@@ -1204,6 +1237,8 @@ blockquote {
 }
 .view-case-studies .views-row .views-field-nothing .overlay .content a:hover {
   text-decoration: none;
+  background: transparent;
+  color: #ffffff;
 }
 .view-case-studies .overlay {
   background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom;
@@ -1218,13 +1253,16 @@ blockquote {
   bottom: 0px;
   padding: 0 15px 10px;
 }
+.view-case-studies.more-case-studies {
+  margin-top: 80px;
+}
 .page-node-2 #main {
   width: 100%;
 }
 .page-node-2 h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 1.25em;
   font-style: normal;
   color: #2a2a2a;
@@ -1235,11 +1273,11 @@ blockquote {
   padding: 30px 0 100px;
   margin-bottom: 0px;
 }
-.services-one .indent {
-  margin-left: 74px;
-}
-.services-one .indent h2 {
+.services-one h2 {
   margin: 0px 0px 1em;
+}
+.services-one .block-content {
+  width: 860px;
 }
 .services-two {
   background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center;
@@ -1247,11 +1285,11 @@ blockquote {
   padding: 60px 0 80px;
   margin-bottom: 0px;
 }
-.services-two .indent {
-  margin-left: 74px;
-}
-.services-two .indent h2 {
+.services-two h2 {
   margin: 0px 0px 1em;
+}
+.services-two .block-content {
+  width: 900px;
 }
 .page-node-7 h1 {
   color: #eeb51c;
@@ -1295,6 +1333,41 @@ blockquote {
   font-weight: 500;
   font-style: normal;
 }
+.design-thinking-programs {
+  background: #ffffff url(../images/bg-design-thinking.jpg) no-repeat left 155px;
+  background-size: 320px auto;
+  min-height: 500px;
+  padding: 20px 0;
+}
+.design-thinking-programs h2.block-title {
+  display: none;
+}
+.design-thinking-programs .block-content h2 {
+  font-size: 2.2em;
+  line-height: 1.25em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+.design-thinking-programs .block-content .programmes-description {
+  width: 340px;
+  float: left;
+}
+.design-thinking-programs .block-content #programmes {
+  margin-left: 380px;
+}
+.design-thinking-programs .block-content .inner-sidebar {
+  width: 150px;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: #000000;
+}
+.design-thinking-programs .block-content .indent {
+  margin-left: 175px;
+}
 .node-type-article #page {
   background: #ffffff url(../images/bg-blog.jpg) no-repeat center bottom;
   background-size: 100% auto;
@@ -1322,8 +1395,8 @@ blockquote {
   margin-left: 330px;
   font-weight: 700;
   font-family: inherit;
-  font-size: 1.3em;
-  line-height: 1.3em;
+  font-size: 1.6em;
+  line-height: 1.25em;
 }
 .latest-blog .views-field-field-author {
   font-family: 'Raleway', sans-serif;
@@ -1351,6 +1424,8 @@ blockquote {
 }
 .latest-blog .views-field-view-node a:hover {
   text-decoration: none;
+  background: transparent;
+  color: #2a2a2a;
 }
 .all-past-blogs {
   background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;
@@ -1426,6 +1501,8 @@ blockquote {
 }
 .all-past-blogs .view-content .views-row .views-field-view-node a:hover {
   text-decoration: none;
+  background: transparent;
+  color: #2a2a2a;
 }
 .page-node-5 #main {
   width: 100%;
@@ -1458,7 +1535,7 @@ blockquote {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #000000;
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.25em;
 }
 .team-members .views-field-body {
@@ -1574,6 +1651,40 @@ blockquote {
   background-size: 16px 16px;
 }
 body.mobile h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 1.25em;
+}
+.ui-accordion .ui-accordion-header {
+  padding: 10px;
+  color: #2a2a2a;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: 0px;
+  background: #ddd;
+  margin-bottom: 1px;
+}
+.ui-accordion .ui-accordion-header:hover {
+  cursor: pointer;
+}
+.ui-accordion .ui-accordion-header.ui-state-active {
+  color: #ffffff;
+  background: #47a9e1;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+.ui-accordion .ui-accordion-content {
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background: transparent;
+  padding: 15px 10px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }

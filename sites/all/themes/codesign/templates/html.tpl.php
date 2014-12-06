@@ -49,8 +49,8 @@
   <?php endif; ?>
   
   <!-- Adding Caslon font from Typekit -->
-  <script src="//use.typekit.net/rpy8vot.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <!--<script src="//use.typekit.net/rpy8vot.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>-->
   
 </head>
 <body class="<?php print $classes; if($detect->isMobile()){ print " mobile"; } else { print " desktop"; } ?>" <?php print $attributes;?>>
