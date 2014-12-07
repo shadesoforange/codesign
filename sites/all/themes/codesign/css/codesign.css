@@ -1923,6 +1923,12 @@ body.mobile h1 {
   font-size: 2.2em;
   line-height: 1.25em;
 }
+body.mobile #content .column-half,
+body.mobile #content .column-third {
+  width: 90%;
+  margin: 0 5%;
+  float: none;
+}
 .ui-accordion .ui-accordion-header {
   padding: 10px;
   color: #2a2a2a;
