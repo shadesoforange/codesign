@@ -2595,6 +2595,9 @@ function template_preprocess_html(&$variables) {
   if ($suggestions = theme_get_suggestions(arg(), 'html')) {
     $variables['theme_hook_suggestions'] = $suggestions;
   }
+  
+  // Fix for jQuery UI Bug
+  drupal_add_library('system', 'ui');
 }
 
 /**
