@@ -87,13 +87,16 @@ small,
 .small {
   font-size: 12px;
 }
+ul {
+  padding: 0px;
+}
 ul ul {
   margin-left: 20px;
 }
 ul li {
   list-style-type: disc;
   list-style-position: outside;
-  margin-left: 30px;
+  margin-left: 17px;
   margin-bottom: 10px;
   line-height: 16px;
 }
@@ -447,8 +450,8 @@ h1 {
   margin: 0 0 1em;
 }
 h2 {
-  font-size: 1.3em;
-  line-height: 1.3em;
+  font-size: 1.6em;
+  line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   margin: 0 0 1.25em;
@@ -882,7 +885,7 @@ body.front #content {
   width: 100%;
 }
 body.front .node-page {
-  width: 920px;
+  width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 40px 0 80px;
@@ -1052,12 +1055,15 @@ blockquote {
   line-height: 1.25em;
   color: #000000;
   font-style: italic;
-  margin: 2em 0;
+  margin: 1em 0;
+}
+blockquote p {
+  margin: 0px;
 }
 .column-half {
-  width: 40%;
+  width: 42%;
   float: left;
-  margin: 0 5% 40px;
+  margin: 0 4% 40px;
 }
 .column-third {
   width: 27.33%;
@@ -1605,14 +1611,45 @@ blockquote {
   font-weight: 300;
   font-style: normal;
 }
+.page-node-31 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.page-node-32 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.page-node-33 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.page-node-34 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.page-node-35 h1 {
+  color: #dc0000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .design-thinking-programs {
-  background: #ffffff url(../images/bg-design-thinking.jpg) no-repeat left 155px;
-  background-size: 320px auto;
-  min-height: 500px;
   padding: 20px 0;
+  margin-bottom: 80px;
 }
 .design-thinking-programs h2.block-title {
   display: none;
+}
+.design-thinking-programs .block-content {
+  width: 100%;
 }
 .design-thinking-programs .block-content h2 {
   font-size: 2.2em;
@@ -1620,13 +1657,6 @@ blockquote {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin-bottom: 0.5em;
-}
-.design-thinking-programs .block-content .programmes-description {
-  width: 340px;
-  float: left;
-}
-.design-thinking-programs .block-content #programmes {
-  margin-left: 380px;
 }
 .design-thinking-programs .block-content .inner-sidebar {
   width: 150px;

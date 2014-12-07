@@ -6,7 +6,7 @@
 html, body { .raleway; .black; .lh(1.3em); .size(14px); }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
 h1 { .xxlarge; .raleway-light; .dkgrey; .tc; .m(0 0 1em); }
-h2 { .med; .raleway-med; .m(0 0 1.25em); }
+h2 { .large; .raleway-med; .m(0 0 1.25em); }
 h3, h4, h5 { .reg; .raleway-med; }
 a { .blue;
 	&:visited {  }
@@ -149,7 +149,7 @@ body.front {
 		.nav-services { .ab; bottom: 0px; z-index: 3; left: 50%; .ml(-438px); }
 	}
 	#content { .bricks-top; .w(100%); }
-	.node-page { .w(920px); .auto; .tc; .p(40px 0 80px); }
+	.node-page { .w(900px); .auto; .tc; .p(40px 0 80px); }
 	.view-case-studies { .mb(0px); }
 	.block-block.quote { .w(100%); .bricks; .mb(0px); .p(155px 0 220px);
 		.block-content { .w(680px); .auto; background: transparent url(../images/quotes-home.png) no-repeat center 10px; .p(0px 140px); }
@@ -198,8 +198,10 @@ img {
 	&.image-right { .fr; .m(15px 0px 25px 25px); }
 	&.image-left { .fl; .m(15px 25px 25px 0px); }
 }
-blockquote { .xlarge; .black; .em; .m(2em 0); }
-.column-half { .w(40%); .fl; .m(0 5% 40px); }
+blockquote { .xlarge; .black; .em; .m(1em 0); 
+	p { .m0; }
+}
+.column-half { .w(42%); .fl; .m(0 4% 40px); }
 .column-third { .w(27.33%); .fl; .m(0 3% 40px); }
 .bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 100% auto; }
 .bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; }
@@ -357,12 +359,16 @@ blockquote { .xlarge; .black; .em; .m(2em 0); }
 .page-node-11 h1 { .violet; .raleway-light; .normal; }
 .page-node-12 h1 { .blue; .raleway-light; .normal; }
 .page-node-30 h1 { .orange; .raleway-light; .normal; }
-.design-thinking-programs { background: #fff url(../images/bg-design-thinking.jpg) no-repeat left 155px; background-size: 320px auto; min-height: 500px; .p(20px 0);
+.page-node-31 h1 { .red; .raleway-light; .normal; }
+.page-node-32 h1 { .red; .raleway-light; .normal; }
+.page-node-33 h1 { .red; .raleway-light; .normal; }
+.page-node-34 h1 { .red; .raleway-light; .normal; }
+.page-node-35 h1 { .red; .raleway-light; .normal; }
+.design-thinking-programs { .p(20px 0); .mb(80px);
 	h2.block-title { .none; }
-	.block-content {
+	.block-content { .w(100%); 
 		h2 { .xlarge; .raleway-light; .mb(0.5em); }
-		.programmes-description { .w(340px); .fl; }
-		#programmes { .ml(380px); }
+		#programmes {  }
 		.inner-sidebar { .w(150px); .fl; .raleway-med; .med; .black; }
 		.indent { .ml(175px); }
 	}
