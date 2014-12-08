@@ -593,6 +593,9 @@ a:hover {
 #header.mobile #block-views-homepage-slides-block {
   display: none;
 }
+#header.mobile .nav-services {
+  display: none;
+}
 #header .nav-services {
   width: 876px;
   margin: 0 auto;
@@ -1949,9 +1952,38 @@ blockquote p {
   background: transparent url(../images/search-white.svg) no-repeat center center;
   background-size: 16px 16px;
 }
-body.mobile h1 {
+body.mobile {
+  font-size: 10px;
+}
+body.mobile .regular,
+body.mobile .reg {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+body.mobile .med {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+body.mobile .large {
+  font-size: 1.6em;
+  line-height: 1.25em;
+}
+body.mobile .xlarge {
   font-size: 2.2em;
   line-height: 1.25em;
+}
+body.mobile .xxlarge {
+  font-size: 3.2em;
+  line-height: 1.25em;
+}
+body.mobile .small {
+  font-size: 0.75em;
+}
+body.mobile .xsmall {
+  font-size: 0.5em;
+}
+body.mobile #header .region {
+  height: auto;
 }
 body.mobile #content .column-half,
 body.mobile #content .column-third {

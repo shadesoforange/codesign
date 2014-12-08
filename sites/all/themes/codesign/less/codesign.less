@@ -21,7 +21,6 @@ a { .blue;
 // Header Region
 
 #header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
-	.region {  }
 	.main-menu { .m(3em 0);
 		h2.block-title { .none; }
 		ul.menu { .m0; .p0; 
@@ -51,6 +50,7 @@ a { .blue;
 		.main-menu { .none; }
 		.mobile-main-menu { .block; }
 		#block-views-homepage-slides-block { .none; }
+		.nav-services { .none; }
 	}
 	.nav-services { .w(876px); .auto; .mb(0px);
 		ul.menu { .h(152px); .p0; .m0;
@@ -462,8 +462,17 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 
 // Other Mobile Styles 
 
-body.mobile {
-	h1 { .xlarge; }
+body.mobile { .size(10px); 
+	.regular, .reg { .size(1.0em); .lh(1.3em); }
+	.med { .size(1.3em); .lh(1.3em); }
+	.large { .size(1.6em); .lh(1.25em); }
+	.xlarge { .size (2.2em); .lh(1.25em); }
+	.xxlarge { .size (3.2em); .lh(1.25em); }
+	.small { .size(0.75em); }
+	.xsmall { .size(0.5em); }
+	#header {
+		.region { .h(auto); }
+	}
 	#content {
 		.column-half, .column-third { .w(90%); .m(0 5%); .fn; }
 	}
