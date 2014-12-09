@@ -865,6 +865,48 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
   background: transparent;
   color: #2a2a2a;
 }
+body.front.mobile #header {
+  background: #000000 url(../images/header-default.jpg) no-repeat center center;
+  background-size: 720px auto;
+  color: #ffffff;
+}
+body.front.mobile .node-page {
+  width: 100%;
+  padding: 0px 0px 30px;
+}
+body.front.mobile .node-page .column-half {
+  font-size: 13px;
+}
+body.front.mobile .node-page .column-half .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+body.front.mobile .view-case-studies {
+  width: 100%;
+}
+body.front.mobile .quote {
+  width: 100%;
+  background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
+  background-size: 720px auto;
+  padding: 40px 0 60px;
+}
+body.front.mobile .quote .block-content {
+  width: 90%;
+  padding: 0 5%;
+}
+body.front.mobile .quote .block-content .xlarge {
+  font-size: 20px;
+}
+body.front.mobile .block-content {
+  width: 100%;
+}
+body.front.mobile #block-views-articles-block .view-content {
+  width: 100%;
+}
+body.front.mobile #content {
+  background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
+  background-size: 720px auto;
+}
 .btn {
   color: #2a2a2a;
   display: inline-block;
@@ -1321,6 +1363,29 @@ blockquote p {
   position: absolute;
   bottom: 0px;
   padding: 0 15px 10px;
+}
+.view-case-studies.mobile {
+  display: none;
+}
+.view-case-studies.mobile h2.block-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: transparent url(../images/double-line-title.png) no-repeat center 3px;
+  background-size: 860px auto;
+  margin-bottom: 15px;
+}
+.view-case-studies.mobile .views-row {
+  width: 100%;
+  float: none;
+  height: 186px;
+  margin: 0px 0px 10px;
+}
+.view-case-studies.mobile .views-row .views-field-nothing {
+  width: 304px;
+  margin: 0 auto;
+}
+.view-case-studies.mobile .views-row .views-field-nothing .overlay {
+  height: 186px;
 }
 .view-case-studies.more-case-studies {
   margin-top: 80px;
@@ -1957,12 +2022,11 @@ body.mobile #content .column-third {
 body.mobile .view-case-studies {
   width: 100%;
 }
-body.mobile .view-case-studies h2.block-title {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  background: transparent url(../images/double-line-title.png) no-repeat center 2px;
-  background-size: 800px auto;
-  margin-bottom: 15px;
+body.mobile .view-case-studies.desktop {
+  display: none;
+}
+body.mobile .view-case-studies.mobile {
+  display: block;
 }
 body.mobile .services-one {
   padding-top: 0px;
@@ -1987,35 +2051,6 @@ body.mobile .services-two .block-content .flag {
 }
 body.mobile .services-two .block-content .indent {
   margin-left: 90px;
-}
-body.mobile.front #header {
-  background: #000000 url(../images/header-default.jpg) no-repeat center center;
-  background-size: 720px auto;
-  color: #ffffff;
-}
-body.mobile.front .node-page {
-  width: 100%;
-  padding: 0px 0px 30px;
-}
-body.mobile.front .view-case-studies {
-  width: 100%;
-}
-body.mobile.front .quote {
-  width: 100%;
-}
-body.mobile.front .quote .block-content {
-  width: 94%;
-  padding: 0 3%;
-}
-body.mobile.front .block-content {
-  width: 100%;
-}
-body.mobile.front #block-views-articles-block .view-content {
-  width: 100%;
-}
-body.mobile.front #content {
-  background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
-  background-size: 720px auto;
 }
 body.mobile.sidebar-first #content {
   width: 90%;
