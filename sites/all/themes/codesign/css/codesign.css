@@ -2016,19 +2016,43 @@ body.mobile.sidebar-first #content {
   padding: 25px 5%;
   margin: 0px;
 }
+body.mobile .ui-accordion .ui-accordion-header {
+  padding: 8px 15px;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+body.mobile .ui-accordion .ui-accordion-content {
+  padding: 15px;
+  background: #eee;
+}
+body.mobile .ui-accordion .ui-accordion-content .inner-sidebar {
+  float: none;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: inherit;
+}
+body.mobile .ui-accordion .ui-accordion-content .indent {
+  margin-left: 0px;
+}
+body.mobile .ui-accordion .ui-accordion-content .indent p {
+  font-size: 13px;
+}
 .ui-accordion .ui-accordion-header {
   padding: 10px;
   color: #2a2a2a;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.3em;
   line-height: 1.3em;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border: 0px;
-  background: #ddd;
+  background: #fff;
   margin-bottom: 1px;
+  border-bottom: 1px solid #aaaaaa;
 }
 .ui-accordion .ui-accordion-header:hover {
   cursor: pointer;
@@ -2036,6 +2060,7 @@ body.mobile.sidebar-first #content {
 .ui-accordion .ui-accordion-header.ui-state-active {
   color: #ffffff;
   background: #47a9e1;
+  border-bottom: none;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   display: none;
@@ -2049,4 +2074,5 @@ body.mobile.sidebar-first #content {
   padding: 15px 10px 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  background: #eee;
 }

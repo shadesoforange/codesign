@@ -464,16 +464,25 @@ body.mobile { .size(13px);
 	&.sidebar-first {
 		#content { .w(90%); .p(25px 5%); .m0; }
 	}
+	.ui-accordion {
+		.ui-accordion-header { .p(8px 15px); .reg; }
+		.ui-accordion-content { .p(15px); background: #eee;
+			.inner-sidebar { .fn; .w(100%); .size(13px); .mb(15px); .bold; }
+			.indent { .ml(0px); 
+				p { .size(13px); }
+			}
+		}
+	}
 }
 
 
 // jQuery UI Overrides
 
 .ui-accordion {
-	.ui-accordion-header { .p10; .dkgrey; .raleway-light; .med; .radius(0px); border: 0px; background: #ddd; .mb(1px);
+	.ui-accordion-header { .p10; .dkgrey; .raleway-med; .med; .radius(0px); border: 0px; background: #fff; .mb(1px); border-bottom: 1px solid @ltgrey;
 		&:hover { cursor: pointer; }
-		&.ui-state-active { .bg-blue; }
+		&.ui-state-active { .bg-blue; border-bottom: none; }
 		.ui-accordion-header-icon { .none; }
 	}
-	.ui-accordion-content { border: none; .radius(0px); background: transparent; .p(15px 10px 20px); .raleway; }
+	.ui-accordion-content { border: none; .radius(0px); background: transparent; .p(15px 10px 20px); .raleway; background: #eee; }
 }
