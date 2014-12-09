@@ -578,11 +578,34 @@ a:hover {
   margin: 0 auto;
   margin-top: 10px;
 }
-#header .mobile-main-menu .menu {
+#header .mobile-main-menu .block-content ul {
   display: none;
+  background: #2a2a2a;
+  margin: 0px;
+  padding: 5px 0;
+  height: 87px;
 }
-#header .mobile-main-menu .menu a {
+#header .mobile-main-menu .block-content ul li {
+  width: 50%;
+  float: left;
+  background: #2a2a2a;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#header .mobile-main-menu .block-content ul a {
   color: #ffffff;
+  display: block;
+  float: left;
+  padding: 8px;
+  height: 13px;
+  text-align: left;
+  background: #2a2a2a;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 14px;
 }
 #header .nav-services {
   width: 876px;
@@ -665,138 +688,6 @@ a:hover {
   position: absolute;
   bottom: 0px;
   display: none;
-}
-#navigation {
-  background: #111;
-  height: 178px;
-  position: relative;
-}
-#navigation .region-navigation {
-  width: 876px;
-  height: 152px;
-  margin: 0 auto;
-  padding: 26px 0px 0px;
-}
-#navigation .region-navigation ul.menu {
-  height: 152px;
-  padding: 0px;
-  margin: 0px;
-}
-#navigation .region-navigation ul.menu li {
-  width: 116px;
-  float: left;
-  margin: 0 15px;
-  padding: 0px;
-  text-align: center;
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
-}
-#navigation .region-navigation ul.menu li a {
-  color: #aaaaaa;
-  padding: 100px 0px 0px;
-  display: block;
-  width: 116px;
-  letter-spacing: 0.5px;
-  height: 52px;
-  font-size: 14px;
-  position: relative;
-}
-#navigation .region-navigation ul.menu li a.innovation-consulting {
-  background: transparent url(../images/icon-innovation.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.innovation-consulting .tag {
-  background: #eeb51c;
-}
-#navigation .region-navigation ul.menu li a.accelerated-design {
-  background: transparent url(../images/icon-accelerated-design.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.accelerated-design .tag {
-  background: #d45000;
-}
-#navigation .region-navigation ul.menu li a.design-thinking {
-  background: transparent url(../images/icon-design-thinking.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.design-thinking .tag {
-  background: #dc0000;
-}
-#navigation .region-navigation ul.menu li a.futures {
-  background: transparent url(../images/icon-futures.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.futures .tag {
-  background: #d83577;
-}
-#navigation .region-navigation ul.menu li a.graphics {
-  background: transparent url(../images/icon-graphics.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.graphics .tag {
-  background: #8b67ba;
-}
-#navigation .region-navigation ul.menu li a.events {
-  background: transparent url(../images/icon-events.svg) no-repeat center top;
-  background-size: 88px 88px;
-}
-#navigation .region-navigation ul.menu li a.events .tag {
-  background: #47a9e1;
-}
-#navigation .region-navigation ul.menu li a:hover {
-  text-decoration: none;
-}
-#navigation .region-navigation ul.menu li a .tag {
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  bottom: 0px;
-  display: none;
-}
-#navigation.mobile .region-navigation {
-  width: 100%;
-}
-#navigation.mobile .region-navigation ul.menu {
-  height: auto;
-}
-#navigation.mobile .region-navigation ul.menu li {
-  width: 50%;
-  margin: 0 0 10px;
-}
-#navigation.mobile .region-navigation ul.menu li a {
-  padding: 4px 8px 4px 42px;
-  width: auto;
-  height: 28px;
-  text-align: left;
-  font-size: 12px;
-  line-height: 14px;
-}
-#navigation.mobile .region-navigation ul.menu li a.innovation-consulting {
-  background-position: left center;
-  background-size: 34px 34px;
-}
-#navigation.mobile .region-navigation ul.menu li a.accelerated-design {
-  background-position: left center;
-  background-size: 34px 34px;
-}
-#navigation.mobile .region-navigation ul.menu li a.design-thinking {
-  background-position: left center;
-  background-size: 34px 34px;
-}
-#navigation.mobile .region-navigation ul.menu li a.futures {
-  background-position: left center;
-  background-size: 34px 34px;
-  height: 14px;
-  padding: 11px 8px 11px 42px;
-}
-#navigation.mobile .region-navigation ul.menu li a.graphics {
-  background-position: left center;
-  background-size: 34px 34px;
-}
-#navigation.mobile .region-navigation ul.menu li a.events {
-  background-position: left center;
-  background-size: 34px 34px;
 }
 body.front #main {
   width: 100%;
@@ -1933,7 +1824,7 @@ body.mobile .reg {
   line-height: 1.3em;
 }
 body.mobile .med {
-  font-size: 1em;
+  font-size: 1.1 em;
   line-height: 1.3em;
 }
 body.mobile .large {
@@ -1975,6 +1866,73 @@ body.mobile #header #block-views-homepage-slides-block {
   display: none;
 }
 body.mobile #header .nav-services {
+  width: 100%;
+  display: none;
+  position: relative;
+  margin-left: 0px;
+  left: 0px;
+}
+body.mobile #header .nav-services ul.menu {
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+body.mobile #header .nav-services ul.menu li {
+  width: 50%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+body.mobile #header .nav-services ul.menu li a {
+  color: #ffffff;
+  padding: 10px 0 10px 50px;
+  display: block;
+  margin-bottom: 1px;
+  letter-spacing: 0.5px;
+  height: 30px;
+  font-size: 13px;
+  width: auto;
+}
+body.mobile #header .nav-services ul.menu li a.innovation-consulting {
+  background: #eeb51c url(../images/icon-innovation.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+  margin-right: 1px;
+}
+body.mobile #header .nav-services ul.menu li a.accelerated-design {
+  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+}
+body.mobile #header .nav-services ul.menu li a.design-thinking {
+  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+  margin-right: 1px;
+}
+body.mobile #header .nav-services ul.menu li a.futures {
+  background: #d83577 url(../images/icon-futures.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+}
+body.mobile #header .nav-services ul.menu li a.graphics {
+  background: #8b67ba url(../images/icon-graphics.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+  margin-right: 1px;
+}
+body.mobile #header .nav-services ul.menu li a.events {
+  background: #47a9e1 url(../images/icon-events.svg) no-repeat 5px 5px;
+  background-size: 40px 40px;
+}
+body.mobile #header .nav-services ul.menu li a:hover {
+  text-decoration: none;
+}
+body.mobile #header .nav-services ul.menu li a .tag {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0px;
   display: none;
 }
 body.mobile #main {
@@ -1982,6 +1940,7 @@ body.mobile #main {
 }
 body.mobile #content {
   padding-top: 25px;
+  box-sizing: content-box;
 }
 body.mobile #content .column-half,
 body.mobile #content .column-third {
