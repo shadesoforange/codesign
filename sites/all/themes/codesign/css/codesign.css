@@ -2013,7 +2013,7 @@ body.mobile.front #content {
 }
 body.mobile.sidebar-first #content {
   width: 90%;
-  padding: 0 5%;
+  padding: 25px 5%;
   margin: 0px;
 }
 .ui-accordion .ui-accordion-header {
