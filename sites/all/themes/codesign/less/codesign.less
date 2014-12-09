@@ -169,7 +169,7 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 		h3 { .white; .med; .raleway-med; }
 		div, p { .white; .raleway-thin; .lh(1.5em); }
 		&.about { background: url(../images/bg-about-block.jpg) no-repeat center center; background-size: 100% auto; background-attackment: fixed; .p(30px 0 75px);
-			.block-content { .w(960px); .auto; .h(300px); .pt(60px); }
+			.block-content { .pt(60px); }
 		}
 	}
 	&.bricks { min-height: 300px; .p(50px 0 150px);  }
@@ -456,6 +456,8 @@ body.mobile { .size(13px);
 			}
 		}
 	}
+	.bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 720px auto; .pb(60px); }
+	.bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 720px auto; }
 	#main { .w(100%); }
 	#content { .pt(25px); box-sizing: content-box;
 		.column-half, .column-third { .w(94%); .m(0 3% 25px); .fn; }
@@ -488,6 +490,26 @@ body.mobile { .size(13px);
 			}
 		}
 	}
+	.block-block {
+		.block-content { .w(100%); }
+		&.dark.about { background-size: cover; 
+			h2.block-title { .w(280px); }
+			.block-content { .pt(20px); }
+		}
+	}
+	.team-members { 
+		&.mobile { .block; .w(100%); 
+			h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
+			.block-content { .w(92%); .m(0 4%); }
+			.views-field-field-image { .m0; .w(90px); .h(90px); 
+				img { .w(90px); .h(90px); }
+			}
+			.views-field-title { .m(0 0 10px 104px); .pt(16px); }
+			.views-field-body { .m(0 0 0 104px); }
+		}
+		&.desktop { .none; }
+	}
+	&.section-about .bricks .column-half { .size(13px); .lh(17px); }
 }
 
 
