@@ -1887,43 +1887,49 @@ body.mobile #header .nav-services ul.menu li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
+  background: #2a2a2a;
 }
 body.mobile #header .nav-services ul.menu li a {
   color: #ffffff;
   padding: 10px 0 10px 50px;
   display: block;
-  margin-bottom: 1px;
   letter-spacing: 0.5px;
   height: 30px;
   font-size: 13px;
   width: auto;
 }
 body.mobile #header .nav-services ul.menu li a.innovation-consulting {
-  background: #eeb51c url(../images/icon-innovation.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-innovation.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
+  border-bottom: 3px solid #eeb51c;
 }
 body.mobile #header .nav-services ul.menu li a.accelerated-design {
-  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-accelerated-design.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
+  border-bottom: 3px solid #d45000;
 }
 body.mobile #header .nav-services ul.menu li a.design-thinking {
-  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-design-thinking.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
+  border-bottom: 3px solid #dc0000;
 }
 body.mobile #header .nav-services ul.menu li a.futures {
-  background: #d83577 url(../images/icon-futures.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-futures.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
+  border-bottom: 3px solid #d83577;
 }
 body.mobile #header .nav-services ul.menu li a.graphics {
-  background: #8b67ba url(../images/icon-graphics.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-graphics.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
+  border-bottom: 3px solid #8b67ba;
 }
 body.mobile #header .nav-services ul.menu li a.events {
-  background: #47a9e1 url(../images/icon-events.svg) no-repeat 5px 5px;
+  background: #2a2a2a url(../images/icon-events.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
+  border-bottom: 3px solid #47a9e1;
 }
 body.mobile #header .nav-services ul.menu li a:hover {
   text-decoration: none;
