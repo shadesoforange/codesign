@@ -1925,7 +1925,7 @@ blockquote p {
   background-size: 16px 16px;
 }
 body.mobile {
-  font-size: 11px;
+  font-size: 13px;
 }
 body.mobile .regular,
 body.mobile .reg {
@@ -1933,20 +1933,20 @@ body.mobile .reg {
   line-height: 1.3em;
 }
 body.mobile .med {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+body.mobile .large {
   font-size: 1.25em;
   line-height: 1.25em;
 }
-body.mobile .large {
-  font-size: 1.4em;
-  line-height: 1.25em;
-}
 body.mobile .xlarge {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 body.mobile .xxlarge,
 body.mobile h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1em;
 }
 body.mobile .small {
@@ -1976,6 +1976,9 @@ body.mobile #header #block-views-homepage-slides-block {
 }
 body.mobile #header .nav-services {
   display: none;
+}
+body.mobile #main {
+  width: 100%;
 }
 body.mobile #content {
   padding-top: 25px;
@@ -2048,6 +2051,11 @@ body.mobile.front #block-views-articles-block .view-content {
 body.mobile.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 720px auto;
+}
+body.mobile.sidebar-first #content {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0px;
 }
 .ui-accordion .ui-accordion-header {
   padding: 10px;
