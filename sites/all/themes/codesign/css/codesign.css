@@ -1928,19 +1928,22 @@ body.mobile #header #block-views-homepage-slides-block {
   display: none;
 }
 body.mobile #header .nav-services {
+  display: none;
+}
+body.mobile #header .nav-services-mobile {
   width: 100%;
   display: none;
   position: relative;
   margin-left: 0px;
   left: 0px;
 }
-body.mobile #header .nav-services ul.menu {
+body.mobile #header .nav-services-mobile ul.menu {
   height: auto;
   padding: 0px;
   margin: 0px;
   width: 100%;
 }
-body.mobile #header .nav-services ul.menu li {
+body.mobile #header .nav-services-mobile ul.menu li {
   width: 50%;
   float: left;
   margin: 0px;
@@ -1951,7 +1954,7 @@ body.mobile #header .nav-services ul.menu li {
   list-style-type: none;
   background: #2a2a2a;
 }
-body.mobile #header .nav-services ul.menu li a {
+body.mobile #header .nav-services-mobile ul.menu li a {
   color: #ffffff;
   padding: 10px 0 10px 50px;
   display: block;
@@ -1960,43 +1963,43 @@ body.mobile #header .nav-services ul.menu li a {
   font-size: 13px;
   width: auto;
 }
-body.mobile #header .nav-services ul.menu li a.innovation-consulting {
+body.mobile #header .nav-services-mobile ul.menu li a.innovation-consulting {
   background: #2a2a2a url(../images/icon-innovation.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
   border-bottom: 3px solid #eeb51c;
 }
-body.mobile #header .nav-services ul.menu li a.accelerated-design {
+body.mobile #header .nav-services-mobile ul.menu li a.accelerated-design {
   background: #2a2a2a url(../images/icon-accelerated-design.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   border-bottom: 3px solid #d45000;
 }
-body.mobile #header .nav-services ul.menu li a.design-thinking {
+body.mobile #header .nav-services-mobile ul.menu li a.design-thinking {
   background: #2a2a2a url(../images/icon-design-thinking.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
   border-bottom: 3px solid #dc0000;
 }
-body.mobile #header .nav-services ul.menu li a.futures {
+body.mobile #header .nav-services-mobile ul.menu li a.futures {
   background: #2a2a2a url(../images/icon-futures.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   border-bottom: 3px solid #d83577;
 }
-body.mobile #header .nav-services ul.menu li a.graphics {
+body.mobile #header .nav-services-mobile ul.menu li a.graphics {
   background: #2a2a2a url(../images/icon-graphics.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   margin-right: 1px;
   border-bottom: 3px solid #8b67ba;
 }
-body.mobile #header .nav-services ul.menu li a.events {
+body.mobile #header .nav-services-mobile ul.menu li a.events {
   background: #2a2a2a url(../images/icon-events.svg) no-repeat 5px 5px;
   background-size: 40px 40px;
   border-bottom: 3px solid #47a9e1;
 }
-body.mobile #header .nav-services ul.menu li a:hover {
+body.mobile #header .nav-services-mobile ul.menu li a:hover {
   text-decoration: none;
 }
-body.mobile #header .nav-services ul.menu li a .tag {
+body.mobile #header .nav-services-mobile ul.menu li a .tag {
   width: 100%;
   height: 10px;
   position: absolute;
