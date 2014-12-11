@@ -689,6 +689,9 @@ a:hover {
   bottom: 0px;
   display: none;
 }
+#header .nav-services-mobile {
+  display: none;
+}
 body.front #main {
   width: 100%;
 }
