@@ -10,7 +10,7 @@ h2 { .large; .raleway-med; .m(0 0 1.25em); }
 h3, h4, h5 { .reg; .raleway-med; }
 a { .blue;
 	&:visited {  }
-	&:hover { .td-none; .bg-blue; }
+	&:hover { .td-none; }
 	&:active {  }
 }
 #page { .w100; max-width: 100%; }
@@ -49,7 +49,7 @@ a { .blue;
 	}
 	.nav-services { .w(876px); .auto; .mb(0px); .mt(100px);
 		ul.menu { .h(150px); .p0; .m0;
-			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none;
+			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none; .rel;
 				a { .white; .p(110px 0px 0px); .show; .w(116px); .ls(0.5px); .h(40px); .size(14px); .rel;
 					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @yellow; }
@@ -77,7 +77,7 @@ a { .blue;
 	}
 	.nav-services-mobile { .hide; }
 	#block-views-case-study-block-header { background-size: 100% auto; .mt(1px); .rel; top: 0px; z-index: 2; .m0; .h(420px);
-		h1 { .size(48px); .white; .upper; .raleway-med; .ls(3px); .mb(0px); .pt(150px); .normal; }
+		h1 { .size(48px); .white; .upper; .raleway-bold; .ls(3px); .mb(0px); .pt(150px); .normal; }
 		h2 { .raleway-thin; .large; .em; .pb(80px); .w(500px); .auto; .white; }
 		.category { background: @blue; .p(8px 0); .w(320px); .auto; .white; 
 			strong { .raleway-med; }
@@ -240,6 +240,7 @@ blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0);
 
 .node-type-case-study {
 	#main { .w(100%); }
+	#page { .bricks; }
 	.node-case-study { .w(100%); }
 	.first-row, .third-row, .fifth-row { .w(960px); .auto; .cb;  .p(35px 0);
 		p { .med; .lh(1.5em); }
@@ -256,22 +257,17 @@ blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0);
 		}
 	}
 }
+.page-node-3 #page { .bricks; .pb(150px); }
 .view-case-studies { .w(960px); .auto; .mb(80px);
 	h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
 	.views-row { .w(304px); .fl; .h(385px); .m(0 24px 24px 0); 
 		&.views-row-3, &.views-row-6, &.views-row-9, &.views-row-12, &.views-row-15 { .mr(0px); }
-		.views-field-nothing { .rel;
-			img { .ab; z-index: 1; top: 0px; left: 0px; }
-			.overlay { .tc; .white; background: transparent url(../images/black-overlay-large.png) no-repeat center bottom; top: 0px; .w(304px); .h(385px); .ab; z-index: 2;
-				.content { .ab; bottom: 0px; .p(0 15px 10px);
-					a { .btn-white; .mt(10px); }
-				}
-			}
+		.views-field-nothing { .h(385px); .rel; .w(304px); 
+			span, .field-content { .block; .h(385px); .rel; .w(304px); }
+			a { .white; }
 		}
 	}
-	.overlay { background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(186px); .ab; z-index: 2;
-		.content { .ab; bottom: 0px; .p(0 15px 10px); }
-	}
+	.overlay { .tc; .white; background: transparent url(../images/black-overlay-70.png); bottom: 0px; .w(284px); .ab; z-index: 2; .p(10px); }
 	&.mobile { .hide; 
 		h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
 		.views-row { .w(100%); .fn; .h(186px); .m(0px 0px 10px);

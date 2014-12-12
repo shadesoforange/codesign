@@ -176,7 +176,8 @@ i,
 .fix {
   position: fixed;
 }
-.show {
+.show,
+.block {
   display: block;
 }
 .inline {
@@ -469,8 +470,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #ffffff;
-  background: #47a9e1;
 }
 #page {
   width: 100%;
@@ -634,6 +633,7 @@ a:hover {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
+  position: relative;
 }
 #header .nav-services ul.menu li a {
   color: #ffffff;
@@ -714,7 +714,7 @@ a:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 0px;
   padding-top: 150px;
@@ -1239,6 +1239,10 @@ blockquote p {
 .node-type-case-study #main {
   width: 100%;
 }
+.node-type-case-study #page {
+  background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
+  background-size: 100% auto;
+}
 .node-type-case-study .node-case-study {
   width: 100%;
 }
@@ -1292,6 +1296,11 @@ blockquote p {
 .node-type-case-study .fourth-row .content .sidebar.pos1 {
   margin-right: 50%;
 }
+.page-node-3 #page {
+  background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
+  background-size: 100% auto;
+  padding-bottom: 150px;
+}
 .view-case-studies {
   width: 960px;
   margin: 0 auto;
@@ -1320,58 +1329,29 @@ blockquote p {
   margin-right: 0px;
 }
 .view-case-studies .views-row .views-field-nothing {
-  position: relative;
-}
-.view-case-studies .views-row .views-field-nothing img {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-}
-.view-case-studies .views-row .views-field-nothing .overlay {
-  text-align: center;
-  color: #ffffff;
-  background: transparent url(../images/black-overlay-large.png) no-repeat center bottom;
-  top: 0px;
-  width: 304px;
   height: 385px;
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  width: 304px;
 }
-.view-case-studies .views-row .views-field-nothing .overlay .content {
-  position: absolute;
-  bottom: 0px;
-  padding: 0 15px 10px;
+.view-case-studies .views-row .views-field-nothing span,
+.view-case-studies .views-row .views-field-nothing .field-content {
+  display: block;
+  height: 385px;
+  position: relative;
+  width: 304px;
 }
-.view-case-studies .views-row .views-field-nothing .overlay .content a {
-  color: #ffffff;
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid #ffffff;
-  font-size: 12px;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  margin-top: 10px;
-}
-.view-case-studies .views-row .views-field-nothing .overlay .content a:hover {
-  text-decoration: none;
-  background: transparent;
+.view-case-studies .views-row .views-field-nothing a {
   color: #ffffff;
 }
 .view-case-studies .overlay {
-  background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom;
-  top: 0px;
-  width: 304px;
-  height: 186px;
+  text-align: center;
+  color: #ffffff;
+  background: transparent url(../images/black-overlay-70.png);
+  bottom: 0px;
+  width: 284px;
   position: absolute;
   z-index: 2;
-}
-.view-case-studies .overlay .content {
-  position: absolute;
-  bottom: 0px;
-  padding: 0 15px 10px;
+  padding: 10px;
 }
 .view-case-studies.mobile {
   display: none;
