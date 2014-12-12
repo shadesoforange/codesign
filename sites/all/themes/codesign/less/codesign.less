@@ -22,7 +22,7 @@ a { .blue;
 
 #header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
 	.main-menu { .m(3em 0);
-		h2.block-title { .none; }
+		h2.block-title { .hide; }
 		ul.menu { .m0; .p0; 
 			li { .list-none; .inline-block; .h(60px); .m0;
 				a { .upper; .size(14px); .white; .lh(60px); .p(0 15px);
@@ -39,18 +39,18 @@ a { .blue;
 			}
 		}
 	}
-	.mobile-main-menu { .rel; .none; 
-		.menu-trigger { .ti; .w(30px); .h(30px); background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center; background-size: 24px 24px; .ab; top: 12px; left: 10px; .block; }
-		.logo { .w(170px); .h(47px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 170px 47px; .block; .auto; .mt(10px); }  
-		.block-content ul { .none; background: @dkgrey; .m0; .p(5px 0); .h(87px);
+	.mobile-main-menu { .rel; .hide; 
+		.menu-trigger { .ti; .w(30px); .h(30px); background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center; background-size: 24px 24px; .ab; top: 12px; left: 10px; .show; }
+		.logo { .w(170px); .h(47px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 170px 47px; .show; .auto; .mt(10px); }  
+		.block-content ul { .hide; background: @dkgrey; .m0; .p(5px 0); .h(87px);
 			li { .list-none; .w(50%); .fl; background: @dkgrey; .list-none; .m0; .p0; }
-			a { .white; .block; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
+			a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
 		}
 	}
 	.nav-services { .w(876px); .auto; .mb(0px);
 		ul.menu { .h(152px); .p0; .m0;
 			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none;
-				a { .white; .p(100px 0px 0px); .block; .w(116px); .ls(0.5px); .h(52px); .size(14px); .rel;
+				a { .white; .p(100px 0px 0px); .show; .w(116px); .ls(0.5px); .h(52px); .size(14px); .rel;
 					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center top; background-size: 88px 88px; 
 						.tag { background: @yellow; }
 					}
@@ -70,12 +70,12 @@ a { .blue;
 						.tag { background: @blue; }
 					}
 					&:hover { .td-none; }
-					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .none; }
+					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .hide; }
 				}
 			}
 		}	
 	}
-	.nav-services-mobile { .none; }
+	.nav-services-mobile { .hide; }
 }
 
 
@@ -199,34 +199,34 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 		.block-content { .w(100%); }
 		ul.menu { .m0; .p0;
 			li { .list-none; .m0; .p0; border-bottom: 1px solid @xltgrey; 
-				a { .raleway-light; .reg; .block; .p(10px 0); .grey;
+				a { .raleway-light; .reg; .show; .p(10px 0); .grey;
 					&:hover { background: #ddd; .dkgrey; }
 					&.active { color: #000; .raleway-bold; }
 				}
 			}
 		}
 		&.innovation-consulting h2.block-title { .mb(15px);
-			a { .block; background: @yellow url(../images/icon-innovation.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @yellow url(../images/icon-innovation.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 		&.design-thinking h2.block-title { .mb(15px);
-			a { .block; background: @red url(../images/icon-design-thinking.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @red url(../images/icon-design-thinking.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 		&.accelerated-design-events h2.block-title { .mb(15px);
-			a { .block; background: @orange url(../images/icon-accelerated-design.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @orange url(../images/icon-accelerated-design.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 		&.futures h2.block-title { .mb(15px);
-			a { .block; background: @magenta url(../images/icon-futures.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @magenta url(../images/icon-futures.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 		&.graphics-facilitation h2.block-title { .mb(15px);
-			a { .block; background: @violet url(../images/icon-graphics.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @violet url(../images/icon-graphics.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 		&.events-conferences h2.block-title { .mb(15px);
-			a { .block; background: @blue url(../images/icon-events.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
+			a { .show; background: @blue url(../images/icon-events.svg) no-repeat center 50px; background-size: 60px 60px; .w(70px); .h(115px); .ti; }
 		}
 	}
 }
 .sidebar-first #content { .p(40px 30px); }
-.section-services .region-sidebar-first .block-menu-block li.first { .none; }
+.section-services .region-sidebar-first .block-menu-block li.first { .hide; }
 
 
 // Case Study Pages and Blocks
@@ -272,7 +272,7 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 	.overlay { background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(186px); .ab; z-index: 2;
 		.content { .ab; bottom: 0px; .p(0 15px 10px); }
 	}
-	&.mobile { .none; 
+	&.mobile { .hide; 
 		h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
 		.views-row { .w(100%); .fn; .h(186px); .m(0px 0px 10px);
 			.views-field-nothing { .w(304px); .auto;
@@ -328,7 +328,7 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 .page-node-34 h1 { .red; .raleway-light; .normal; }
 .page-node-35 h1 { .red; .raleway-light; .normal; }
 .design-thinking-programs { .p(20px 0); .mb(80px);
-	h2.block-title { .none; }
+	h2.block-title { .hide; }
 	.block-content { .w(100%); 
 		h2 { .xlarge; .raleway-light; .mb(0.5em); }
 		#programmes {  }
@@ -417,7 +417,7 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 	#block-search-form { .w(200px); .fl; .m(0 0 0 20px); .pt(40px);
 		.container-inline { border: 1px solid @ltgrey; }
 		input.form-text { background: #000; .ltgrey; border: none; .lh(14px); .size(14px); .p(8px); .w(150px); }
-		input.form-submit { .w(30px); .h(30px); .block; .fr; .p0; .ti; border: none; background: transparent url(../images/search-white.svg) no-repeat center center; background-size: 16px 16px; }
+		input.form-submit { .w(30px); .h(30px); .show; .fr; .p0; .ti; border: none; background: transparent url(../images/search-white.svg) no-repeat center center; background-size: 16px 16px; }
 	}
 	
 }
@@ -435,16 +435,16 @@ body.mobile { .size(13px);
 	.xsmall { .size(0.5em); }
 	#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 720px auto;
 		.region { .h(auto); }
-		.main-menu { .none; }
-		.mobile-main-menu { .block; 
+		.main-menu { .hide; }
+		.mobile-main-menu { .show; 
 			.block-content { .w(100%); }
 		}
-		#block-views-homepage-slides-block { .none; }
-		.nav-services { .none; }
-		.nav-services-mobile { .w(100%); .none; .rel; .ml(0px); left: 0px;
+		#block-views-homepage-slides-block { .hide; }
+		.nav-services { .hide; }
+		.nav-services-mobile { .w(100%); .hide; .rel; .ml(0px); left: 0px;
 			ul.menu { .h(auto); .p0; .m0; .w(100%);
 				li { .w(50%); .fl; .m(0px); .p0; .tl; .list-none; background: @dkgrey;
-					a { .white; .p(10px 0 10px 50px); .block; .ls(0.5px); .h(30px); .size(13px); .w(auto);
+					a { .white; .p(10px 0 10px 50px); .show; .ls(0.5px); .h(30px); .size(13px); .w(auto);
 					&.innovation-consulting { background: @dkgrey url(../images/icon-innovation.svg) no-repeat 5px 5px; background-size: 40px 40px; .mr(1px); border-bottom: 3px solid @yellow; }
 					&.accelerated-design { background: @dkgrey url(../images/icon-accelerated-design.svg) no-repeat 5px 5px; background-size: 40px 40px; border-bottom: 3px solid @orange;}
 					&.design-thinking { background: @dkgrey url(../images/icon-design-thinking.svg) no-repeat 5px 5px; background-size: 40px 40px; .mr(1px); border-bottom: 3px solid @red;}
@@ -452,7 +452,7 @@ body.mobile { .size(13px);
 					&.graphics { background: @dkgrey url(../images/icon-graphics.svg) no-repeat 5px 5px; background-size: 40px 40px; .mr(1px); border-bottom: 3px solid @violet;}
 					&.events { background: @dkgrey url(../images/icon-events.svg) no-repeat 5px 5px; background-size: 40px 40px; border-bottom: 3px solid @blue; }
 					&:hover { .td-none; }
-					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .none; }
+					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .hide; }
 					}
 				}
 			}
@@ -465,8 +465,8 @@ body.mobile { .size(13px);
 		.column-half, .column-third { .w(94%); .m(0 3% 25px); .fn; }
 	}
 	.view-case-studies { .w(100%);
-		&.desktop { .none; }
-		&.mobile { .block; }
+		&.desktop { .hide; }
+		&.mobile { .show; }
 	}
 	.services-one { .pt(0px); .bricks-mobile; .pb(35px);
 		.block-content { .w(100%); 
@@ -500,7 +500,7 @@ body.mobile { .size(13px);
 		}
 	}
 	.team-members { 
-		&.mobile { .block; .w(100%); 
+		&.mobile { .show; .w(100%); 
 			h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
 			.block-content { .w(92%); .m(0 4%); }
 			.views-field-field-image { .m0; .w(90px); .h(90px); 
@@ -509,7 +509,7 @@ body.mobile { .size(13px);
 			.views-field-title { .m(0 0 10px 104px); .pt(16px); }
 			.views-field-body { .m(0 0 0 104px); }
 		}
-		&.desktop { .none; }
+		&.desktop { .hide; }
 	}
 	&.section-about .bricks .column-half { .size(13px); .lh(17px); }
 }
@@ -521,7 +521,7 @@ body.mobile { .size(13px);
 	.ui-accordion-header { .p10; .dkgrey; .raleway-med; .med; .radius(0px); border: 0px; background: #fff; .mb(1px); border-bottom: 1px solid @ltgrey;
 		&:hover { cursor: pointer; }
 		&.ui-state-active { .bg-blue; border-bottom: none; }
-		.ui-accordion-header-icon { .none; }
+		.ui-accordion-header-icon { .hide; }
 	}
 	.ui-accordion-content { border: none; .radius(0px); background: transparent; .p(15px 10px 20px); .raleway; background: #eee; }
 }

@@ -176,7 +176,7 @@ i,
 .fix {
   position: fixed;
 }
-.block {
+.show {
   display: block;
 }
 .inline {
@@ -185,7 +185,7 @@ i,
 .inline-block {
   display: inline-block;
 }
-.none,
+.hide,
 .elements-invisible {
   display: none;
 }
