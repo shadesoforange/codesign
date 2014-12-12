@@ -20,7 +20,7 @@ a { .blue;
 
 // Header Region
 
-#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0; min-height: 100px;
+#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0; min-height: 140px;
 	.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px;
 		h2.block-title { .hide; }
 		ul.menu { .m0; .p0; 
@@ -47,7 +47,7 @@ a { .blue;
 			a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
 		}
 	}
-	.nav-services { .w(876px); .auto; .mb(0px); .mt(100px);
+	.nav-services { .w(876px); .auto; .mb(0px); .mt(120px);
 		ul.menu { .h(150px); .p0; .m0;
 			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none; .rel;
 				a { .white; .p(110px 0px 0px); .show; .w(116px); .ls(0.5px); .h(40px); .size(14px); .rel;
@@ -147,10 +147,10 @@ body.front {
 
 // Basic Page Styles 
 
-.btn { .dkgrey; .inline-block; .p(5px 15px); border: 1px solid @dkgrey; .small; .upper; .raleway-light;
-	&:hover { .td-none; background: transparent; .dkgrey; }
+.btn { .dkgrey; .inline-block; .p(5px 15px); border: 1px solid @dkgrey; .small; .upper; .raleway;
+	&:hover { .td-none; background: transparent; .dkgrey; .p(6px 16px); .bg-blue; border: none; }
 }
-.btn-white { .white; .inline-block; .p(5px 15px); border: 1px solid #ffffff; .small; .upper; .raleway-light;
+.btn-white { .white; .inline-block; .p(5px 15px); border: 1px solid #ffffff; .small; .upper; .raleway;
 	&:hover { .td-none; background: transparent; .white; }
 }
 p { .m(0 0 1em); }
@@ -176,7 +176,7 @@ blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0);
 		h2.block-title { background: @blue; .tc; .white; .med; .ls(1px); .raleway; .mb(30px); .p(10px); .w(300px); .auto; }
 		h3 { .white; .med; .raleway-med; }
 		div, p { .white; .raleway-thin; .lh(1.5em); }
-		&.about { background: url(../images/bg-about-block.jpg) no-repeat center center; background-size: 100% auto; background-attackment: fixed; .p(30px 0 75px);
+		&.about { background: url(../images/bg-about-block.jpg) no-repeat center center; background-size: 100% auto; background-attachment: fixed; .p(30px 0 75px);
 			.block-content { .pt(60px); }
 		}
 	}
@@ -262,9 +262,7 @@ blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0);
 	h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
 	.views-row { .w(304px); .fl; .h(304px); .m(0 24px 24px 0); 
 		&.views-row-3, &.views-row-6, &.views-row-9, &.views-row-12, &.views-row-15 { .mr(0px); }
-		.views-field-nothing { .h(304px); .rel; .w(304px); 
-			span, .field-content { .block; .h(385px); .rel; .w(304px); }
-		}
+		.views-field-nothing { .h(304px); .rel; .w(304px); }
 	}
 	.case-study-teaser { .white; .block; .rel; .w(304px); .h(304px);
 		img { .ab; z-index: 1; top: 0px; }

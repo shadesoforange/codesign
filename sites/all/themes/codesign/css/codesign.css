@@ -491,7 +491,7 @@ a:hover {
   color: #ffffff;
   text-align: center;
   padding: 0px;
-  min-height: 100px;
+  min-height: 140px;
 }
 #header .main-menu {
   margin: 0px;
@@ -617,7 +617,7 @@ a:hover {
   width: 876px;
   margin: 0 auto;
   margin-bottom: 0px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 #header .nav-services ul.menu {
   height: 150px;
@@ -911,6 +911,10 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
   text-decoration: none;
   background: transparent;
   color: #2a2a2a;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: #47a9e1;
+  border: none;
 }
 body.front.mobile #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;
@@ -969,6 +973,10 @@ body.front.mobile #content {
   text-decoration: none;
   background: transparent;
   color: #2a2a2a;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: #47a9e1;
+  border: none;
 }
 .btn-white {
   color: #ffffff;
@@ -1069,7 +1077,7 @@ blockquote p {
 .block-block.dark.about {
   background: url(../images/bg-about-block.jpg) no-repeat center center;
   background-size: 100% auto;
-  background-attackment: fixed;
+  background-attachment: fixed;
   padding: 30px 0 75px;
 }
 .block-block.dark.about .block-content {
@@ -1330,13 +1338,6 @@ blockquote p {
 }
 .view-case-studies .views-row .views-field-nothing {
   height: 304px;
-  position: relative;
-  width: 304px;
-}
-.view-case-studies .views-row .views-field-nothing span,
-.view-case-studies .views-row .views-field-nothing .field-content {
-  display: block;
-  height: 385px;
   position: relative;
   width: 304px;
 }
@@ -1659,6 +1660,10 @@ blockquote p {
   text-decoration: none;
   background: transparent;
   color: #2a2a2a;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: #47a9e1;
+  border: none;
 }
 .all-past-blogs {
   background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;
@@ -1736,6 +1741,10 @@ blockquote p {
   text-decoration: none;
   background: transparent;
   color: #2a2a2a;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: #47a9e1;
+  border: none;
 }
 .page-node-5 #main {
   width: 100%;
