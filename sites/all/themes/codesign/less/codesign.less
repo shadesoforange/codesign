@@ -260,14 +260,19 @@ blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0);
 .page-node-3 #page { .bricks; .pb(150px); }
 .view-case-studies { .w(960px); .auto; .mb(80px);
 	h2.block-title { .tc; .med; .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; .mb(15px); }
-	.views-row { .w(304px); .fl; .h(385px); .m(0 24px 24px 0); 
+	.views-row { .w(304px); .fl; .h(304px); .m(0 24px 24px 0); 
 		&.views-row-3, &.views-row-6, &.views-row-9, &.views-row-12, &.views-row-15 { .mr(0px); }
-		.views-field-nothing { .h(385px); .rel; .w(304px); 
+		.views-field-nothing { .h(304px); .rel; .w(304px); 
 			span, .field-content { .block; .h(385px); .rel; .w(304px); }
-			a { .white; }
 		}
 	}
-	.overlay { .tc; .white; background: transparent url(../images/black-overlay-70.png); bottom: 0px; .w(284px); .ab; z-index: 2; .p(10px); }
+	.case-study-teaser { .white; .block; .rel; .w(304px); .h(304px);
+		img { .ab; z-index: 1; top: 0px; }
+		.overlay, .highlight { .tc; .ab; .white; bottom: 0px; .w(284px); .p(10px); }
+		.overlay { background: transparent url(../images/black-overlay-70.png); z-index: 10; }
+		.highlight { background: @blue; z-index: 20; .hide; }
+	}
+	
 	&.mobile { .hide; 
 		h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
 		.views-row { .w(100%); .fn; .h(186px); .m(0px 0px 10px);

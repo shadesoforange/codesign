@@ -48,8 +48,21 @@ Drupal.behaviors.my_custom_behavior = {
 	$('#block-views-homepage-slides-block .slide:first').hide().delay(500).fadeIn(1000);
 	
 	
+	// Make the highlight on the Case Study teasers show/hide 
+	$('.case-study-teaser').hover(
+		function(e){
+			$(this).children('.highlight').fadeIn();
+		},
+		function(e){
+			$(this).children('.highlight').fadeOut();
+		}
+	);
+	
+	
 	// Make the programs table an accordion
 	$('#programmes').accordion({heightStyle:"content"});
+	
+	
 	
   }
 };

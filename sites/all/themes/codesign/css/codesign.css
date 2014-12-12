@@ -1318,7 +1318,7 @@ blockquote p {
 .view-case-studies .views-row {
   width: 304px;
   float: left;
-  height: 385px;
+  height: 304px;
   margin: 0 24px 24px 0;
 }
 .view-case-studies .views-row.views-row-3,
@@ -1329,7 +1329,7 @@ blockquote p {
   margin-right: 0px;
 }
 .view-case-studies .views-row .views-field-nothing {
-  height: 385px;
+  height: 304px;
   position: relative;
   width: 304px;
 }
@@ -1340,18 +1340,35 @@ blockquote p {
   position: relative;
   width: 304px;
 }
-.view-case-studies .views-row .views-field-nothing a {
+.view-case-studies .case-study-teaser {
   color: #ffffff;
+  display: block;
+  position: relative;
+  width: 304px;
+  height: 304px;
 }
-.view-case-studies .overlay {
+.view-case-studies .case-study-teaser img {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+}
+.view-case-studies .case-study-teaser .overlay,
+.view-case-studies .case-study-teaser .highlight {
   text-align: center;
+  position: absolute;
   color: #ffffff;
-  background: transparent url(../images/black-overlay-70.png);
   bottom: 0px;
   width: 284px;
-  position: absolute;
-  z-index: 2;
   padding: 10px;
+}
+.view-case-studies .case-study-teaser .overlay {
+  background: transparent url(../images/black-overlay-70.png);
+  z-index: 10;
+}
+.view-case-studies .case-study-teaser .highlight {
+  background: #47a9e1;
+  z-index: 20;
+  display: none;
 }
 .view-case-studies.mobile {
   display: none;
