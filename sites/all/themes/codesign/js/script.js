@@ -20,13 +20,19 @@ Drupal.behaviors.my_custom_behavior = {
     // Place your code here.
 	
 	//$('.nav-services a.design-thinking').append('&trade;');
-	$('.nav-services ul.menu li a').append('<div class="tag"></div>');
+	$('.nav-services ul.menu li a.innovation-consulting').before('<div class="tag bg-yellow"></div>');
+	$('.nav-services ul.menu li a.accelerated-design').before('<div class="tag bg-orange"></div>');
+	$('.nav-services ul.menu li a.design-thinking').before('<div class="tag bg-red"></div>');
+	$('.nav-services ul.menu li a.futures').before('<div class="tag bg-magenta"></div>');
+	$('.nav-services ul.menu li a.graphics').before('<div class="tag bg-violet"></div>');
+	$('.nav-services ul.menu li a.events').before('<div class="tag bg-blue"></div>');
+	
 	$('.nav-services ul.menu li a').hover(
 		function(e){
-			$(this).children('.tag').slideDown(200);
+			$(this).siblings('.tag').slideDown(350);
 		},
 		function(e){
-			$(this).children('.tag').slideUp(200);
+			$(this).siblings('.tag').slideUp(350);
 		}	
 	);
 	

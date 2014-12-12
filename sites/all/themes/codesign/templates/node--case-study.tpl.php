@@ -34,8 +34,6 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
-        
-    print views_embed_view('case_study', 'block_header', $node->nid );
     
     if(!empty($node->field_first_row_copy['und'][0]['value'])){
 	    print '<div class="first-row">';

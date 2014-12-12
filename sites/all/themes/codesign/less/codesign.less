@@ -20,8 +20,8 @@ a { .blue;
 
 // Header Region
 
-#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0;
-	.main-menu { .m(3em 0);
+#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0; min-height: 100px;
+	.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px;
 		h2.block-title { .hide; }
 		ul.menu { .m0; .p0; 
 			li { .list-none; .inline-block; .h(60px); .m0;
@@ -47,35 +47,49 @@ a { .blue;
 			a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
 		}
 	}
-	.nav-services { .w(876px); .auto; .mb(0px);
-		ul.menu { .h(152px); .p0; .m0;
+	.nav-services { .w(876px); .auto; .mb(0px); .mt(100px);
+		ul.menu { .h(150px); .p0; .m0;
 			li { .w(116px); .fl; .m(0 15px); .p0; .tc; .list-none;
-				a { .white; .p(100px 0px 0px); .show; .w(116px); .ls(0.5px); .h(52px); .size(14px); .rel;
-					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center top; background-size: 88px 88px; 
+				a { .white; .p(110px 0px 0px); .show; .w(116px); .ls(0.5px); .h(40px); .size(14px); .rel;
+					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @yellow; }
 					}
-					&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center top; background-size: 88px 88px; 
+					&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @orange; }
 					}
-					&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center top; background-size: 88px 88px; 
+					&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @red; }
 					}
-					&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center top; background-size: 88px 88px; 
+					&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @magenta; }
 					}
-					&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center top; background-size: 88px 88px; 
+					&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @violet; }
 					}
-					&.events { background: transparent url(../images/icon-events.svg) no-repeat center top; background-size: 88px 88px; 
+					&.events { background: transparent url(../images/icon-events.svg) no-repeat center 10px; background-size: 88px 88px; 
 						.tag { background: @blue; }
 					}
 					&:hover { .td-none; }
-					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .hide; }
 				}
+				.tag { .w(116px); .h(150px); .ab; bottom: 0px; .hide; }
 			}
 		}	
 	}
 	.nav-services-mobile { .hide; }
+	#block-views-case-study-block-header { background-size: 100% auto; .mt(1px); .rel; top: 0px; z-index: 2; .m0; .h(420px);
+		h1 { .size(48px); .white; .upper; .raleway-med; .ls(3px); .mb(0px); .pt(150px); .normal; }
+		h2 { .raleway-thin; .large; .em; .pb(80px); .w(500px); .auto; .white; }
+		.category { background: @blue; .p(8px 0); .w(320px); .auto; .white; 
+			strong { .raleway-med; }
+		}
+		.case-study-header { .h(420px); }
+	}
+	#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 600px; .m0; background: #000;
+		.view-content { .h(600px); }
+		.slide { .h(600px); .rel; .w(100%); .tc; }
+		.slide-bg { .h(600px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
+		.slide-copy { .white; .raleway-light; .xxlarge; .m0; .w(650px); top: 230px; .ml(-325px); left: 50%; .ab; z-index: 2; }
+	}
 }
 
 
@@ -85,13 +99,6 @@ body.front {
 	#main { .w(100%); }
 	#header { background: #000; .p0; 
 		.region { .w(100%); max-width: 100%; .rel; .tc; .h(600px); }
-		#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 600px; .m0; background: #000;
-			.view-content { .h(600px); }
-			.slide { .h(600px); .rel; .w(100%); .tc; }
-			.slide-bg { .h(600px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
-			.slide-copy { .white; .raleway-light; .xxlarge; .m0; .w(650px); top: 230px; .ml(-325px); left: 50%; .ab; z-index: 2; }
-		}
-		.main-menu { .m0; .pr(25px); .ab; top: 3em; left: 50%; z-index: 3; margin-left: -354px; }
 		.nav-services { .ab; bottom: 0px; z-index: 3; left: 50%; .ml(-438px); }
 	}
 	#content { .bricks-top; .w(100%); }
@@ -151,7 +158,7 @@ img {
 	&.image-right { .fr; .m(15px 0px 25px 25px); }
 	&.image-left { .fl; .m(15px 25px 25px 0px); }
 }
-blockquote { .xlarge; .black; .em; .m(1em 0); 
+blockquote { .large; .blue; .em; .raleway-bold; .m(1em 0); 
 	p { .m0; }
 }
 .column-half { .w(42%); .fl; .m(0 4% 40px); }
@@ -234,13 +241,6 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 .node-type-case-study {
 	#main { .w(100%); }
 	.node-case-study { .w(100%); }
-	.case-study-header { background-size: 100% auto; .p(150px 0 1em); .mt(1px);
-		h1 { .size(60px); .white; .upper; .raleway-med; .ls(4px); .mb(0px); .normal; }
-		h2 { .raleway-thin; .xlarge; .em; .pb(80px); .w(460px); .auto; .white; }
-		.category { background: @blue; .p(8px 0); .w(320px); .auto; .white; 
-			strong { .raleway-med; }
-		}
-	}
 	.first-row, .third-row, .fifth-row { .w(960px); .auto; .cb;  .p(35px 0);
 		p { .med; .lh(1.5em); }
 		blockquote { .mb(1.25em);
@@ -328,7 +328,6 @@ blockquote { .xlarge; .black; .em; .m(1em 0);
 .page-node-34 h1 { .red; .raleway-light; .normal; }
 .page-node-35 h1 { .red; .raleway-light; .normal; }
 .design-thinking-programs { .p(20px 0); .mb(80px);
-	h2.block-title { .hide; }
 	.block-content { .w(100%); 
 		h2 { .xlarge; .raleway-light; .mb(0.5em); }
 		#programmes {  }
@@ -452,7 +451,6 @@ body.mobile { .size(13px);
 					&.graphics { background: @dkgrey url(../images/icon-graphics.svg) no-repeat 5px 5px; background-size: 40px 40px; .mr(1px); border-bottom: 3px solid @violet;}
 					&.events { background: @dkgrey url(../images/icon-events.svg) no-repeat 5px 5px; background-size: 40px 40px; border-bottom: 3px solid @blue; }
 					&:hover { .td-none; }
-					.tag { .w(100%); .h(10px); .ab; bottom: 0px; .hide; }
 					}
 				}
 			}
