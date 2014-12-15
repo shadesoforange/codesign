@@ -29,10 +29,10 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	$('.nav-services ul.menu li a').hover(
 		function(e){
-			$(this).siblings('.tag').slideDown(350);
+			$(this).siblings('.tag').fadeIn(350);
 		},
 		function(e){
-			$(this).siblings('.tag').slideUp(350);
+			$(this).siblings('.tag').fadeOut(350);
 		}	
 	);
 	
