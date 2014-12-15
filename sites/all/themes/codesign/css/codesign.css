@@ -804,6 +804,10 @@ body.front #header .region {
   text-align: center;
   height: 600px;
 }
+body.front #header .main-menu {
+  top: 3em;
+  margin-top: 0px;
+}
 body.front #header .nav-services {
   position: absolute;
   bottom: 0px;
