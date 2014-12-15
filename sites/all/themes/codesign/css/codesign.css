@@ -497,7 +497,7 @@ a:hover {
   margin: 0px;
   padding-right: 25px;
   position: absolute;
-  top: 3em;
+  margin-top: 3em;
   left: 50%;
   z-index: 3;
   margin-left: -354px;
