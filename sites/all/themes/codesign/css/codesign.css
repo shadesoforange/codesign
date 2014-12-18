@@ -83,6 +83,11 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
 small,
 .small {
   font-size: 12px;
@@ -592,9 +597,6 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -760,7 +762,8 @@ a:hover {
 #header #block-views-homepage-slides-block .view-content {
   height: 600px;
 }
-#header #block-views-homepage-slides-block .slide {
+#header #block-views-homepage-slides-block .slide,
+#header #block-views-homepage-slides-block .views_slideshow_slide {
   height: 600px;
   position: relative;
   width: 100%;
@@ -777,18 +780,41 @@ a:hover {
   z-index: 1;
 }
 #header #block-views-homepage-slides-block .slide-copy {
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 3.2em;
-  line-height: 1.25em;
-  margin: 0px;
-  width: 650px;
-  top: 230px;
-  margin-left: -325px;
-  left: 50%;
   position: absolute;
   z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/overlay-grid.png);
+}
+#header #block-views-homepage-slides-block .slide-copy .content {
+  margin: 230px auto;
+  width: 640px;
+  text-align: center;
+}
+#header #block-views-homepage-slides-block .slide-copy .content .headline {
+  font-size: 34px;
+  line-height: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#header #block-views-homepage-slides-block .slide-copy .content a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+#header #block-views-homepage-slides-block .slide-copy .content a:hover {
+  text-decoration: none;
+  background: transparent;
+  color: #ffffff;
 }
 body.front #main {
   width: 100%;
@@ -1042,6 +1068,10 @@ blockquote p {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
 }
+.bricks-lamp {
+  background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat top;
+  background-size: 100% auto;
+}
 .bricks-mobile {
   background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
   background-size: 720px auto;
@@ -1049,6 +1079,12 @@ blockquote p {
 .bricks-top-mobile {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 720px auto;
+}
+input.form-text {
+  background: #f0f0f0;
+  border: 1px solid #aaaaaa;
+  font-size: 14px;
+  padding: 8px;
 }
 .block-block {
   margin-bottom: 0px;
@@ -1803,7 +1839,7 @@ blockquote p {
   margin: 0px;
 }
 #footer {
-  padding: 80px 0 20px;
+  padding: 90px 0 20px;
   width: 932px;
   margin: 0 auto;
   border-bottom: 1px solid #2c2a2a;
