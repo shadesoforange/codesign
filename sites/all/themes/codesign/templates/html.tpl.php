@@ -30,9 +30,9 @@
 
   <?php print $styles; ?>
   
-  <!-- Adding Raleway Google font -->
+  <!-- Adding Google fonts -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,500,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Satisfy|Courgette|Marck+Script' rel='stylesheet' type='text/css'>
   
   <?php print $scripts; ?>
   <?php if ($add_html5_shim and !$add_respond_js): ?>

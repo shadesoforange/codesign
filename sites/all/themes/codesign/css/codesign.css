@@ -1,6 +1,9 @@
 .blue {
   color: #47a9e1;
 }
+.dkblue {
+  color: #278bc5;
+}
 .magenta {
   color: #d83577;
 }
@@ -19,6 +22,10 @@
 .bg-blue {
   color: #ffffff;
   background: #47a9e1;
+}
+.bg-dkblue {
+  color: #ffffff;
+  background: #278bc5;
 }
 .bg-magenta {
   color: #ffffff;
@@ -83,10 +90,9 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
-.roboto {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-style: italic;
+.script {
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
 }
 small,
 .small {
@@ -500,12 +506,11 @@ a:hover {
 }
 #header .main-menu {
   margin: 0px;
-  padding-right: 25px;
   position: absolute;
   margin-top: 3em;
   left: 50%;
   z-index: 3;
-  margin-left: -354px;
+  margin-left: -388px;
 }
 #header .main-menu h2.block-title {
   display: none;
@@ -528,31 +533,20 @@ a:hover {
   color: #ffffff;
   line-height: 60px;
   padding: 0 15px;
-}
-#header .main-menu ul.menu li a.services {
-  padding: 0 25px 0 15px;
+  display: inline-block;
 }
 #header .main-menu ul.menu li a.home {
   display: inline-block;
   text-indent: -5000px;
   width: 217px;
   height: 60px;
-  background: transparent url(../images/logo-white.svg) no-repeat;
+  background: transparent url(../images/logo-white.svg) no-repeat center center;
   background-size: 217px 60px;
-  padding: 0px;
+  padding: 0 15px;
 }
 #header .main-menu ul.menu li a.home:hover {
-  background: transparent url(../images/logo-white.svg) no-repeat;
+  background: transparent url(../images/logo-white.svg) no-repeat center center;
   background-size: 217px 60px;
-}
-#header .main-menu ul.menu li a.blog {
-  padding: 0 10px 0 20px;
-}
-#header .main-menu ul.menu li a.about {
-  padding: 0 10px;
-}
-#header .main-menu ul.menu li a.contact {
-  padding: 0 10px;
 }
 #header .main-menu ul.menu li a.search {
   display: inline-block;
@@ -800,21 +794,19 @@ a:hover {
 }
 #header #block-views-homepage-slides-block .slide-copy .content a {
   color: #ffffff;
+  background: #47a9e1;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
   display: inline-block;
   padding: 5px 15px;
-  border: 1px solid #ffffff;
-  font-size: 12px;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1.3em;
-  line-height: 1.3em;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+  line-height: 1.25em;
 }
 #header #block-views-homepage-slides-block .slide-copy .content a:hover {
   text-decoration: none;
-  background: transparent;
   color: #ffffff;
+  background: #278bc5;
 }
 body.front #main {
   width: 100%;
@@ -846,11 +838,25 @@ body.front #content {
   background-size: 100% auto;
   width: 100%;
 }
+body.front #content table {
+  width: 100% !important;
+}
+body.front #content table td {
+  padding: 15px;
+  vertical-align: top;
+}
 body.front .node-page {
-  width: 900px;
+  width: 980px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   padding: 40px 0 80px;
+}
+body.front .node-page h3 {
+  color: #47a9e1;
+  font-size: 1.6em;
+  line-height: 1.25em;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
 }
 body.front .view-case-studies {
   margin-bottom: 0px;
@@ -868,12 +874,45 @@ body.front .block-block.quote .block-content {
   background: transparent url(../images/quotes-home.png) no-repeat center 10px;
   padding: 0px 140px;
 }
+body.front .bricks-lamp {
+  padding: 60px 0 140px;
+}
+body.front .bricks-lamp .block-content {
+  width: 900px;
+  margin: 0 auto;
+}
+body.front .bricks-lamp h2 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  color: #47a9e1;
+  text-align: center;
+  font-size: 2.2em;
+  line-height: 1.25em;
+}
+body.front .bricks-lamp p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+body.front .bricks-lamp table {
+  width: 100% !important;
+  border: 0px;
+}
+body.front .bricks-lamp table td {
+  padding: 15px;
+  vertical-align: top;
+  border: 0px;
+}
 body.front #block-views-articles-block {
+  clear: both;
   background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0 100px;
   margin-bottom: 0px;
+}
+body.front #block-views-articles-block .block-content {
+  width: 960px;
+  margin: 0 auto;
 }
 body.front #block-views-articles-block h2.block-title {
   text-align: center;
@@ -887,8 +926,37 @@ body.front #block-views-articles-block h2.block-title {
   font-style: normal;
   margin-bottom: 30px;
 }
+body.front #block-views-articles-block .view-header {
+  text-align: center;
+}
+body.front #block-views-articles-block .view-header blockquote {
+  text-align: left;
+  width: 700px;
+  margin: 0px auto 30px;
+  float: none;
+  clear: both;
+  text-indent: 0px;
+  padding: 25px 25px 70px 25px;
+  position: relative;
+  top: 0px;
+}
+body.front #block-views-articles-block .view-header blockquote p {
+  margin: 0px;
+  padding: 0px;
+}
+body.front #block-views-articles-block .view-header h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+}
 body.front #block-views-articles-block .view-content {
-  width: 960px;
   height: 400px;
   margin: 0 auto;
 }
@@ -991,7 +1059,8 @@ body.front.mobile #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 720px auto;
 }
-.btn {
+.btn,
+.button {
   color: #2a2a2a;
   display: inline-block;
   padding: 5px 15px;
@@ -1002,7 +1071,8 @@ body.front.mobile #content {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
-.btn:hover {
+.btn:hover,
+.button:hover {
   text-decoration: none;
   background: transparent;
   color: #2a2a2a;
@@ -1011,7 +1081,8 @@ body.front.mobile #content {
   background: #47a9e1;
   border: none;
 }
-.btn-white {
+.btn-white,
+.button-white {
   color: #ffffff;
   display: inline-block;
   padding: 5px 15px;
@@ -1022,10 +1093,27 @@ body.front.mobile #content {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
-.btn-white:hover {
+.btn-white:hover,
+.button-white:hover {
   text-decoration: none;
   background: transparent;
   color: #ffffff;
+}
+.btn-blue,
+.button-blue {
+  color: #ffffff;
+  background: #47a9e1;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  padding: 5px 15px;
+  letter-spacing: 1px;
+}
+.btn-blue:hover,
+.button-blue:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #278bc5;
 }
 p {
   margin: 0 0 1em;
@@ -1039,13 +1127,18 @@ img.image-left {
   margin: 15px 25px 25px 0px;
 }
 blockquote {
-  font-size: 1.6em;
-  line-height: 1.25em;
-  color: #47a9e1;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
   font-style: italic;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin: 1em 0;
+  background: transparent url(../images/quote.png) no-repeat bottom left;
+  float: left;
+  margin-left: -50px;
+  width: 400px;
+  padding: 25px 25px 70px;
 }
 blockquote p {
   margin: 0px;
@@ -1069,7 +1162,7 @@ blockquote p {
   background-size: 100% auto;
 }
 .bricks-lamp {
-  background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat top;
+  background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat bottom;
   background-size: 100% auto;
 }
 .bricks-mobile {
