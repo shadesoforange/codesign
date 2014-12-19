@@ -1589,11 +1589,6 @@ input.form-text {
 }
 .section-services #header #block-views-header-image-block .header-image {
   height: 420px;
-  width: 100%;
-  position: absolute;
-  z-index: 1px;
-  margin: 0px;
-  padding: 0px;
 }
 .page-node-2 #main {
   width: 100%;
