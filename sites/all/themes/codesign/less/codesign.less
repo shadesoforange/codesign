@@ -20,8 +20,9 @@ a { .blue;
 
 // Header Region
 
-#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0; min-height: 140px;
-	.main-menu { .m0; .ab; margin-top: 3em; left: 50%; z-index: 3; margin-left: -388px; 
+#header { .w100; background: #fff url(../images/header-default.jpg) no-repeat center center; background-size: cover; .white; .tc; .p0; min-height: 280px;
+	.region { .w(100%); .h(280px); .rel; .tc; }
+	.main-menu { .ab; left: 50%; z-index: 10; .m(0px 0px 0px -388px); .pt(30px);
 		h2.block-title { .hide; }
 		ul.menu { .m0; .p0; 
 			li { .list-none; .inline-block; .h(60px); .m0; 
@@ -47,31 +48,32 @@ a { .blue;
 			a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
 		}
 	}
-	.nav-services { .w(876px); .auto; .mb(0px); .mt(120px);
-		ul.menu { .h(150px); .p0; .m0;
-			li { .w(116px); .fl; .m(0 11px); .p0; .tc; .list-none; .rel;
-				a { .white; .p(110px 0px 0px); .show; .w(124px); .ls(0.5px); .h(40px); .size(14px); .rel;
-					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center 10px; background-size: 88px 88px; 
+	.nav-services { .w(744px); .ab; bottom: 0px; left: 50%; .m(0 0 0 -372px); z-index: 9; 
+		ul.menu { .h(132px); .p0; .m0;
+			li { .w(110px); .fl; .m(0 7px); .p0; .tc; .list-none; .rel;
+				a { .white; .p(90px 0px 0px); .show; .w(110px); .ls(0.5px); .h(40px); .size(13px); .rel;
+					&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @yellow; }
 					}
-					&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 10px; background-size: 88px 88px; 
+					&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @orange; }
 					}
-					&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center 10px; background-size: 88px 88px; 
+					&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @red; }
 					}
-					&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center 10px; background-size: 88px 88px; 
+					&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @magenta; }
 					}
-					&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center 10px; background-size: 88px 88px; 
+					&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @violet; }
 					}
-					&.events { background: transparent url(../images/icon-events.svg) no-repeat center 10px; background-size: 88px 88px; 
+					&.events { background: transparent url(../images/icon-events.svg) no-repeat center 10px; background-size: 70px 70px; 
 						.tag { background: @blue; }
 					}
 					&:hover { .td-none; }
 				}
-				.tag { .w(124px); .h(150px); .ab; bottom: 0px; .hide; }
+				.tag { .w(110px); .h(132px); .ab; bottom: 0px; .hide; }
+				&.is-active .tag { .show; }
 			}
 		}	
 	}
@@ -84,10 +86,19 @@ a { .blue;
 		}
 		.case-study-header { .h(420px); }
 	}
-	#block-views-homepage-slides-block { .w(100%); .rel; top: 0px; z-index: 2; height: 600px; .m0; background: #000;
+	#block-views-header-image-block { .w(100%); .ab; top: 0px; z-index: 2; .h(280px); .m0; background: transparent;
+		.views-row { .h(280px); .w(100%); }
+		.header-image { .h(280px); .w(100%); .ab; z-index: 1px; .m0; .p0; }		
+		.header-copy { .ab; z-index: 2; .w(100%); .h(100%); background: transparent url(../images/overlay-grid.png); 
+			.content { .m(150px auto); .w(640px); .tc; .white; 
+				h1, h2, p, span { .white; }
+			}
+		}
+	}
+	#block-views-homepage-slides-block { .w(100%); .ab; top: 0px; z-index: 2; .h(600px); .m0; background: #000;
 		.view-content { .h(600px); }
 		.slide, .views_slideshow_slide { .h(600px); .rel; .w(100%); .tc; }
-		.slide-bg { .h(600px); width: 100%; .m0; .p0; .op(0.5); .ab; z-index: 1; }
+		.slide-bg { .h(600px); .w(100%); .m0; .p0; .op(0.5); .ab; z-index: 1; }
 		.slide-copy { .ab; z-index: 2; .w(100%); .h(100%); background: transparent url(../images/overlay-grid.png);
 			.content { .m(230px auto); .w(640px); .tc;
 				.headline { .size(34px); .lh(36px); .raleway-med; .mb(10px); }
@@ -104,7 +115,7 @@ body.front {
 	#main { .w(100%); }
 	#header { background: #000; .p0; 
 		.region { .w(100%); max-width: 100%; .rel; .tc; .h(600px); }
-		.main-menu { top: 3em; margin-top: 0px; }
+		.main-menu { }
 		.nav-services { .ab; bottom: 0px; z-index: 3; left: 50%; .ml(-438px); }
 	}
 	#content { .bricks-top; .w(100%); 
@@ -115,15 +126,15 @@ body.front {
 	.node-page { .w(980px); .auto; .tl; .p(40px 0 80px); 
 		h3 { .blue; .large; .script; }
 	}
-	.view-case-studies { .mb(0px); }
+	.view-case-studies { .mb(30px); }
 	.block-block.quote { .w(100%); .bricks; .mb(0px); .p(155px 0 220px);
 		.block-content { .w(680px); .auto; background: transparent url(../images/quotes-home.png) no-repeat center 10px; .p(0px 140px); }
 	}
 	.bricks-lamp { .p(60px 0 140px);
 		.block-content { .w(900px); .auto; }
-		h2 { .script; .blue; .tc; .xlarge; }
+		h2 { .script; .blue; .tc; .xlarge; .mb(20px); }
 		p { .med; }
-		table { width: 100% !important; border: 0px;
+		table { width: 100% !important; border: 0px; .mt(0px);
 			td { .p(15px); vertical-align: top; border: 0px; }
 		}
 	}
@@ -318,6 +329,14 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 
 // Services Pages
 
+.section-services {
+	#header {
+		.region { .h(420px); }
+		#block-views-header-image-block { .h(420px); 
+			.header-image { .h(420px); .w(100%); .ab; z-index: 1px; .m0; .p0; }
+		}
+	}
+}
 .page-node-2 {
 	#main { .w(100%); }
 	h1 { .raleway-thin; .xxlarge; .normal; .dkgrey; }
@@ -346,7 +365,7 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 	}
 	.column-half { .w(44%); .fl; .m(0 3% 40px); }
 }
-.section-services.sidebar-first h1 { .tl; }
+/*.section-services.sidebar-first h1 { .tl; }
 .page-node-7 h1 { .yellow; .raleway-light; .normal; }
 .page-node-8 h1 { .orange; .raleway-light; .normal; }
 .page-node-9 h1 { .red; .raleway-light; .normal; }
@@ -358,7 +377,7 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 .page-node-32 h1 { .red; .raleway-light; .normal; }
 .page-node-33 h1 { .red; .raleway-light; .normal; }
 .page-node-34 h1 { .red; .raleway-light; .normal; }
-.page-node-35 h1 { .red; .raleway-light; .normal; }
+.page-node-35 h1 { .red; .raleway-light; .normal; }*/
 .design-thinking-programs { .p(20px 0); .mb(80px);
 	.block-content { .w(100%); 
 		h2 { .xlarge; .raleway-light; .mb(0.5em); }

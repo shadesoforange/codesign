@@ -29,10 +29,14 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	$('.nav-services ul.menu li a').hover(
 		function(e){
-			$(this).siblings('.tag').fadeIn(350);
+			if(!$(this).parent('li').hasClass('active')){
+				$(this).siblings('.tag').fadeIn(350);
+			}
 		},
 		function(e){
-			$(this).siblings('.tag').fadeOut(350);
+			if(!$(this).parent('li').hasClass('active')){
+				$(this).siblings('.tag').fadeOut(350);
+			}
 		}	
 	);
 	
@@ -61,8 +65,6 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	// Make the programs table an accordion
 	$('#programmes').accordion({heightStyle:"content"});
-	
-	
 	
   }
 };

@@ -502,15 +502,20 @@ a:hover {
   color: #ffffff;
   text-align: center;
   padding: 0px;
-  min-height: 140px;
+  min-height: 280px;
+}
+#header .region {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  text-align: center;
 }
 #header .main-menu {
-  margin: 0px;
   position: absolute;
-  margin-top: 3em;
   left: 50%;
-  z-index: 3;
-  margin-left: -388px;
+  z-index: 10;
+  margin: 0px 0px 0px -388px;
+  padding-top: 30px;
 }
 #header .main-menu h2.block-title {
   display: none;
@@ -613,20 +618,22 @@ a:hover {
   line-height: 14px;
 }
 #header .nav-services {
-  width: 876px;
-  margin: 0 auto;
-  margin-bottom: 0px;
-  margin-top: 120px;
+  width: 744px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin: 0 0 0 -372px;
+  z-index: 9;
 }
 #header .nav-services ul.menu {
-  height: 150px;
+  height: 132px;
   padding: 0px;
   margin: 0px;
 }
 #header .nav-services ul.menu li {
-  width: 116px;
+  width: 110px;
   float: left;
-  margin: 0 11px;
+  margin: 0 7px;
   padding: 0px;
   text-align: center;
   list-style: none;
@@ -636,52 +643,52 @@ a:hover {
 }
 #header .nav-services ul.menu li a {
   color: #ffffff;
-  padding: 110px 0px 0px;
+  padding: 90px 0px 0px;
   display: block;
-  width: 124px;
+  width: 110px;
   letter-spacing: 0.5px;
   height: 40px;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
 }
 #header .nav-services ul.menu li a.innovation-consulting {
   background: transparent url(../images/icon-innovation.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.innovation-consulting .tag {
   background: #eeb51c;
 }
 #header .nav-services ul.menu li a.accelerated-design {
   background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.accelerated-design .tag {
   background: #d45000;
 }
 #header .nav-services ul.menu li a.design-thinking {
   background: transparent url(../images/icon-design-thinking.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.design-thinking .tag {
   background: #dc0000;
 }
 #header .nav-services ul.menu li a.futures {
   background: transparent url(../images/icon-futures.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.futures .tag {
   background: #d83577;
 }
 #header .nav-services ul.menu li a.graphics {
   background: transparent url(../images/icon-graphics.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.graphics .tag {
   background: #8b67ba;
 }
 #header .nav-services ul.menu li a.events {
   background: transparent url(../images/icon-events.svg) no-repeat center 10px;
-  background-size: 88px 88px;
+  background-size: 70px 70px;
 }
 #header .nav-services ul.menu li a.events .tag {
   background: #47a9e1;
@@ -690,11 +697,14 @@ a:hover {
   text-decoration: none;
 }
 #header .nav-services ul.menu li .tag {
-  width: 124px;
-  height: 150px;
+  width: 110px;
+  height: 132px;
   position: absolute;
   bottom: 0px;
   display: none;
+}
+#header .nav-services ul.menu li.is-active .tag {
+  display: block;
 }
 #header .nav-services-mobile {
   display: none;
@@ -744,9 +754,49 @@ a:hover {
 #header #block-views-case-study-block-header .case-study-header {
   height: 420px;
 }
+#header #block-views-header-image-block {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  height: 280px;
+  margin: 0px;
+  background: transparent;
+}
+#header #block-views-header-image-block .views-row {
+  height: 280px;
+  width: 100%;
+}
+#header #block-views-header-image-block .header-image {
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  z-index: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+#header #block-views-header-image-block .header-copy {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/overlay-grid.png);
+}
+#header #block-views-header-image-block .header-copy .content {
+  margin: 150px auto;
+  width: 640px;
+  text-align: center;
+  color: #ffffff;
+}
+#header #block-views-header-image-block .header-copy .content h1,
+#header #block-views-header-image-block .header-copy .content h2,
+#header #block-views-header-image-block .header-copy .content p,
+#header #block-views-header-image-block .header-copy .content span {
+  color: #ffffff;
+}
 #header #block-views-homepage-slides-block {
   width: 100%;
-  position: relative;
+  position: absolute;
   top: 0px;
   z-index: 2;
   height: 600px;
@@ -822,10 +872,6 @@ body.front #header .region {
   text-align: center;
   height: 600px;
 }
-body.front #header .main-menu {
-  top: 3em;
-  margin-top: 0px;
-}
 body.front #header .nav-services {
   position: absolute;
   bottom: 0px;
@@ -859,7 +905,7 @@ body.front .node-page h3 {
   font-weight: 400;
 }
 body.front .view-case-studies {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 body.front .block-block.quote {
   width: 100%;
@@ -888,6 +934,7 @@ body.front .bricks-lamp h2 {
   text-align: center;
   font-size: 2.2em;
   line-height: 1.25em;
+  margin-bottom: 20px;
 }
 body.front .bricks-lamp p {
   font-size: 1.3em;
@@ -896,6 +943,7 @@ body.front .bricks-lamp p {
 body.front .bricks-lamp table {
   width: 100% !important;
   border: 0px;
+  margin-top: 0px;
 }
 body.front .bricks-lamp table td {
   padding: 15px;
@@ -1533,6 +1581,20 @@ input.form-text {
 .view-case-studies.more-case-studies {
   margin-top: 80px;
 }
+.section-services #header .region {
+  height: 420px;
+}
+.section-services #header #block-views-header-image-block {
+  height: 420px;
+}
+.section-services #header #block-views-header-image-block .header-image {
+  height: 420px;
+  width: 100%;
+  position: absolute;
+  z-index: 1px;
+  margin: 0px;
+  padding: 0px;
+}
 .page-node-2 #main {
   width: 100%;
 }
@@ -1640,81 +1702,19 @@ input.form-text {
   float: left;
   margin: 0 3% 40px;
 }
-.section-services.sidebar-first h1 {
-  text-align: left;
-}
-.page-node-7 h1 {
-  color: #eeb51c;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-8 h1 {
-  color: #d45000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-9 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-10 h1 {
-  color: #d83577;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-11 h1 {
-  color: #8b67ba;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-12 h1 {
-  color: #47a9e1;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-30 h1 {
-  color: #d45000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-31 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-32 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-33 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-34 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.page-node-35 h1 {
-  color: #dc0000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+/*.section-services.sidebar-first h1 { .tl; }
+.page-node-7 h1 { .yellow; .raleway-light; .normal; }
+.page-node-8 h1 { .orange; .raleway-light; .normal; }
+.page-node-9 h1 { .red; .raleway-light; .normal; }
+.page-node-10 h1 { .magenta; .raleway-light; .normal; }
+.page-node-11 h1 { .violet; .raleway-light; .normal; }
+.page-node-12 h1 { .blue; .raleway-light; .normal; }
+.page-node-30 h1 { .orange; .raleway-light; .normal; }
+.page-node-31 h1 { .red; .raleway-light; .normal; }
+.page-node-32 h1 { .red; .raleway-light; .normal; }
+.page-node-33 h1 { .red; .raleway-light; .normal; }
+.page-node-34 h1 { .red; .raleway-light; .normal; }
+.page-node-35 h1 { .red; .raleway-light; .normal; }*/
 .design-thinking-programs {
   padding: 20px 0;
   margin-bottom: 80px;
