@@ -35,11 +35,29 @@
     hide($content['comments']);
     hide($content['links']);
     
+    // Render the sidebars to see if there's anything in them.
+    $sidebar_first  = render($page['sidebar_first']);
+    $sidebar_second = render($page['sidebar_second']);
+    
+    if($sidebar_first){
+    	print '<div class="sidebar-first">';
+        print $sidebar_first;
+        print '</div>';
+    }
+    
     if(!empty($node->field_first_row_copy['und'][0]['value'])){
 	    print '<div class="first-row">';
 	    print $node->field_first_row_copy['und'][0]['value'];
 	    print '</div>';
     }
+    
+    if($sidebar_second){
+    	print '<div class="sidebar-second">';
+        print $sidebar_second;
+        print '</div>';
+    }
+    
+    print "<p>We're using the right template.</p>";
     
     if(!empty($node->field_second_row_copy['und'][0]['value'])){
 	    print views_embed_view('feature_page', 'block_row2', $node->nid );

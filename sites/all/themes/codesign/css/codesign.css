@@ -780,7 +780,7 @@ a:hover {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: transparent url(../images/overlay-grid.png);
+  background: transparent url(../images/overlay-grid-darker.png);
 }
 #header #block-views-header-image-block .header-copy .content {
   margin: 150px auto;
@@ -828,7 +828,7 @@ a:hover {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: transparent url(../images/overlay-grid.png);
+  background: transparent url(../images/overlay-grid-darker.png);
 }
 #header #block-views-homepage-slides-block .slide-copy .content {
   margin: 230px auto;
@@ -1590,6 +1590,42 @@ input.form-text {
 .section-services #header #block-views-header-image-block .header-image {
   height: 420px;
 }
+.section-services .flag {
+  width: 90px;
+  padding: 80px 0 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: center;
+  float: left;
+  line-height: 1.1em;
+}
+.section-services .flag.innovation-consulting {
+  background: #eeb51c url(../images/icon-innovation.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.section-services .flag.accelerated-design {
+  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.section-services .flag.design-thinking {
+  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.section-services .flag.futures {
+  background: #d83577 url(../images/icon-futures.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.section-services .flag.graphics {
+  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
+.section-services .flag.events {
+  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
+  background-size: 60px 60px;
+}
 .page-node-2 #main {
   width: 100%;
 }
@@ -1616,42 +1652,6 @@ input.form-text {
 .services-one .indent {
   margin-left: 115px;
 }
-.services-one .flag {
-  width: 90px;
-  padding: 80px 0 10px;
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.3em;
-  text-align: center;
-  float: left;
-  line-height: 1.1em;
-}
-.services-one .flag.innovation-consulting {
-  background: #eeb51c url(../images/icon-innovation.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-one .flag.accelerated-design {
-  background: #d45000 url(../images/icon-accelerated-design.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-one .flag.design-thinking {
-  background: #dc0000 url(../images/icon-design-thinking.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-one .flag.futures {
-  background: #d83577 url(../images/icon-futures.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-one .flag.graphics {
-  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-one .flag.events {
-  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
 .services-one .column-half {
   width: 44%;
   float: left;
@@ -1667,30 +1667,10 @@ input.form-text {
   margin: 0px 0px 1em;
 }
 .services-two .block-content {
-  width: 860px;
+  width: 740px;
 }
 .services-two .indent {
   margin-left: 115px;
-}
-.services-two .flag {
-  width: 90px;
-  padding: 80px 0 10px;
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.3em;
-  text-align: center;
-  float: left;
-  line-height: 1.1em;
-}
-.services-two .flag.graphics {
-  background: #8b67ba url(../images/icon-graphics.svg) no-repeat center 10px;
-  background-size: 60px 60px;
-}
-.services-two .flag.events {
-  background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
-  background-size: 60px 60px;
 }
 .services-two .column-half {
   width: 44%;
