@@ -1677,6 +1677,20 @@ input.form-text {
   font-size: 16px;
   line-height: 19px;
 }
+#block-views-graphics-block h2.block-title {
+  color: #47a9e1;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 1.25em;
+  text-align: center;
+}
+#block-views-graphics-block .views-row {
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+  float: left;
+}
 .section-services #header .region {
   height: 420px;
 }
