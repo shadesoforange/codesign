@@ -46,7 +46,11 @@
     }
     
     if(!empty($node->field_first_row_copy['und'][0]['value'])){
-	    print '<div class="first-row">';
+	    if(!empty($node->field_first_row_css['und'][0]['value'])){
+		    print '<div class="first-row '.$node->field_first_row_css['und'][0]['value'].'">';
+	    } else {
+		    print '<div class="first-row">';	
+	    }
 	    print $node->field_first_row_copy['und'][0]['value'];
 	    print '</div>';
     }
@@ -64,9 +68,7 @@
     }
     
     if(!empty($node->field_third_row_copy['und'][0]['value'])){
-	    print '<div class="third-row">';
-	    print $node->field_third_row_copy['und'][0]['value'];
-	    print '</div>';
+	    print views_embed_view('feature_page', 'block_row3', $node->nid );
     }
     
     if(!empty($node->field_fourth_row_copy['und'][0]['value'])){
@@ -74,7 +76,11 @@
     }
     
     if(!empty($node->field_fifth_row_copy['und'][0]['value'])){
-	    print '<div class="fifth-row">';
+	    if(!empty($node->field_fifth_row_css['und'][0]['value'])){
+		    print '<div class="fifth-row '.$node->field_fifth_row_css['und'][0]['value'].'">';
+	    } else {
+		    print '<div class="fifth-row">';	
+	    }
 	    print $node->field_fifth_row_copy['und'][0]['value'];
 	    print '</div>';
     }
