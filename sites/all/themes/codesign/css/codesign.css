@@ -1633,9 +1633,10 @@ input.form-text {
 }
 .node-feature-page .row .content h2,
 .node-feature-page .row .content h3 {
-  margin: 15px 0 4px;
+  margin: 0 0 4px;
 }
 .node-feature-page .row .content p {
+  margin: 0 0 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
 }
