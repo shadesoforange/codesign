@@ -1800,6 +1800,9 @@ input.form-text {
 .design-thinking-programs .block-content .indent {
   margin-left: 175px;
 }
+.page-node-42 blockquote {
+  background: url(../images/quote-orange.png) no-repeat bottom left;
+}
 .node-type-article #page {
   background: #ffffff url(../images/bg-blog.jpg) no-repeat center bottom;
   background-size: 100% auto;
