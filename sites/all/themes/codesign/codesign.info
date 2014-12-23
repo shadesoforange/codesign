@@ -90,7 +90,8 @@ regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
-regions[sidebar_first]  = Sidebar
+regions[sidebar_first]  = Left Sidebar
+regions[sidebar_second] = Right Sidebar
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 

@@ -31,62 +31,34 @@
   <?php endif; ?>
 
   <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
+    	// We hide the comments and links now so that we can render them later.
+    	hide($content['comments']);
+    	hide($content['links']);
     
-    // Render the sidebars to see if there's anything in them.
-    $sidebar_first  = render($page['sidebar_first']);
-    $sidebar_second = render($page['sidebar_second']);
+    	if(!empty($node->field_second_row_copy['und'][0]['value'])){
+	    	print views_embed_view('feature_page', 'block_row2', $node->nid );
+    	}
     
-    if($sidebar_first){
-    	print '<div class="sidebar-first">';
-        print $sidebar_first;
-        print '</div>';
-    }
+    	if(!empty($node->field_third_row_copy['und'][0]['value'])){
+	    	print views_embed_view('feature_page', 'block_row3', $node->nid );
+    	}
     
-    if(!empty($node->field_first_row_copy['und'][0]['value'])){
-	    if(!empty($node->field_first_row_css['und'][0]['value'])){
-		    print '<div class="first-row '.$node->field_first_row_css['und'][0]['value'].'">';
-	    } else {
-		    print '<div class="first-row">';	
-	    }
-	    print $node->field_first_row_copy['und'][0]['value'];
-	    print '</div>';
-    }
+    	if(!empty($node->field_fourth_row_copy['und'][0]['value'])){
+	    	print views_embed_view('feature_page', 'block_row4', $node->nid );
+    	}
     
-    if($sidebar_second){
-    	print '<div class="sidebar-second">';
-        print $sidebar_second;
-        print '</div>';
-    }
+    	if(!empty($node->field_fifth_row_copy['und'][0]['value'])){
+	    	if(!empty($node->field_fifth_row_css['und'][0]['value'])){
+		    	print '<div class="fifth-row '.$node->field_fifth_row_css['und'][0]['value'].'">';
+	    	} else {
+		    	print '<div class="fifth-row">';	
+	    	}
+	    	print $node->field_fifth_row_copy['und'][0]['value'];
+	    	print '</div>';
+   	 	}
     
-    print "<p>We're using the right template.</p>";
-    
-    if(!empty($node->field_second_row_copy['und'][0]['value'])){
-	    print views_embed_view('feature_page', 'block_row2', $node->nid );
-    }
-    
-    if(!empty($node->field_third_row_copy['und'][0]['value'])){
-	    print views_embed_view('feature_page', 'block_row3', $node->nid );
-    }
-    
-    if(!empty($node->field_fourth_row_copy['und'][0]['value'])){
-	    print views_embed_view('feature_page', 'block_row4', $node->nid );
-    }
-    
-    if(!empty($node->field_fifth_row_copy['und'][0]['value'])){
-	    if(!empty($node->field_fifth_row_css['und'][0]['value'])){
-		    print '<div class="fifth-row '.$node->field_fifth_row_css['und'][0]['value'].'">';
-	    } else {
-		    print '<div class="fifth-row">';	
-	    }
-	    print $node->field_fifth_row_copy['und'][0]['value'];
-	    print '</div>';
-    }
-    
-    // print render($content);
-  ?>
+   		// print render($content);
+  		?>
 
   <?php print render($content['links']); ?>
 

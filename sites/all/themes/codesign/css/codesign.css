@@ -157,11 +157,11 @@ i,
   line-height: 1.3em;
 }
 .med {
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
 }
 .large {
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 .xlarge {
@@ -462,13 +462,18 @@ h1 {
   margin: 0 0 1em;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   margin: 0 0 1.25em;
 }
-h3,
+h3 {
+  font-size: 1.33em;
+  line-height: 1.3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
 h4,
 h5 {
   font-size: 1em;
@@ -596,6 +601,9 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -698,7 +706,7 @@ a:hover {
 }
 #header .nav-services ul.menu li .tag {
   width: 110px;
-  height: 132px;
+  height: 130px;
   position: absolute;
   bottom: 0px;
   display: none;
@@ -732,7 +740,7 @@ a:hover {
 #header #block-views-case-study-block-header h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
   font-style: italic;
   padding-bottom: 80px;
@@ -783,8 +791,8 @@ a:hover {
   background: transparent url(../images/overlay-grid-darker.png);
 }
 #header #block-views-header-image-block .header-copy .content {
-  margin: 150px auto;
-  width: 640px;
+  margin: 150px auto 0px;
+  width: 700px;
   text-align: center;
   color: #ffffff;
 }
@@ -793,6 +801,7 @@ a:hover {
 #header #block-views-header-image-block .header-copy .content p,
 #header #block-views-header-image-block .header-copy .content span {
   color: #ffffff;
+  margin-bottom: 6px;
 }
 #header #block-views-homepage-slides-block {
   width: 100%;
@@ -850,7 +859,7 @@ a:hover {
   display: inline-block;
   padding: 5px 15px;
   letter-spacing: 1px;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 #header #block-views-homepage-slides-block .slide-copy .content a:hover {
@@ -899,7 +908,7 @@ body.front .node-page {
 }
 body.front .node-page h3 {
   color: #47a9e1;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
   font-family: 'Permanent Marker', sans-serif;
   font-weight: 400;
@@ -937,7 +946,7 @@ body.front .bricks-lamp h2 {
   margin-bottom: 20px;
 }
 body.front .bricks-lamp p {
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
 }
 body.front .bricks-lamp table {
@@ -965,7 +974,7 @@ body.front #block-views-articles-block .block-content {
 body.front #block-views-articles-block h2.block-title {
   text-align: center;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -995,7 +1004,7 @@ body.front #block-views-articles-block .view-header blockquote p {
 body.front #block-views-articles-block .view-header h2 {
   text-align: center;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1181,7 +1190,7 @@ blockquote {
   font-style: italic;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  margin: 1em 0;
+  margin: 1em 1.5em 1em 0;
   background: transparent url(../images/quote.png) no-repeat bottom left;
   float: left;
   margin-left: -50px;
@@ -1234,7 +1243,7 @@ input.form-text {
   background: #47a9e1;
   text-align: center;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   letter-spacing: 1px;
   font-family: 'Raleway', sans-serif;
@@ -1246,7 +1255,7 @@ input.form-text {
 }
 .block-block.dark h3 {
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -1280,7 +1289,7 @@ input.form-text {
   color: #47a9e1;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
   margin-bottom: 30px;
 }
@@ -1307,7 +1316,7 @@ input.form-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #555555;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
 }
 .region-sidebar-first .recent-posts .views-field-title a:hover {
@@ -1428,6 +1437,19 @@ input.form-text {
 .section-services .region-sidebar-first .block-menu-block li.first {
   display: none;
 }
+.region-sidebar-second {
+  padding: 30px 10px;
+}
+.region-sidebar-second .block-block .block-content {
+  width: auto;
+  padding: 20px;
+}
+.region-sidebar-second .block-block .block-content h1,
+.region-sidebar-second .block-block .block-content h2,
+.region-sidebar-second .block-block .block-content h3,
+.region-sidebar-second .block-block .block-content h4 {
+  margin-top: 0px;
+}
 .node-type-case-study #main {
   width: 100%;
 }
@@ -1449,7 +1471,7 @@ input.form-text {
 .node-type-case-study .first-row p,
 .node-type-case-study .third-row p,
 .node-type-case-study .fifth-row p {
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   line-height: 1.5em;
 }
@@ -1500,7 +1522,7 @@ input.form-text {
 }
 .view-case-studies h2.block-title {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1581,6 +1603,79 @@ input.form-text {
 .view-case-studies.more-case-studies {
   margin-top: 80px;
 }
+.node-type-feature-page #content {
+  min-height: 0px;
+}
+.node-type-feature-page .first-row {
+  padding: 0 20px 30px 35px;
+}
+.node-feature-page {
+  clear: both;
+}
+.node-feature-page .row {
+  width: 100%;
+  text-align: center;
+}
+.node-feature-page .row .content-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 0;
+}
+.node-feature-page .row .content {
+  padding: 3%;
+}
+.node-feature-page .row .content table {
+  border: 0px;
+}
+.node-feature-page .row .content table td {
+  padding: 0 20px 20px 0;
+}
+.node-feature-page .row .content h2,
+.node-feature-page .row .content h3 {
+  margin: 15px 0 4px;
+}
+.node-feature-page .row .content p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+.node-feature-page .row.dark .content {
+  background: transparent url(../images/black-overlay-70.png);
+  color: #ffffff;
+}
+.node-feature-page .row.light .content {
+  background: transparent url(../images/white-overlay-70.png);
+  color: #2a2a2a;
+}
+.node-feature-page .row.column-right .content {
+  width: 44%;
+  margin-left: 50%;
+}
+.node-feature-page .row.column-right.twothirds .content {
+  width: 60%;
+  margin-left: 34%;
+}
+.node-feature-page .row.column-left .content {
+  width: 44%;
+  margin-right: 50%;
+}
+.node-feature-page .row.column-left.twothirds .content {
+  width: 60%;
+  margin-right: 34%;
+}
+.node-feature-page .row.large-type {
+  font-size: 16px;
+}
+.node-feature-page .row blockquote {
+  margin: 1em 1.5em 1em 0;
+  width: 360px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.node-feature-page .row blockquote p {
+  font-size: 16px;
+  line-height: 19px;
+}
 .section-services #header .region {
   height: 420px;
 }
@@ -1626,16 +1721,18 @@ input.form-text {
   background: #47a9e1 url(../images/icon-events.svg) no-repeat center 10px;
   background-size: 60px 60px;
 }
-.page-node-2 #main {
-  width: 100%;
+.section-services .contact {
+  text-align: center;
 }
-.page-node-2 h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 3.2em;
-  line-height: 1.25em;
-  font-style: normal;
-  color: #2a2a2a;
+.section-services .contact .block-content {
+  width: 600px;
+  padding: 50px 0;
+  margin: 0 auto;
+  font-size: 1.33em;
+  line-height: 1.3em;
+}
+.page-node-41 #main {
+  width: 100%;
 }
 .services-one {
   background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom;
@@ -1677,19 +1774,6 @@ input.form-text {
   float: left;
   margin: 0 3% 40px;
 }
-/*.section-services.sidebar-first h1 { .tl; }
-.page-node-7 h1 { .yellow; .raleway-light; .normal; }
-.page-node-8 h1 { .orange; .raleway-light; .normal; }
-.page-node-9 h1 { .red; .raleway-light; .normal; }
-.page-node-10 h1 { .magenta; .raleway-light; .normal; }
-.page-node-11 h1 { .violet; .raleway-light; .normal; }
-.page-node-12 h1 { .blue; .raleway-light; .normal; }
-.page-node-30 h1 { .orange; .raleway-light; .normal; }
-.page-node-31 h1 { .red; .raleway-light; .normal; }
-.page-node-32 h1 { .red; .raleway-light; .normal; }
-.page-node-33 h1 { .red; .raleway-light; .normal; }
-.page-node-34 h1 { .red; .raleway-light; .normal; }
-.page-node-35 h1 { .red; .raleway-light; .normal; }*/
 .design-thinking-programs {
   padding: 20px 0;
   margin-bottom: 80px;
@@ -1709,7 +1793,7 @@ input.form-text {
   float: left;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   color: #000000;
 }
@@ -1740,7 +1824,7 @@ input.form-text {
   margin-left: 330px;
   font-weight: 700;
   font-family: inherit;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 .latest-blog .views-field-field-author {
@@ -1786,7 +1870,7 @@ input.form-text {
 .all-past-blogs h2.block-title {
   text-align: center;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1867,7 +1951,7 @@ input.form-text {
 }
 .team-members h2.block-title {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1888,11 +1972,46 @@ input.form-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #000000;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 .team-members .views-field-body {
   margin: 0 20px 30px 175px;
+}
+.page-node-25 #content {
+  background: url(../images/redphone.jpg) no-repeat bottom left;
+}
+.page-node-25 #content .node-page {
+  width: 45%;
+  float: left;
+  font-size: 1.33em;
+  line-height: 1.3em;
+}
+.page-node-25 #content .block-webform {
+  width: 45%;
+  float: right;
+  margin-bottom: 80px;
+}
+.page-node-25 #content .block-webform input.form-submit {
+  color: #ffffff;
+  background: #47a9e1;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  padding: 5px 15px;
+  letter-spacing: 1px;
+  font-size: 1.33em;
+  line-height: 1.3em;
+  border: none;
+}
+.page-node-25 #content .block-webform input.form-submit:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #278bc5;
+}
+.page-node-25 #content .phone {
+  width: 45%;
+  float: right;
 }
 #footer-wrapper {
   background: #000000 url(../images/bg-footer.jpg) no-repeat center 25px;
@@ -2263,7 +2382,7 @@ body.mobile.section-about .bricks .column-half {
   color: #2a2a2a;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.33em;
   line-height: 1.3em;
   border-radius: 0px;
   -webkit-border-radius: 0px;

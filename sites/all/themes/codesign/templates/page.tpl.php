@@ -31,8 +31,7 @@
     <?php endif; ?>
   
   <div id="main" <?php if ($detect->isMobile()){ print 'class="mobile"'; } ?>>
-  	
-  	
+
   	
     <div id="content" class="column <?php if ($detect->isMobile()){ print 'mobile'; } ?>" role="main">
       <?php print render($page['highlighted']); ?>
@@ -49,7 +48,13 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
+      <?php if($node->type == "feature_page"){
+      	print '<div class="first-row">';
+      	print render($node->field_first_row_copy['und'][0]['value']);
+      	print '</div>';
+      } else {
+      	print render($page['content']); 
+      } ?>
       <?php print $feed_icons; ?>
     </div>
 
@@ -65,9 +70,13 @@
         <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>
-
+	
   </div>
-
+	
+  <?php if($node->type == "feature_page"): ?>
+  <?php print render($page['content']); ?>
+  <?php endif; ?>	
+  	
 </div>
 
 <div id="footer-wrapper" <?php if ($detect->isMobile()){ print 'class="mobile"'; } ?>>
