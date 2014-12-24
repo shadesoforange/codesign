@@ -47,6 +47,10 @@
   color: #ffffff;
   background: #8b67ba;
 }
+.bg-white {
+  color: #2a2a2a;
+  background: #fff;
+}
 .black {
   color: #000000;
 }
@@ -1236,6 +1240,25 @@ blockquote p {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 720px auto;
 }
+.newspaper {
+  background: #000000 url(../images/bg-newspaper.jpg) center center;
+  background-size: cover;
+}
+.extended-family {
+  padding: 40px 0;
+}
+.extended-family h2.block-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.33em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+}
 input.form-text {
   background: #f0f0f0;
   border: 1px solid #aaaaaa;
@@ -2059,6 +2082,9 @@ input.form-text {
 }
 .team-members .views-field-body {
   margin: 0 20px 30px 175px;
+}
+.team-members.mobile {
+  display: none;
 }
 .page-node-25 #content {
   background: url(../images/redphone.jpg) no-repeat bottom left;
