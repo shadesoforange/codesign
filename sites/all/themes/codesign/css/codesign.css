@@ -715,6 +715,9 @@ a:hover {
 #header .nav-services ul.menu li.is-active .tag {
   display: block;
 }
+#header .nav-services ul.menu li.is-active-trail .tag {
+  display: block;
+}
 #header .nav-services-mobile {
   display: none;
 }
