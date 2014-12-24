@@ -601,9 +601,6 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -881,17 +878,18 @@ body.front #header .region {
   text-align: center;
   height: 600px;
 }
-body.front #header .nav-services {
-  position: absolute;
-  bottom: 0px;
-  z-index: 3;
-  left: 50%;
-  margin-left: -438px;
-}
 body.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
   width: 100%;
+}
+body.front #content.page-bottom {
+  padding: 60px 0px 100px;
+  font-size: 1.33em;
+  line-height: 1.3em;
+}
+body.front #content.page-bottom .block-content {
+  width: 700px;
 }
 body.front #content table {
   width: 100% !important;
@@ -1217,6 +1215,14 @@ blockquote p {
 .bricks-top {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
+}
+.bricks-top.page-bottom {
+  padding: 60px 0px 100px;
+  font-size: 1.33em;
+  line-height: 1.3em;
+}
+.bricks-top.page-bottom .block-content {
+  width: 700px;
 }
 .bricks-lamp {
   background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat bottom;
@@ -1667,6 +1673,49 @@ input.form-text {
 .node-feature-page .row.large-type {
   font-size: 16px;
 }
+.node-feature-page .row.programs h2 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+.node-feature-page .row.programs .top {
+  padding: 30px;
+  margin: 5px;
+  background: transparent url(../images/black-overlay-70.png);
+  color: #ffffff;
+  font-size: 1.33em;
+  line-height: 1.3em;
+}
+.node-feature-page .row.programs .program {
+  padding: 30px 30px 20px;
+  margin: 5px;
+  width: 370px;
+  height: 280px;
+  background: transparent url(../images/black-overlay-70.png);
+  color: #ffffff;
+  float: left;
+}
+.node-feature-page .row.programs .program .meta {
+  margin-bottom: 10px;
+  color: #47a9e1;
+}
+.node-feature-page .row.programs .program p {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.node-feature-page .row.programs .program p .btn-blue {
+  font-size: 14px;
+}
+.node-feature-page .row.programs .program ul,
+.node-feature-page .row.programs .program ol {
+  margin: 0 0 10px 0;
+}
+.node-feature-page .row.programs .program ul li,
+.node-feature-page .row.programs .program ol li {
+  margin: 0px;
+  font-size: 12px;
+}
 .node-feature-page .row blockquote {
   margin: 1em 1.5em 1em 0;
   width: 360px;
@@ -1677,6 +1726,16 @@ input.form-text {
   font-size: 16px;
   line-height: 19px;
 }
+#block-views-graphics-block {
+  background: #000000 url(../images/bg-newspaper.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 40px 0;
+  margin-bottom: 0px;
+}
+#block-views-graphics-block .block-content {
+  width: 960px;
+  margin: 0 auto;
+}
 #block-views-graphics-block h2.block-title {
   color: #47a9e1;
   font-family: 'Permanent Marker', sans-serif;
@@ -1684,12 +1743,17 @@ input.form-text {
   font-size: 1.75em;
   line-height: 1.25em;
   text-align: center;
+  margin-bottom: 20px;
 }
 #block-views-graphics-block .views-row {
   width: 300px;
+  height: 220px;
   margin: 0 10px;
   text-align: center;
   float: left;
+  background: #fff;
+  vertical-align: center;
+  line-height: 220px;
 }
 .section-services #header .region {
   height: 420px;
@@ -2055,6 +2119,9 @@ input.form-text {
   float: left;
   width: 400px;
 }
+#footer .menu-services .block-content {
+  width: auto;
+}
 #footer .menu-services h2 {
   font-size: 1em;
   line-height: 1.3em;
@@ -2091,6 +2158,9 @@ input.form-text {
   float: left;
   height: 120px;
 }
+#footer .menu-column2 .block-content {
+  width: auto;
+}
 #footer .menu-column2 .block-content ul {
   margin: 0px;
   padding: 0px;
@@ -2116,6 +2186,9 @@ input.form-text {
   float: left;
   margin: 0 0 0 20px;
   padding-top: 40px;
+}
+#footer #block-search-form .block-content {
+  width: auto;
 }
 #footer #block-search-form .container-inline {
   border: 1px solid #aaaaaa;
