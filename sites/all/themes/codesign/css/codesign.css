@@ -818,6 +818,10 @@ a:hover {
 }
 #header #block-views-homepage-slides-block .view-content {
   height: 600px;
+  width: 100%;
+}
+#header #block-views-homepage-slides-block .views-slideshow-cycle-main-frame {
+  width: 100% !important;
 }
 #header #block-views-homepage-slides-block .slide,
 #header #block-views-homepage-slides-block .views_slideshow_slide {
