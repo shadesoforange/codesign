@@ -830,12 +830,12 @@ a:hover {
 #header #block-views-homepage-slides-block .views_slideshow_slide {
   height: 600px;
   position: relative;
-  width: 100%;
+  width: 100% !important;
   text-align: center;
 }
 #header #block-views-homepage-slides-block .slide-bg {
   height: 600px;
-  width: 100%;
+  width: 100% !important;
   margin: 0px;
   padding: 0px;
   opacity: 0.5;
@@ -846,7 +846,7 @@ a:hover {
 #header #block-views-homepage-slides-block .slide-copy {
   position: absolute;
   z-index: 2;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   background: transparent url(../images/overlay-grid-darker.png);
 }
