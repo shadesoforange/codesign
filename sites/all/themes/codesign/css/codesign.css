@@ -469,7 +469,7 @@ h2 {
   font-size: 1.75em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0 0 1.25em;
 }
 h3 {
@@ -605,6 +605,9 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
