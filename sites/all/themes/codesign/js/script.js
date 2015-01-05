@@ -29,12 +29,12 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	$('.nav-services ul.menu li a').hover(
 		function(e){
-			if(!$(this).parent('li').hasClass('active')){
+			if((!$(this).parent('li').hasClass('active-trail')) && (!$(this).parent('li').hasClass('active'))){
 				$(this).siblings('.tag').fadeIn(350);
 			}
 		},
 		function(e){
-			if(!$(this).parent('li').hasClass('active')){
+			if((!$(this).parent('li').hasClass('active-trail')) && (!$(this).parent('li').hasClass('active'))){
 				$(this).siblings('.tag').fadeOut(350);
 			}
 		}	

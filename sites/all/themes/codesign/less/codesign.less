@@ -49,7 +49,7 @@ a { .blue;
 			a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px);}
 		}
 	}
-	.nav-services { .w(744px); .ab; bottom: 0px; left: 50%; .m(0 0 0 -372px); z-index: 9; 
+	.nav-services { .w(744px); .ab; bottom: 0px; left: 50%; .m(0 0 0 -372px); z-index: 9;
 		ul.menu { .h(132px); .p0; .m0;
 			li { .w(110px); .fl; .m(0 7px); .p0; .tc; .list-none; .rel;
 				a { .white; .p(90px 0px 0px); .show; .w(110px); .ls(0.5px); .h(40px); .size(13px); .rel;
@@ -75,6 +75,7 @@ a { .blue;
 				}
 				.tag { .w(110px); .h(130px); .ab; bottom: 0px; .hide; }
 				&.is-active .tag { .show; }
+				&.is-active-trail .tag { .show; }
 			}
 		}	
 	}
@@ -97,7 +98,8 @@ a { .blue;
 		}
 	}
 	#block-views-homepage-slides-block { .w(100%); .ab; top: 0px; z-index: 2; .h(600px); .m0; background: #000;
-		.view-content { .h(600px); }
+		.view-content { .h(600px); .w(100%); }
+		.views-slideshow-cycle-main-frame { width: 100% !important; }
 		.slide, .views_slideshow_slide { .h(600px); .rel; .w(100%); .tc; }
 		.slide-bg { .h(600px); .w(100%); .m0; .p0; .op(0.5); .ab; z-index: 1; }
 		.slide-copy { .ab; z-index: 2; .w(100%); .h(100%); background: transparent url(../images/overlay-grid-darker.png);
@@ -116,8 +118,6 @@ body.front {
 	#main { .w(100%); }
 	#header { background: #000; .p0; 
 		.region { .w(100%); max-width: 100%; .rel; .tc; .h(600px); }
-		.main-menu { }
-		.nav-services { .ab; bottom: 0px; z-index: 3; left: 50%; .ml(-438px); }
 	}
 	#content { .bricks-top; .w(100%); 
 		table { width: 100% !important;
@@ -125,6 +125,7 @@ body.front {
 		}
 	}
 	.node-page { .w(980px); .auto; .tl; .p(40px 0 80px); 
+		h1 { }
 		h3 { .blue; .large; .script; }
 	}
 	.view-case-studies { .mb(30px); }
@@ -205,12 +206,20 @@ blockquote { .size(22px); .lh(27px); .white; .em; .raleway-med; .m(1em 1.5em 1em
 	p { .m0; }
 }
 .column-half { .w(42%); .fl; .m(0 4% 40px); }
-.column-third { .w(27.33%); .fl; .m(0 3% 40px); }
+.column-third { .w(29.33%); .fl; .m(0 2% 40px); }
 .bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 100% auto; }
-.bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; }
+.bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 100% auto; 
+	&.page-bottom { .p(60px 0px 100px); .med; 
+		.block-content { .w(700px); }
+	}
+}
 .bricks-lamp { background: #fff url(../images/bg-bricks-lamp.jpg) no-repeat bottom; background-size: 100% auto;  }
 .bricks-mobile { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 720px auto; }
 .bricks-top-mobile { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 720px auto; }
+.newspaper { background: #000 url(../images/bg-newspaper.jpg) center center; background-size: cover; }
+.extended-family { .p(40px 0);
+	h2.block-title { .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
+}
 input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .p(8px); }
 
 
@@ -344,7 +353,7 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 	.row { .w(100%); .tc;
 		.content-wrapper { .w(940px); .auto; .tl; .p(30px 0); }
 		.content { .p(3%);
-			table { border: 0px; 
+			table { border: 0px; .m(0px 0px);
 				td { .p(0 20px 20px 0); }
 			}
 			h2, h3 { .m(0 0 4px); }
@@ -367,15 +376,29 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 		&.large-type {
 			.size(16px); 
 		}
+		&.programs {
+			h2 { .script; .size(26px); }
+			.top { .p(30px); .m(5px); background: transparent url(../images/black-overlay-70.png); .white; .med; }
+			.program { .p(30px 30px 20px); .m(5px); .w(370px); .h(280px); background: transparent url(../images/black-overlay-70.png); .white; .fl; 
+				.meta { .mb(10px); .blue; }
+				p { .size(12px); .lh(15px); .mb(10px);
+					.btn-blue { .size(14px); }
+				}
+				ul, ol { .m(0 0 10px 0); 
+					li { .m(0px); .size(12px); }
+				}
+			}
+		}
 		blockquote { .m(1em 1.5em 1em 0); .w(360px); .size(16px); .lh(19px); 
 			 p { .size(16px); .lh(19px); }
 		}
 	}
 }
 
-#block-views-graphics-block {
-	h2.block-title { .blue; .script; .large; .tc; }
-	.views-row { .w(300px); .m(0 10px); .tc; .fl; }
+#block-views-graphics-block { background: #000 url(../images/bg-newspaper.jpg) no-repeat center center; background-size: cover; .p(40px 0); .mb(0px); 
+	.block-content { .w(960px); .auto; }
+	h2.block-title { .blue; .script; .large; .tc; .mb(20px); }
+	.views-row { .w(300px); .h(220px); .m(0 10px); .tc; .fl; background: #fff; vertical-align: center; .lh(220px); }
 }
 
 // Services Pages
@@ -473,6 +496,7 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 	.views-field-field-image { .fl; .ml(20px); }
 	.views-field-title { .m(1em 20px 1em 175px); .raleway-med; .black; .large; }
 	.views-field-body { .m(0 20px 30px 175px); }
+	&.mobile { .hide; }
 }
 
 
@@ -498,6 +522,7 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 }
 #footer { .p(90px 0 20px); .w(932px); .m(0 auto); border-bottom: 1px solid #2c2a2a; .ltgrey; 
 	.menu-services { .m(0 0 0 50px); .fl; .w(400px);
+		.block-content { .w(auto); }
 		h2 { .reg; .m(0 0 12px);
 			a { .upper; .raleway-med; .white; .reg; .ls(2px); }
 		}
@@ -508,13 +533,16 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 		}
 	}
 	.menu-column2 { .m(0 0 0 20px); .w(200px); .fl; .h(120px);
-		.block-content ul { .m0; .p0; 
-			li { .list-none; .m(0 0 12px); .p0;
-				a { .upper; .raleway-med; .white; .reg; .ls(2px); }
+		.block-content { .w(auto);
+			ul { .m0; .p0; 
+				li { .list-none; .m(0 0 12px); .p0;
+					a { .upper; .raleway-med; .white; .reg; .ls(2px); }
+				}
 			}
 		}
 	}
 	#block-search-form { .w(200px); .fl; .m(0 0 0 20px); .pt(40px);
+		.block-content { .w(auto); }
 		.container-inline { border: 1px solid @ltgrey; }
 		input.form-text { background: #000; .ltgrey; border: none; .lh(14px); .size(14px); .p(8px); .w(150px); }
 		input.form-submit { .w(30px); .h(30px); .show; .fr; .p0; .ti; border: none; background: transparent url(../images/search-white.svg) no-repeat center center; background-size: 16px 16px; }
