@@ -1202,10 +1202,9 @@ blockquote {
   font-style: italic;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  margin: 0 1.5em 1em 0;
+  margin: 0 1.5em 1em -50px;
   background: transparent url(../images/quote.png) no-repeat bottom left;
   float: left;
-  margin-left: -50px;
   width: 300px;
   padding: 25px 25px 70px;
 }
@@ -1512,10 +1511,10 @@ input.form-text {
   line-height: 27px;
 }
 .node-type-case-study .article-content .image-right {
-  margin: 0 -25px 15px 25px;
+  margin: 0 -40px 15px 25px;
 }
 .node-type-case-study .article-content .image-left {
-  margin: 0 25px 15px -25px;
+  margin: 0 25px 15px -40px;
 }
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
