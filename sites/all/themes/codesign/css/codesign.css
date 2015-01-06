@@ -463,14 +463,14 @@ h1 {
   font-weight: 300;
   color: #2a2a2a;
   text-align: center;
-  margin: 0 0 1em;
+  margin: 0.5em 0 1em;
 }
 h2 {
   font-size: 1.75em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  margin: 0 0 1.25em;
+  margin: 0.5em 0 1em;
 }
 h3 {
   font-size: 1.33em;
@@ -1206,7 +1206,7 @@ blockquote {
   background: transparent url(../images/quote.png) no-repeat bottom left;
   float: left;
   margin-left: -50px;
-  width: 340px;
+  width: 300px;
   padding: 25px 25px 70px;
 }
 blockquote p {
@@ -1506,6 +1506,10 @@ input.form-text {
 .node-type-case-study .article-content p {
   font-size: 15px;
   line-height: 20px;
+}
+.node-type-case-study .article-content blockquote p {
+  font-size: 22px;
+  line-height: 27px;
 }
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
