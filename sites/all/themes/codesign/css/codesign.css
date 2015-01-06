@@ -1207,7 +1207,7 @@ blockquote {
   float: left;
   margin-left: -50px;
   width: 300px;
-  padding: 25px 25px 70px;
+  padding: 0px 25px 70px;
 }
 blockquote p {
   margin: 0px;
