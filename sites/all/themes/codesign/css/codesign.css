@@ -1499,6 +1499,10 @@ input.form-text {
 .node-type-case-study .node-case-study {
   width: 100%;
 }
+.node-type-case-study .article-content {
+  width: 800px;
+  margin: 0 auto;
+}
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
 .node-type-case-study .fifth-row {

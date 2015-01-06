@@ -29,40 +29,18 @@
       <?php endif; ?>
     </header>
   <?php endif; ?>
-
-  <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
+	
+	<div class="article-content">
+	
+  	<?php
+    	// We hide the comments and links now so that we can render them later.
+    	hide($content['comments']);
+    	hide($content['links']);
     
-    if(!empty($node->field_first_row_copy['und'][0]['value'])){
-	    print '<div class="first-row">';
-	    print $node->field_first_row_copy['und'][0]['value'];
-	    print '</div>';
-    }
-    
-    if(!empty($node->field_second_row_copy['und'][0]['value'])){
-	    print views_embed_view('case_study', 'block_row2', $node->nid );
-    }
-    
-    if(!empty($node->field_third_row_copy['und'][0]['value'])){
-	    print '<div class="third-row">';
-	    print $node->field_third_row_copy['und'][0]['value'];
-	    print '</div>';
-    }
-    
-    if(!empty($node->field_fourth_row_copy['und'][0]['value'])){
-	    print views_embed_view('case_study', 'block_row4', $node->nid );
-    }
-    
-    if(!empty($node->field_fifth_row_copy['und'][0]['value'])){
-	    print '<div class="fifth-row">';
-	    print $node->field_fifth_row_copy['und'][0]['value'];
-	    print '</div>';
-    }
-    
-    // print render($content);
-  ?>
+    	print $node->body['und'][0]['value'];
+  	?>
+    </div>
+  
 
   <?php print render($content['links']); ?>
 
