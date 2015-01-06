@@ -37,7 +37,7 @@
     	hide($content['comments']);
     	hide($content['links']);
     
-    	print $node->body['und'][0]['value'];
+    	print render($node->body['und'][0]['value']);
   	?>
     </div>
   
