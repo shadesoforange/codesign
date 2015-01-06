@@ -1511,10 +1511,10 @@ input.form-text {
   line-height: 27px;
 }
 .node-type-case-study .article-content .image-right {
-  margin: 0 -50px 15px 25px;
+  margin: 0 -60px 25px 30px;
 }
 .node-type-case-study .article-content .image-left {
-  margin: 0 25px 15px -50px;
+  margin: 0 30px 25px -60px;
 }
 .node-type-case-study .article-content .field-label {
   display: none;
