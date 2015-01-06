@@ -1511,6 +1511,12 @@ input.form-text {
   font-size: 22px;
   line-height: 27px;
 }
+.node-type-case-study .article-content .image-right {
+  margin: 0 -25px 15px 25px;
+}
+.node-type-case-study .article-content .image-left {
+  margin: 0 25px 15px -25px;
+}
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
 .node-type-case-study .fifth-row {
