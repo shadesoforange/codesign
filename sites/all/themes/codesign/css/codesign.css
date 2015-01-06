@@ -1206,7 +1206,7 @@ blockquote {
   background: transparent url(../images/quote.png) no-repeat bottom left;
   float: left;
   margin-left: -50px;
-  width: 400px;
+  width: 340px;
   padding: 25px 25px 70px;
 }
 blockquote p {
@@ -1502,6 +1502,10 @@ input.form-text {
 .node-type-case-study .article-content {
   width: 800px;
   margin: 0 auto;
+}
+.node-type-case-study .article-content p {
+  font-size: 15px;
+  line-height: 20px;
 }
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
