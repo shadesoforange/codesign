@@ -1202,12 +1202,12 @@ blockquote {
   font-style: italic;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  margin: 1em 1.5em 1em 0;
+  margin: 0 1.5em 1em 0;
   background: transparent url(../images/quote.png) no-repeat bottom left;
   float: left;
   margin-left: -50px;
   width: 300px;
-  padding: 0px 25px 70px;
+  padding: 25px 25px 70px;
 }
 blockquote p {
   margin: 0px;
