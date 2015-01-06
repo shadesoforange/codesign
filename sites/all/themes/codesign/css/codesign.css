@@ -1499,22 +1499,22 @@ input.form-text {
   width: 100%;
 }
 .node-type-case-study .article-content {
-  width: 800px;
+  width: 760px;
   margin: 0 auto;
 }
 .node-type-case-study .article-content p {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 21px;
 }
 .node-type-case-study .article-content blockquote p {
   font-size: 22px;
   line-height: 27px;
 }
 .node-type-case-study .article-content .image-right {
-  margin: 0 -40px 15px 25px;
+  margin: 0 -50px 15px 25px;
 }
 .node-type-case-study .article-content .image-left {
-  margin: 0 25px 15px -40px;
+  margin: 0 25px 15px -50px;
 }
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
@@ -1657,7 +1657,7 @@ input.form-text {
   height: 186px;
 }
 .view-case-studies.more-case-studies {
-  margin: 80px 0 110px;
+  margin: 80px auto 110px;
 }
 .node-type-feature-page #content {
   min-height: 0px;
