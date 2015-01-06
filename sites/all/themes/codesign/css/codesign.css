@@ -1516,6 +1516,9 @@ input.form-text {
 .node-type-case-study .article-content .image-left {
   margin: 0 25px 15px -50px;
 }
+.node-type-case-study .article-content .field-label {
+  display: none;
+}
 .node-type-case-study .first-row,
 .node-type-case-study .third-row,
 .node-type-case-study .fifth-row {
