@@ -1354,17 +1354,14 @@ input.form-text {
 .region-sidebar-first .recent-posts .views-row {
   margin-bottom: 20px;
 }
-.region-sidebar-first .recent-posts .views-field-title {
-  margin-bottom: 5px;
-}
-.region-sidebar-first .recent-posts .views-field-title a {
+.region-sidebar-first .recent-posts .views-row a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 1.33em;
   line-height: 1.3em;
 }
-.region-sidebar-first .recent-posts .views-field-title a:hover {
+.region-sidebar-first .recent-posts .views-row a:hover {
   text-decoration: none;
   color: #ffffff;
   background: #278bc5;
