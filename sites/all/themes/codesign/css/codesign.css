@@ -1946,6 +1946,7 @@ input.form-text {
 }
 .node-type-article #content {
   background: #fff;
+  padding-bottom: 100px;
 }
 .node-type-article #header {
   height: 125px;
