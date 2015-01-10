@@ -1934,9 +1934,7 @@ input.form-text {
   background: url(../images/quote-orange.png) no-repeat bottom left;
 }
 .node-type-article #page {
-  background: #ffffff url(../images/bg-blog.jpg) no-repeat center bottom;
-  background-size: 100% auto;
-  background-attachment: fixed;
+  /* background: #fff url(../images/bg-blog.jpg) no-repeat center bottom; background-size: 100% auto; background-attachment: fixed; */
 }
 .node-type-article #content {
   background: #fff;
