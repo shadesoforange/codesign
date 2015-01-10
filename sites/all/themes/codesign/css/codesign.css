@@ -1998,7 +1998,7 @@ input.form-text {
 }
 .all-past-blogs {
   background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto;
   background-attachment: fixed;
   padding: 80px 0 100px;
   margin-bottom: 0px;
