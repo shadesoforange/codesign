@@ -1366,10 +1366,9 @@ input.form-text {
   color: #ffffff;
   background: #278bc5;
 }
-.region-sidebar-first .recent-posts .views-field-field-author {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+.region-sidebar-first .recent-posts .view-footer a {
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .region-sidebar-first .block-menu-block {
   padding: 0 30px 0 0;
