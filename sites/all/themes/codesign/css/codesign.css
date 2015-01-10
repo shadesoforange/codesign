@@ -1083,48 +1083,6 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
   background: #47a9e1;
   border: none;
 }
-body.front.mobile #header {
-  background: #000000 url(../images/header-default.jpg) no-repeat center center;
-  background-size: 720px auto;
-  color: #ffffff;
-}
-body.front.mobile .node-page {
-  width: 100%;
-  padding: 0px 0px 30px;
-}
-body.front.mobile .node-page .column-half {
-  font-size: 13px;
-}
-body.front.mobile .node-page .column-half .btn {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-body.front.mobile .view-case-studies {
-  width: 100%;
-}
-body.front.mobile .quote {
-  width: 100%;
-  background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
-  background-size: 720px auto;
-  padding: 40px 0 60px;
-}
-body.front.mobile .quote .block-content {
-  width: 90%;
-  padding: 0 5%;
-}
-body.front.mobile .quote .block-content .xlarge {
-  font-size: 20px;
-}
-body.front.mobile .block-content {
-  width: 100%;
-}
-body.front.mobile #block-views-articles-block .view-content {
-  width: 100%;
-}
-body.front.mobile #content {
-  background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
-  background-size: 720px auto;
-}
 .btn,
 .button {
   color: #2a2a2a;
@@ -2318,6 +2276,7 @@ body.mobile .xsmall {
 body.mobile #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;
   background-size: 720px auto;
+  min-height: 75px;
 }
 body.mobile #header .region {
   height: auto;
@@ -2538,6 +2497,55 @@ body.mobile .team-members.desktop {
 body.mobile.section-about .bricks .column-half {
   font-size: 13px;
   line-height: 17px;
+}
+body.mobile.front #header {
+  background: #000000 url(../images/header-default.jpg) no-repeat center center;
+  background-size: 720px auto;
+  color: #ffffff;
+}
+body.mobile.front .node-page {
+  width: 94%;
+  padding: 0px 3% 30px;
+}
+body.mobile.front .node-page .column-half {
+  font-size: 13px;
+}
+body.mobile.front .node-page .column-half .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+body.mobile.front .node-page h1 {
+  margin-top: 0px;
+}
+body.mobile.front .node-page h2,
+body.mobile.front .node-page h3 {
+  margin-bottom: 5px;
+}
+body.mobile.front .view-case-studies {
+  width: 100%;
+}
+body.mobile.front .quote {
+  width: 100%;
+  background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
+  background-size: 720px auto;
+  padding: 40px 0 60px;
+}
+body.mobile.front .quote .block-content {
+  width: 90%;
+  padding: 0 5%;
+}
+body.mobile.front .quote .block-content .xlarge {
+  font-size: 20px;
+}
+body.mobile.front .block-content {
+  width: 100%;
+}
+body.mobile.front #block-views-articles-block .view-content {
+  width: 100%;
+}
+body.mobile.front #content {
+  background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
+  background-size: 720px auto;
 }
 .ui-accordion .ui-accordion-header {
   padding: 10px;
