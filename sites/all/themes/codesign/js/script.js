@@ -66,6 +66,16 @@ Drupal.behaviors.my_custom_behavior = {
 	// Make the programs table an accordion
 	$('#programmes').accordion({heightStyle:"content"});
 	
+	
+	// Add image position classes to images floated using the WYSIWYG
+	$(".article-content img").filter(function(){
+    	return $(this).css('float') == "right";
+	}).addClass('image-right');
+	$(".article-content img").filter(function(){
+    	return $(this).css('float') == "left";
+	}).addClass('image-left');
+	
+	
   }
 };
 
