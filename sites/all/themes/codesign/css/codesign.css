@@ -1369,6 +1369,8 @@ input.form-text {
 .region-sidebar-first .recent-posts .view-footer a {
   text-transform: uppercase;
   color: #ffffff;
+  border-top: 1px solid #fff;
+  margin-top: 10px;
 }
 .region-sidebar-first .block-menu-block {
   padding: 0 30px 0 0;
