@@ -1939,8 +1939,12 @@ input.form-text {
 .node-type-article #content {
   background: #fff;
 }
+.node-type-article #header {
+  height: 125px;
+  min-height: 125px;
+}
 .node-type-article #header .region {
-  height: 120px;
+  height: 125px;
 }
 .page-node-4 #main {
   width: 100%;
