@@ -605,9 +605,6 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -1943,6 +1940,9 @@ input.form-text {
 }
 .node-type-article #content {
   background: #fff;
+}
+.node-type-article #header .region {
+  height: 120px;
 }
 .page-node-4 #main {
   width: 100%;
