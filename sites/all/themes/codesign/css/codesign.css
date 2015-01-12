@@ -1622,9 +1622,18 @@ input.form-text {
 .view-case-studies.mobile .views-row .views-field-nothing {
   width: 304px;
   margin: 0 auto;
-}
-.view-case-studies.mobile .views-row .views-field-nothing .overlay {
   height: 186px;
+  position: relative;
+}
+.view-case-studies.mobile .case-study-teaser {
+  height: 186px;
+}
+.view-case-studies.mobile .case-study-teaser .overlay {
+  width: 140px;
+  right: 0px;
+  bottom: auto;
+  height: 146px;
+  padding: 20px 10px;
 }
 .view-case-studies.more-case-studies {
   margin: 80px auto 110px;

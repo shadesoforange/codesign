@@ -327,9 +327,10 @@ input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .
 	&.mobile { .hide; 
 		h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
 		.views-row { .w(100%); .fn; .h(186px); .m(0px 0px 10px);
-			.views-field-nothing { .w(304px); .auto;
-				.overlay { .h(186px); }
-			}
+			.views-field-nothing { .w(304px); .auto; .h(186px); .rel }
+		}
+		.case-study-teaser { .h(186px);
+			.overlay { .w(140px); right: 0px; bottom: auto; .h(146px); .p(20px 10px); }
 		}
 	}
 	&.more-case-studies { .m(80px auto 110px); }
