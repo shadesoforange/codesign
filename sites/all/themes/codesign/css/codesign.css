@@ -1229,6 +1229,10 @@ input.form-text {
   font-size: 14px;
   padding: 8px;
 }
+article .field-name-body {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .block-block {
   margin-bottom: 0px;
 }
