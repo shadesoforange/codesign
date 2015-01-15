@@ -218,9 +218,9 @@ $databases = array (
     'default' => 
     array (
       'database' => 'codesign',
-      'username' => 'root',
+      'username' => 'ianmonk',
       'password' => 'oranges83',
-      'host' => 'localhost',
+      'host' => 'ianmonkdev.db',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
