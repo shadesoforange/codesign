@@ -605,6 +605,9 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -820,8 +823,42 @@ a:hover {
   height: 600px;
   width: 100%;
 }
-#header #block-views-homepage-slides-block .views-slideshow-cycle-main-frame {
+#header #block-views-homepage-slides-block .view-homepage-slides {
   width: 100% !important;
+  position: relative;
+  z-index: 2;
+}
+#header #block-views-homepage-slides-block .views_slideshow_cycle_main {
+  width: 100% !important;
+  position: relative;
+  z-index: 2;
+}
+#header #block-views-homepage-slides-block .views-slideshow-controls-bottom {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+}
+#header #block-views-homepage-slides-block .views-slideshow-controls-bottom .views-slideshow-controls-text-pause {
+  display: none;
+}
+#header #block-views-homepage-slides-block .views-slideshow-controls-bottom .views-slideshow-controls-text-previous {
+  text-indent: -5000px;
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  top: 220px;
+  left: 5px;
+  background: url(../images/arrow-back-white.png) no-repeat center center;
+}
+#header #block-views-homepage-slides-block .views-slideshow-controls-bottom .views-slideshow-controls-text-next {
+  text-indent: -5000px;
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  top: 220px;
+  right: 5px;
+  background: url(../images/arrow-next-white.png) no-repeat center center;
 }
 #header #block-views-homepage-slides-block .slide,
 #header #block-views-homepage-slides-block .views_slideshow_slide {
