@@ -555,12 +555,12 @@ body.mobile { .size(13px);
 	.xxlarge, h1 { .size (2.5em); .lh(1.0em); }
 	.small { .size(0.75em); }
 	.xsmall { .size(0.5em); }
-	#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 720px auto; min-height: 70px; 
+	#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 1000px auto; min-height: 70px; 
 		.region { .h(auto); }
 		.main-menu { .hide; }
-		.mobile-main-menu { .show; .ab; z-index: 10; .w(100%);
-			.menu-trigger { .ti; .w(30px); .h(30px); background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center; background-size: 24px 24px; .ab; top: 18px; left: 10px; .show; }
-			.logo { .rel; left: 50%; .w(170px); .h(47px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 170px 47px; .show; .m(10px 0 0 -85px); }  
+		.mobile-main-menu { .show; .tc; .rel;
+			.menu-trigger { .ti; .w(30px); .h(30px); background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center; background-size: 24px 24px; .ab; top: 10px; left: 10px; .show; }
+			.logo { .w(170px); .h(47px); background: transparent url(../images/logo-white.svg) no-repeat; background-size: 170px 47px; .show; .m(10px auto 0px); }  
 			.block-content ul { .hide; background: @dkgrey; .m0; .p(5px 0); .h(87px);
 				li { .list-none; .w(50%); .fl; background: @dkgrey; .list-none; .m0; .p0; }
 				a { .white; .show; .fl; .p(8px); .h(13px); .tl; background: @dkgrey; .size(13px); .upper; .lh(14px); }
@@ -569,7 +569,7 @@ body.mobile { .size(13px);
 		}
 		#block-views-homepage-slides-block { .hide; }
 		.nav-services { .hide; }
-		.nav-services-mobile { .w100; .hide; .rel; .ml(0px); left: 0px;
+		.nav-services-mobile { .w100; .hide; .rel; left: 0px;
 			ul.menu { .h(auto); .p0; .m0; .w100;
 				li { .w(50%); .fl; .m(0px); .p0; .tl; .list-none; background: @dkgrey;
 					a { .white; .p(10px 0 10px 50px); .show; .ls(0.5px); .h(30px); .size(13px); .w(auto);
@@ -584,16 +584,14 @@ body.mobile { .size(13px);
 				}
 			}
 		}
+		.mobile { .show; }
+		.desktop { .hide; }
 	}
 	&.section-services {
-		#header { .h(240px); 
-			.region { .h(240px); }
-			#block-views-header-image-block { .h(240px);
-				.views-row { .h(240px); }
-				.header-image { .h(240px); background-attachment: scroll; background-position: center top; background-size: cover !important; }
-				.header-copy { 
-					.content { .w100; .mt(95px); }
-				}
+		#header {  
+			#block-views-header-image-block-1 { 
+				.views-row { .m(30px 20px); }
+				.views-field-title { .size(30px); .mb(10px); }
 			}
 		}
 	}

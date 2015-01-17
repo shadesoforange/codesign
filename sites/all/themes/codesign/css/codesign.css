@@ -2285,7 +2285,7 @@ body.mobile .xsmall {
 }
 body.mobile #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;
-  background-size: 720px auto;
+  background-size: 1000px auto;
   min-height: 70px;
 }
 body.mobile #header .region {
@@ -2296,9 +2296,8 @@ body.mobile #header .main-menu {
 }
 body.mobile #header .mobile-main-menu {
   display: block;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
+  text-align: center;
+  position: relative;
 }
 body.mobile #header .mobile-main-menu .menu-trigger {
   text-indent: -5000px;
@@ -2307,19 +2306,17 @@ body.mobile #header .mobile-main-menu .menu-trigger {
   background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center;
   background-size: 24px 24px;
   position: absolute;
-  top: 18px;
+  top: 10px;
   left: 10px;
   display: block;
 }
 body.mobile #header .mobile-main-menu .logo {
-  position: relative;
-  left: 50%;
   width: 170px;
   height: 47px;
   background: transparent url(../images/logo-white.svg) no-repeat;
   background-size: 170px 47px;
   display: block;
-  margin: 10px 0 0 -85px;
+  margin: 10px auto 0px;
 }
 body.mobile #header .mobile-main-menu .block-content ul {
   display: none;
@@ -2363,7 +2360,6 @@ body.mobile #header .nav-services-mobile {
   width: 100%;
   display: none;
   position: relative;
-  margin-left: 0px;
   left: 0px;
 }
 body.mobile #header .nav-services-mobile ul.menu {
@@ -2428,27 +2424,18 @@ body.mobile #header .nav-services-mobile ul.menu li a.events {
 body.mobile #header .nav-services-mobile ul.menu li a:hover {
   text-decoration: none;
 }
-body.mobile.section-services #header {
-  height: 240px;
+body.mobile #header .mobile {
+  display: block;
 }
-body.mobile.section-services #header .region {
-  height: 240px;
+body.mobile #header .desktop {
+  display: none;
 }
-body.mobile.section-services #header #block-views-header-image-block {
-  height: 240px;
+body.mobile.section-services #header #block-views-header-image-block-1 .views-row {
+  margin: 30px 20px;
 }
-body.mobile.section-services #header #block-views-header-image-block .views-row {
-  height: 240px;
-}
-body.mobile.section-services #header #block-views-header-image-block .header-image {
-  height: 240px;
-  background-attachment: scroll;
-  background-position: center top;
-  background-size: cover !important;
-}
-body.mobile.section-services #header #block-views-header-image-block .header-copy .content {
-  width: 100%;
-  margin-top: 95px;
+body.mobile.section-services #header #block-views-header-image-block-1 .views-field-title {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 body.mobile .bricks {
   background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
