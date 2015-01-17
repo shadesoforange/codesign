@@ -574,57 +574,7 @@ a:hover {
   background: transparent;
 }
 #header .mobile-main-menu {
-  position: relative;
   display: none;
-}
-#header .mobile-main-menu .menu-trigger {
-  text-indent: -5000px;
-  width: 30px;
-  height: 30px;
-  background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center;
-  background-size: 24px 24px;
-  position: absolute;
-  top: 12px;
-  left: 10px;
-  display: block;
-}
-#header .mobile-main-menu .logo {
-  width: 170px;
-  height: 47px;
-  background: transparent url(../images/logo-white.svg) no-repeat;
-  background-size: 170px 47px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-#header .mobile-main-menu .block-content ul {
-  display: none;
-  background: #2a2a2a;
-  margin: 0px;
-  padding: 5px 0;
-  height: 87px;
-}
-#header .mobile-main-menu .block-content ul li {
-  width: 50%;
-  float: left;
-  background: #2a2a2a;
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-#header .mobile-main-menu .block-content ul a {
-  color: #ffffff;
-  display: block;
-  float: left;
-  padding: 8px;
-  height: 13px;
-  text-align: left;
-  background: #2a2a2a;
-  font-size: 13px;
-  text-transform: uppercase;
-  line-height: 14px;
 }
 #header .nav-services {
   width: 744px;
@@ -2336,7 +2286,7 @@ body.mobile .xsmall {
 body.mobile #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;
   background-size: 720px auto;
-  min-height: 75px;
+  min-height: 70px;
 }
 body.mobile #header .region {
   height: auto;
@@ -2346,6 +2296,59 @@ body.mobile #header .main-menu {
 }
 body.mobile #header .mobile-main-menu {
   display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+body.mobile #header .mobile-main-menu .menu-trigger {
+  text-indent: -5000px;
+  width: 30px;
+  height: 30px;
+  background: transparent url(../images/mobile-menu-icon.svg) no-repeat center center;
+  background-size: 24px 24px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  display: block;
+}
+body.mobile #header .mobile-main-menu .logo {
+  position: relative;
+  left: 50%;
+  width: 170px;
+  height: 47px;
+  background: transparent url(../images/logo-white.svg) no-repeat;
+  background-size: 170px 47px;
+  display: block;
+  margin: 10px 0 0 -85px;
+}
+body.mobile #header .mobile-main-menu .block-content ul {
+  display: none;
+  background: #2a2a2a;
+  margin: 0px;
+  padding: 5px 0;
+  height: 87px;
+}
+body.mobile #header .mobile-main-menu .block-content ul li {
+  width: 50%;
+  float: left;
+  background: #2a2a2a;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+body.mobile #header .mobile-main-menu .block-content ul a {
+  color: #ffffff;
+  display: block;
+  float: left;
+  padding: 8px;
+  height: 13px;
+  text-align: left;
+  background: #2a2a2a;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 14px;
 }
 body.mobile #header .mobile-main-menu .block-content {
   width: 100%;
@@ -2424,6 +2427,28 @@ body.mobile #header .nav-services-mobile ul.menu li a.events {
 }
 body.mobile #header .nav-services-mobile ul.menu li a:hover {
   text-decoration: none;
+}
+body.mobile.section-services #header {
+  height: 240px;
+}
+body.mobile.section-services #header .region {
+  height: 240px;
+}
+body.mobile.section-services #header #block-views-header-image-block {
+  height: 240px;
+}
+body.mobile.section-services #header #block-views-header-image-block .views-row {
+  height: 240px;
+}
+body.mobile.section-services #header #block-views-header-image-block .header-image {
+  height: 240px;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover !important;
+}
+body.mobile.section-services #header #block-views-header-image-block .header-copy .content {
+  width: 100%;
+  margin-top: 95px;
 }
 body.mobile .bricks {
   background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
