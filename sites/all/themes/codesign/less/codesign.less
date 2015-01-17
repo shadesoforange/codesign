@@ -174,6 +174,8 @@ body.front {
 			}
 		}
 	}
+	.mobile { .hide; }
+	.desktop { .show; }
 }
 
 
@@ -332,16 +334,6 @@ article .field-name-body { max-width: 900px; .auto; }
 		.overlay, .highlight { .tc; .ab; .white; bottom: 0px; .w(284px); .p(10px); }
 		.overlay { background: transparent url(../images/black-overlay-70.png); z-index: 10; }
 		.highlight { background: @blue; z-index: 20; .hide; }
-	}
-	
-	&.mobile { .hide; 
-		h2.block-title { .upper; .ls(3px); background: transparent url(../images/double-line-title.png) no-repeat center 3px; background-size: 860px auto; .mb(15px); }
-		.views-row { .w(100%); .fn; .h(186px); .m(0px 0px 10px);
-			.views-field-nothing { .w(304px); .auto; .h(186px); .rel }
-		}
-		.case-study-teaser { .h(186px);
-			.overlay { .w(140px); right: 0px; bottom: auto; .h(146px); .p(20px 10px); }
-		}
 	}
 	&.more-case-studies { .m(80px auto 110px); }
 }
@@ -594,7 +586,7 @@ body.mobile { .size(13px);
 			}
 		}
 	}
-	.bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 720px auto; .pb(60px); }
+	.bricks { background: #fff url(../images/bg-bricks-bottom.jpg) no-repeat bottom; background-size: 720px auto; .pt(30px); .pb(60px); }
 	.bricks-top { background: #fff url(../images/bg-bricks-top.jpg) no-repeat top; background-size: 720px auto; }
 	#main { .w(100%); }
 	#content { .pt(25px); box-sizing: content-box;
@@ -657,7 +649,26 @@ body.mobile { .size(13px);
 			h1 { .mt(0px); }
 			h2, h3 { .mb(5px); }
 		}
-		.view-case-studies { .w100; }
+		.view-case-studies { background: #000; 
+			.view-content { .w(300px); .auto; 
+				.views-row { .w(100%); .fn; .h(160px); .m(0px 0px 10px); 
+					.views-field-nothing { .w(304px); .auto; .h(160px); .rel; 
+						img { .h(160px); .w(auto); }
+					}
+				}
+				.case-study-teaser { .h(160px);
+					.overlay { .w(132px); right: 0px; bottom: auto; .h(120px); .p(20px 10px); .bg-blue; }
+					.highlight { .hide; }
+				}
+			}
+		}
+		.mobile { .show; }
+		.desktop { .hide; }
+		.video {
+			h2 { .script; .blue; .tc; }
+			iframe { .w(100%); .h(auto); }
+			p { .p(0 20px); }
+		}
 		.quote { .w100; .bricks-mobile; .p(40px 0 60px);
 			.block-content { .w(90%); .p(0 5%); 
 				.xlarge { .size(20px); }
