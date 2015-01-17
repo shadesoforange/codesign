@@ -2293,6 +2293,9 @@ article .field-name-body {
   line-height: 1.3em;
   letter-spacing: 2px;
 }
+#footer #block-menu-block-3 h2.block-title {
+  display: none;
+}
 #footer #block-search-form {
   width: 200px;
   float: left;
