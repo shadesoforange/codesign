@@ -2661,6 +2661,7 @@ body.mobile.front #block-views-articles-block {
 }
 body.mobile.front #block-views-articles-block .block-content {
   width: 100%;
+  height: auto;
 }
 body.mobile.front #block-views-articles-block .view-header {
   width: 100%;
@@ -2674,6 +2675,11 @@ body.mobile.front #block-views-articles-block .view-header blockquote {
 }
 body.mobile.front #block-views-articles-block .view-content {
   width: 100%;
+  height: auto;
+}
+body.mobile.front #block-views-articles-block .view-content .views-row {
+  float: none;
+  margin-bottom: 10px;
 }
 body.mobile.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
