@@ -605,9 +605,6 @@ a:hover {
   height: 87px;
 }
 #header .mobile-main-menu .block-content ul li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
   width: 50%;
   float: left;
   background: #2a2a2a;
@@ -950,7 +947,7 @@ body.front .node-page {
   width: 980px;
   margin: 0 auto;
   text-align: left;
-  padding: 40px 0 80px;
+  padding: 40px 0 30px;
 }
 body.front .node-page h3 {
   color: #47a9e1;
@@ -960,7 +957,43 @@ body.front .node-page h3 {
   font-weight: 400;
 }
 body.front .view-case-studies {
+  width: 100%;
+  padding: 50px 0;
+  margin-bottom: 0px;
+  background: url(../images/dark-bg2.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+body.front .view-case-studies h2.block-title {
+  background: transparent;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.33em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin-bottom: 30px;
+}
+body.front .view-case-studies .view-content {
+  width: 960px;
+  margin: 0 auto;
+}
+body.front .view-case-studies .view-footer .btn {
+  color: #ffffff;
+  background: #47a9e1;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  padding: 5px 15px;
+  letter-spacing: 1px;
+  border: none;
+}
+body.front .view-case-studies .view-footer .btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #278bc5;
 }
 body.front .block-block.quote {
   width: 100%;
