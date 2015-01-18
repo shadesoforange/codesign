@@ -3030,6 +3030,24 @@ body.mobile.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 720px auto;
 }
+body.mobile.page-node-25 #content {
+  padding-bottom: 160px;
+}
+body.mobile.page-node-25 #content .node-page,
+body.mobile.page-node-25 #content .block-webform,
+body.mobile.page-node-25 #content .phone {
+  width: 90%;
+  float: none;
+  margin: 0 5%;
+}
+body.mobile.page-node-25 #content .node-page h2,
+body.mobile.page-node-25 #content .block-webform h2,
+body.mobile.page-node-25 #content .phone h2 {
+  font-size: 18px;
+}
+body.mobile.page-node-25 #content .phone {
+  margin-bottom: 15px;
+}
 .ui-accordion .ui-accordion-header {
   padding: 10px;
   color: #2a2a2a;
