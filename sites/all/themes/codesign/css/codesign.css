@@ -2268,6 +2268,9 @@ article .field-name-body {
   background: #47a9e1;
   border: none;
 }
+.blog-mobile {
+  display: none;
+}
 .page-node-5 #main {
   width: 100%;
 }
@@ -2800,6 +2803,86 @@ body.mobile .team-members.desktop {
 body.mobile.section-about .bricks .column-half {
   font-size: 13px;
   line-height: 17px;
+}
+body.mobile .latest-blog {
+  display: none;
+}
+body.mobile .all-past-blogs {
+  display: none;
+}
+body.mobile .blog-mobile {
+  display: block;
+  width: 100%;
+}
+body.mobile .blog-mobile h2.block-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1 em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+body.mobile .blog-mobile .view-content {
+  width: 304px;
+  margin: 0 auto;
+}
+body.mobile .blog-mobile .view-content .views-row {
+  width: 304px;
+  background: #fff;
+  text-align: left;
+  margin: 0px 0px 30px;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-nothing {
+  height: 186px;
+  position: relative;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-nothing img {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-nothing .overlay {
+  background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom;
+  top: 0px;
+  width: 304px;
+  height: 186px;
+  position: absolute;
+  z-index: 2;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-nothing .overlay .content {
+  position: absolute;
+  bottom: 0px;
+  padding: 0 15px 10px;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-body {
+  padding: 20px 15px 20px;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-view-node {
+  margin: 0 15px;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-view-node a {
+  color: #2a2a2a;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #2a2a2a;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+body.mobile .blog-mobile .view-content .views-row .views-field-view-node a:hover {
+  text-decoration: none;
+  background: transparent;
+  color: #2a2a2a;
+  padding: 6px 16px;
+  color: #ffffff;
+  background: #47a9e1;
+  border: none;
 }
 body.mobile.front #header {
   background: #000000 url(../images/header-default.jpg) no-repeat center center;

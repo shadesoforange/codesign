@@ -563,6 +563,7 @@ article .field-name-body { max-width: 900px; .auto; }
 		}
 	}
 }
+.blog-mobile { .hide; }
 
 
 // About Us Page
@@ -642,7 +643,9 @@ article .field-name-body { max-width: 900px; .auto; }
 
 // Mobile Styles 
 
-body.mobile { .size(13px); 
+ 
+body.mobile { 
+	.size(13px); 
 	.regular, .reg { .size(1.0em); .lh(1.3em); }
 	.med { .size(1.1 em); .lh(1.3em); }
 	.large { .size(1.25em); .lh(1.25em); }
@@ -744,6 +747,25 @@ body.mobile { .size(13px);
 		&.desktop { .hide; }
 	}
 	&.section-about .bricks .column-half { .size(13px); .lh(17px); }
+	.latest-blog { .hide; }
+	.all-past-blogs { .hide; }
+	.blog-mobile { .show; .w100;
+		h2.block-title { .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
+		.view-content { .w(304px); .auto;
+			.views-row { .w(304px); background: #fff; .tl; .m(0px 0px 30px);
+				.views-field-nothing { .h(186px); .rel; 
+					img { .ab; z-index: 1; top: 0px; left: 0px; }
+					.overlay { background: transparent url(../images/overlay-black-gradient.png) no-repeat center bottom; top: 0px; .w(304px); .h(186px); .ab; z-index: 2;
+						.content { .ab; bottom: 0px; .p(0 15px 10px); }
+					}
+				}
+				.views-field-body { .p(20px 15px 20px); }
+				.views-field-view-node { .m(0 15px); 
+					a { .btn; }
+				}
+			}
+		}
+	}	
 	&.front {
 		#header { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 720px auto; .white; }
 		.node-page { .w(94%); .p(0px 3% 30px); 
