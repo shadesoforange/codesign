@@ -775,7 +775,7 @@ a:hover {
   position: relative;
   z-index: 2;
 }
-#header #block-views-homepage-slides-block .views_slideshow_cycle_main {
+#header #block-views-homepage-slides-block .views-slideshow-cycle-main-frame {
   width: 100% !important;
   position: relative;
   z-index: 2;
@@ -858,6 +858,9 @@ a:hover {
   text-decoration: none;
   color: #ffffff;
   background: #278bc5;
+}
+#header .mobile {
+  display: none;
 }
 body.front #main {
   width: 100%;
@@ -1191,6 +1194,11 @@ blockquote {
 }
 blockquote p {
   margin: 0px;
+}
+blockquote.full {
+  margin: 0 3em 1em;
+  float: none;
+  width: auto;
 }
 .column-half {
   width: 42%;
@@ -2435,6 +2443,7 @@ body.mobile.section-services #header #block-views-header-image-block-1 .views-ro
 }
 body.mobile.section-services #header #block-views-header-image-block-1 .views-field-title {
   font-size: 30px;
+  line-height: 33px;
   margin-bottom: 10px;
 }
 body.mobile .bricks {
