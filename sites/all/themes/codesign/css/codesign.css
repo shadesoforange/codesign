@@ -500,6 +500,11 @@ a:hover {
   width: 960px;
   margin: 0 auto;
 }
+@media (max-width: 980px) {
+  #main {
+    width: 100%;
+  }
+}
 #content {
   padding: 40px 0 0;
   min-height: 500px;
@@ -1851,6 +1856,11 @@ article .field-name-body {
   font-size: 16px;
   line-height: 19px;
 }
+@media (max-width: 980px) {
+  .node-feature-page .row .content-wrapper {
+    width: 780px;
+  }
+}
 #block-views-graphics-block {
   background: #000000 url(../images/bg-newspaper.jpg) no-repeat center center;
   background-size: cover;
@@ -2348,6 +2358,23 @@ article .field-name-body {
   border: none;
   background: transparent url(../images/search-white.svg) no-repeat center center;
   background-size: 16px 16px;
+}
+@media (max-width: 980px) {
+  #footer {
+    width: 780px;
+  }
+  #footer .menu-services {
+    width: 300px;
+  }
+  #footer .menu-column2 {
+    width: 150px;
+  }
+  #footer #block-search-form {
+    width: 150px;
+  }
+  #footer #block-search-form input.form-text {
+    width: 100px;
+  }
 }
 body.mobile {
   font-size: 13px;
