@@ -91,6 +91,11 @@ a { .blue;
 				h1, h2, p, span { .white; .mb(6px); }
 			}
 		}
+		@media (max-width: 920px) {
+			.header-copy {
+				.content { .w(500px); }
+			}
+		}
 	}
 	#block-views-homepage-slides-block { .w100; .ab; top: 0px; z-index: 2; .h(600px); .m0; background: #000;
 		.view-content { .h(600px); .w100; }
@@ -114,6 +119,23 @@ a { .blue;
 	@media (max-width: 920px) {
 		.main-menu { .m(0px 0px 0px -355px);
 			ul.menu li a { .p(0px 8px); .size(13px); }
+		}
+	}
+	@media (max-width: 744px) {
+		.nav-services { .w(552px); .m(0 0 0 -276px);
+			ul.menu { .h(120px);
+				li { .w(92px); .fl; .m(0px 0px); .p0; .tc; .list-none; .rel;
+					a { .white; .p(84px 0px 0px); .show; .w(92px); .ls(0.5px); .h(36px); .size(11px); .lh(13px); .rel; 
+						&.innovation-consulting { background: transparent url(../images/icon-innovation.svg) no-repeat center 5px; background-size: 70px 70px; }
+						&.accelerated-design { background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 5px; background-size: 70px 70px; }
+						&.design-thinking { background: transparent url(../images/icon-design-thinking.svg) no-repeat center 5px; background-size: 70px 70px; }
+						&.futures { background: transparent url(../images/icon-futures.svg) no-repeat center 5px; background-size: 70px 70px; }
+						&.graphics { background: transparent url(../images/icon-graphics.svg) no-repeat center 5px; background-size: 70px 70px; } 
+						&.events { background: transparent url(../images/icon-events.svg) no-repeat center 5px; background-size: 70px 70px; }
+					}
+					.tag { .w(92px); .h(120px); }
+				}
+			}
 		}
 	}
 }
@@ -435,6 +457,18 @@ article .field-name-body { max-width: 900px; .auto; }
 			.content-wrapper { .w(780px); }
 		}
 	}
+	@media (max-width: 720px) {
+		.row {
+			&.column-right, &.column-left {
+				.content { .w(82%); margin-right: 5%; margin-left: 5%; .p(4%); }
+				&.twothirds .content { .w(82%); margin-right: 5%; margin-left: 5%; .p(4%); }
+			}
+			.content-wrapper { .w(auto); }
+			.mobile { .show; }
+		}
+		.desktop { .hide; }	
+	}
+	.mobile { .hide; }
 }
 
 #block-views-graphics-block { background: #000 url(../images/bg-newspaper.jpg) no-repeat center center; background-size: cover; .p(40px 0); .mb(0px); 

@@ -762,6 +762,11 @@ a:hover {
   color: #ffffff;
   margin-bottom: 6px;
 }
+@media (max-width: 920px) {
+  #header #block-views-header-image-block .header-copy .content {
+    width: 500px;
+  }
+}
 #header #block-views-homepage-slides-block {
   width: 100%;
   position: absolute;
@@ -874,6 +879,65 @@ a:hover {
   #header .main-menu ul.menu li a {
     padding: 0px 8px;
     font-size: 13px;
+  }
+}
+@media (max-width: 744px) {
+  #header .nav-services {
+    width: 552px;
+    margin: 0 0 0 -276px;
+  }
+  #header .nav-services ul.menu {
+    height: 120px;
+  }
+  #header .nav-services ul.menu li {
+    width: 92px;
+    float: left;
+    margin: 0px 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    list-style-image: none;
+    list-style-type: none;
+    position: relative;
+  }
+  #header .nav-services ul.menu li a {
+    color: #ffffff;
+    padding: 84px 0px 0px;
+    display: block;
+    width: 92px;
+    letter-spacing: 0.5px;
+    height: 36px;
+    font-size: 11px;
+    line-height: 13px;
+    position: relative;
+  }
+  #header .nav-services ul.menu li a.innovation-consulting {
+    background: transparent url(../images/icon-innovation.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li a.accelerated-design {
+    background: transparent url(../images/icon-accelerated-design.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li a.design-thinking {
+    background: transparent url(../images/icon-design-thinking.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li a.futures {
+    background: transparent url(../images/icon-futures.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li a.graphics {
+    background: transparent url(../images/icon-graphics.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li a.events {
+    background: transparent url(../images/icon-events.svg) no-repeat center 5px;
+    background-size: 70px 70px;
+  }
+  #header .nav-services ul.menu li .tag {
+    width: 92px;
+    height: 120px;
   }
 }
 body.front #main {
@@ -1871,6 +1935,34 @@ article .field-name-body {
   .node-feature-page .row .content-wrapper {
     width: 780px;
   }
+}
+@media (max-width: 720px) {
+  .node-feature-page .row.column-right .content,
+  .node-feature-page .row.column-left .content {
+    width: 82%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 4%;
+  }
+  .node-feature-page .row.column-right.twothirds .content,
+  .node-feature-page .row.column-left.twothirds .content {
+    width: 82%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 4%;
+  }
+  .node-feature-page .row .content-wrapper {
+    width: auto;
+  }
+  .node-feature-page .row .mobile {
+    display: block;
+  }
+  .node-feature-page .desktop {
+    display: none;
+  }
+}
+.node-feature-page .mobile {
+  display: none;
 }
 #block-views-graphics-block {
   background: #000000 url(../images/bg-newspaper.jpg) no-repeat center center;
