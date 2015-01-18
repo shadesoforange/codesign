@@ -523,7 +523,7 @@ a:hover {
   position: absolute;
   left: 50%;
   z-index: 10;
-  margin: 0px 0px 0px -388px;
+  margin: 0px 0px 0px -408px;
   padding-top: 30px;
 }
 #header .main-menu h2.block-title {
@@ -861,6 +861,15 @@ a:hover {
 }
 #header .mobile {
   display: none;
+}
+@media (max-width: 920px) {
+  #header .main-menu {
+    margin: 0px 0px 0px -355px;
+  }
+  #header .main-menu ul.menu li a {
+    padding: 0px 8px;
+    font-size: 13px;
+  }
 }
 body.front #main {
   width: 100%;
