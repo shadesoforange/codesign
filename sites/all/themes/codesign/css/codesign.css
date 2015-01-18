@@ -1921,6 +1921,17 @@ article .field-name-body {
   margin: 0px;
   font-size: 12px;
 }
+@media (max-width: 720px) {
+  .node-feature-page .row.programs .top {
+    background: transparent;
+    color: #000;
+  }
+  .node-feature-page .row.programs .program {
+    width: auto;
+    height: auto;
+    margin: 5px 0;
+  }
+}
 .node-feature-page .row blockquote {
   margin: 1em 1.5em 1em 0;
   width: 360px;
