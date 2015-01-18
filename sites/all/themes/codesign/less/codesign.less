@@ -782,7 +782,7 @@ body.mobile {
 						img { .h(160px); .w(auto); }
 					}
 				}
-				.case-study-teaser { .h(160px);
+				.case-study-teaser { .h(160px); .w(300px);
 					.overlay { .w(132px); right: 0px; bottom: auto; .h(120px); .p(20px 10px); .bg-blue; }
 					.highlight { .hide; }
 				}
@@ -807,7 +807,14 @@ body.mobile {
 				blockquote { .w(84%); .m(0 3%); .p(15px 5% 55px); .size(16px); .lh(19px); }
 			}
 			.view-content { .w100; .h(auto); 
-				.views-row { .fn; .mb(10px); }
+				.views-row { .fn; .mb(10px); .w(304px); .m(0 8px 8px); .h(auto); .pb(20px);
+					.views-field-nothing { .w(304px); .h(186px);
+						img { .w(304px); .h(auto); }
+						.overlay { .w(304px); .h(186px); 
+							.content { .p(0 15px 10px); }
+						}
+					}
+				}
 			}
 		}
 		#content { .bricks-top-mobile; }

@@ -2932,6 +2932,7 @@ body.mobile.front .view-case-studies .view-content .views-row .views-field-nothi
 }
 body.mobile.front .view-case-studies .view-content .case-study-teaser {
   height: 160px;
+  width: 300px;
 }
 body.mobile.front .view-case-studies .view-content .case-study-teaser .overlay {
   width: 132px;
@@ -3005,6 +3006,25 @@ body.mobile.front #block-views-articles-block .view-content {
 body.mobile.front #block-views-articles-block .view-content .views-row {
   float: none;
   margin-bottom: 10px;
+  width: 304px;
+  margin: 0 8px 8px;
+  height: auto;
+  padding-bottom: 20px;
+}
+body.mobile.front #block-views-articles-block .view-content .views-row .views-field-nothing {
+  width: 304px;
+  height: 186px;
+}
+body.mobile.front #block-views-articles-block .view-content .views-row .views-field-nothing img {
+  width: 304px;
+  height: auto;
+}
+body.mobile.front #block-views-articles-block .view-content .views-row .views-field-nothing .overlay {
+  width: 304px;
+  height: 186px;
+}
+body.mobile.front #block-views-articles-block .view-content .views-row .views-field-nothing .overlay .content {
+  padding: 0 15px 10px;
 }
 body.mobile.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
