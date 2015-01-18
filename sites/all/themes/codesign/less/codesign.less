@@ -132,11 +132,21 @@ body.front {
 	.node-page { .w(980px); .auto; .tl; .p(40px 0 30px); 
 		h1 { }
 		h3 { .blue; .large; .script; }
+		@media (max-width: 980px) { .w(760px); .p(30px 0); }
 	}
 	.view-case-studies { .w100; .p(50px 0); .mb(0px); background: url(../images/dark-bg2.jpg) no-repeat center center; background-size: 100% auto; 
 		h2.block-title { background: transparent; .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
 		.view-content { .w(960px); .auto; }
 		.view-footer .btn { .btn-blue; border: none; }
+		@media (max-width: 980px) { 
+			.view-content { .w(744px); .auto; }
+			.views-row { .w(240px); .m(0 4px 20px); .h(240px); 
+				.views-field-nothing { .w(240px); .h(240px); }
+			}
+			.case-study-teaser { .w(240px); .h(240px); 
+				.overlay, .highlight { .w(220px); }
+			}
+		}	
 	}
 	.block-block.quote { .w100; .bricks; .mb(0px); .p(155px 0 220px);
 		.block-content { .w(680px); .auto; background: transparent url(../images/quotes-home.png) no-repeat center 10px; .p(0px 140px); }
@@ -169,6 +179,18 @@ body.front {
 				.views-field-body { .p(20px 15px 20px); }
 				.views-field-view-node { .m(0 15px); 
 					a { .btn; }
+				}
+			}
+		}
+		@media (max-width: 980px) { 
+			.view-content { .w(744px); .auto;
+				.views-row { .w(240px); .m(0 4px 20px); .h(400px); 
+					.views-field-nothing { .h(147px);
+						img { .w(240px); .h(auto); }
+						.overlay { .w(240px); .h(147px); 
+							.content { .p(0 8px 8px); }
+						}
+					}
 				}
 			}
 		}
@@ -336,6 +358,15 @@ article .field-name-body { max-width: 900px; .auto; }
 		.highlight { background: @blue; z-index: 20; .hide; }
 	}
 	&.more-case-studies { .m(80px auto 110px); }
+	@media (max-width: 980px) { .w(744px); 
+		.view-content { .w(744px); .auto; }
+		.views-row { .w(240px); .m(0 4px); .h(240px); 
+			.views-field-nothing { .w(240px); .h(240px); }
+		}
+		.case-study-teaser { .w(240px); .h(240px); 
+			.overlay, .highlight { .w(220px); }
+		}
+	}
 }
 
 
