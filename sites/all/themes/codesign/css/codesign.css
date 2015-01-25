@@ -1219,6 +1219,11 @@ body.front #header .region {
     height: 420px;
   }
 }
+@media (max-width: 480px) {
+  body.front #header .region {
+    height: 70px;
+  }
+}
 body.front #content {
   background: #ffffff url(../images/bg-bricks-top.jpg) no-repeat top;
   background-size: 100% auto;
