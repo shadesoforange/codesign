@@ -7,9 +7,9 @@ html, body { .raleway; .black; .lh(1.3em); .size(14px);
 	@media (max-width: 640px) {
 		.size(13px); 
 		.regular, .reg { .size(1.0em); .lh(1.3em); }
-		.med { .size(1.1 em); .lh(1.3em); }
-		.large { .size(1.25em); .lh(1.25em); }
-		.xlarge { .size (1.75em); .lh(1.25em); }
+		.med { .size(1.1em); .lh(1.1em); }
+		.large { .size(1.25em); .lh(1.1em); }
+		.xlarge { .size (1.75em); .lh(1.1em); }
 		.xxlarge, h1 { .size (2.5em); .lh(1.0em); }
 		.small { .size(0.75em); }
 		.xsmall { .size(0.5em); }
@@ -17,8 +17,8 @@ html, body { .raleway; .black; .lh(1.3em); .size(14px);
 }
 hr { height: 3px; border: none; border-top: 1px solid @xltgrey; border-bottom: 1px solid @xltgrey; }
 h1 { .xxlarge; .raleway-light; .dkgrey; .tc; .m(1em 0 0.5em); }
-h2 { .large; .raleway-bold; .m(1em 0 0.5em); }
-h3 { .med; .raleway-med; }
+h2 { .large; .raleway-bold; .m(1em 0 0.33em); }
+h3 { .med; .raleway-med; .m(1em 0 0.25em); }
 h4, h5 { .reg; .raleway-med; }
 a { .blue;
 	&:visited {  }
@@ -227,7 +227,7 @@ body.front {
 		h3 { .blue; .large; .script; }
 		@media (max-width: 980px) { .w(760px); .p(30px 0); }
 	}
-	.view-case-studies { .w100; .p(50px 0); .mb(0px); background: url(../images/dark-bg2.jpg) no-repeat center center; background-size: 100% auto; 
+	.view-case-studies { .w100; .p(50px 0); .mb(0px); background: url(../images/dark-bg2.jpg) no-repeat center center; background-size: cover; 
 		h2.block-title { background: transparent; .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
 		.view-content { .w(960px); .auto; }
 		.view-footer .btn { .btn-blue; border: none; }
@@ -238,6 +238,19 @@ body.front {
 			}
 			.case-study-teaser { .w(240px); .h(240px); 
 				.overlay, .highlight { .w(220px); }
+			}
+		}
+		@media (max-width: 480px) { background: #000; 
+			.view-content { .w(300px); .auto; 
+				.views-row { .w100; .fn; .h(160px); .m(0px 0px 10px); 
+					.views-field-nothing { .w(304px); .auto; .h(160px); .rel; 
+						img { .h(160px); .w(auto); }
+					}
+				}
+				.case-study-teaser { .h(160px); .w(300px);
+					.overlay { .w(132px); right: 0px; bottom: auto; .h(120px); .p(20px 10px); .bg-blue; }
+					.highlight { .hide; }
+				}
 			}
 		}	
 	}
@@ -276,7 +289,11 @@ body.front {
 			}
 		}
 		@media (max-width: 980px) { 
-			.view-content { .w(744px); .auto;
+			.block-content { .w(744px); .auto; }
+			.view-header {
+				blockquote { .w(600px); }
+			}
+			.view-content { 
 				.views-row { .w(240px); .m(0 4px 20px); .h(400px); 
 					.views-field-nothing { .h(147px);
 						img { .w(240px); .h(auto); }
@@ -823,19 +840,7 @@ body {
 			h1 { .mt(0px); }
 			h2, h3 { .mb(5px); }
 		}
-		.view-case-studies { background: #000; 
-			.view-content { .w(300px); .auto; 
-				.views-row { .w100; .fn; .h(160px); .m(0px 0px 10px); 
-					.views-field-nothing { .w(304px); .auto; .h(160px); .rel; 
-						img { .h(160px); .w(auto); }
-					}
-				}
-				.case-study-teaser { .h(160px); .w(300px);
-					.overlay { .w(132px); right: 0px; bottom: auto; .h(120px); .p(20px 10px); .bg-blue; }
-					.highlight { .hide; }
-				}
-			}
-		}
+		
 		.mobile { .show; }
 		.desktop { .hide; }
 		.video {

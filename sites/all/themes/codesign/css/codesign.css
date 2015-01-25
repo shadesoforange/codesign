@@ -162,19 +162,19 @@ i,
 }
 .med {
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 .large {
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 .xlarge {
   font-size: 2.2em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 .xxlarge {
   font-size: 3.2em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 .small {
   font-size: 0.75em;
@@ -464,18 +464,18 @@ body {
   }
   html .med,
   body .med {
-    font-size: 1.1 em;
-    line-height: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.1em;
   }
   html .large,
   body .large {
     font-size: 1.25em;
-    line-height: 1.25em;
+    line-height: 1.1em;
   }
   html .xlarge,
   body .xlarge {
     font-size: 1.75em;
-    line-height: 1.25em;
+    line-height: 1.1em;
   }
   html .xxlarge,
   body .xxlarge,
@@ -501,7 +501,7 @@ hr {
 }
 h1 {
   font-size: 3.2em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #2a2a2a;
@@ -510,16 +510,17 @@ h1 {
 }
 h2 {
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  margin: 1em 0 0.5em;
+  margin: 1em 0 0.33em;
 }
 h3 {
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  margin: 1em 0 0.25em;
 }
 h4,
 h5 {
@@ -743,7 +744,7 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   font-style: italic;
   padding-bottom: 80px;
   width: 500px;
@@ -905,7 +906,7 @@ a:hover {
   padding: 5px 15px;
   letter-spacing: 1px;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 #header #block-views-homepage-slides-block .slide-copy .content a:hover {
   text-decoration: none;
@@ -951,7 +952,7 @@ a:hover {
   }
   #header #block-views-homepage-slides-block .slide-copy .content a {
     font-size: 1.33em;
-    line-height: 1.3em;
+    line-height: 1.2em;
   }
   #header #block-views-homepage-slides-block .views-slideshow-controls-bottom .views-slideshow-controls-text-previous {
     top: 160px;
@@ -1226,7 +1227,7 @@ body.front #content {
 body.front #content.page-bottom {
   padding: 60px 0px 100px;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 body.front #content.page-bottom .block-content {
   width: 700px;
@@ -1247,7 +1248,7 @@ body.front .node-page {
 body.front .node-page h3 {
   color: #47a9e1;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   font-family: 'Permanent Marker', sans-serif;
   font-weight: 400;
 }
@@ -1262,14 +1263,14 @@ body.front .view-case-studies {
   padding: 50px 0;
   margin-bottom: 0px;
   background: url(../images/dark-bg2.jpg) no-repeat center center;
-  background-size: 100% auto;
+  background-size: cover;
 }
 body.front .view-case-studies h2.block-title {
   background: transparent;
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Raleway', sans-serif;
@@ -1319,6 +1320,47 @@ body.front .view-case-studies .view-footer .btn:hover {
     width: 220px;
   }
 }
+@media (max-width: 480px) {
+  body.front .view-case-studies {
+    background: #000;
+  }
+  body.front .view-case-studies .view-content {
+    width: 300px;
+    margin: 0 auto;
+  }
+  body.front .view-case-studies .view-content .views-row {
+    width: 100%;
+    float: none;
+    height: 160px;
+    margin: 0px 0px 10px;
+  }
+  body.front .view-case-studies .view-content .views-row .views-field-nothing {
+    width: 304px;
+    margin: 0 auto;
+    height: 160px;
+    position: relative;
+  }
+  body.front .view-case-studies .view-content .views-row .views-field-nothing img {
+    height: 160px;
+    width: auto;
+  }
+  body.front .view-case-studies .view-content .case-study-teaser {
+    height: 160px;
+    width: 300px;
+  }
+  body.front .view-case-studies .view-content .case-study-teaser .overlay {
+    width: 132px;
+    right: 0px;
+    bottom: auto;
+    height: 120px;
+    padding: 20px 10px;
+    color: #ffffff;
+    background: #47a9e1;
+  }
+  body.front .view-case-studies .view-content .case-study-teaser .highlight {
+    display: none;
+  }
+}
 body.front .block-block.quote {
   width: 100%;
   background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
@@ -1345,12 +1387,12 @@ body.front .bricks-lamp h2 {
   color: #47a9e1;
   text-align: center;
   font-size: 2.2em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   margin-bottom: 20px;
 }
 body.front .bricks-lamp p {
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 body.front .bricks-lamp table {
   width: 100% !important;
@@ -1378,7 +1420,7 @@ body.front #block-views-articles-block h2.block-title {
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Raleway', sans-serif;
@@ -1408,7 +1450,7 @@ body.front #block-views-articles-block .view-header h2 {
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Raleway', sans-serif;
@@ -1478,9 +1520,12 @@ body.front #block-views-articles-block .view-content .views-row .views-field-vie
   border: none;
 }
 @media (max-width: 980px) {
-  body.front #block-views-articles-block .view-content {
+  body.front #block-views-articles-block .block-content {
     width: 744px;
     margin: 0 auto;
+  }
+  body.front #block-views-articles-block .view-header blockquote {
+    width: 600px;
   }
   body.front #block-views-articles-block .view-content .views-row {
     width: 240px;
@@ -1620,7 +1665,7 @@ blockquote.full {
 .bricks-top.page-bottom {
   padding: 60px 0px 100px;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 .bricks-top.page-bottom .block-content {
   width: 700px;
@@ -1648,7 +1693,7 @@ blockquote.full {
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Raleway', sans-serif;
@@ -1689,7 +1734,7 @@ article .field-name-body {
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   letter-spacing: 1px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -1701,7 +1746,7 @@ article .field-name-body {
 .block-block.dark h3 {
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
@@ -1746,7 +1791,7 @@ article .field-name-body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   margin-bottom: 30px;
 }
 .region-sidebar-first .block-block,
@@ -1780,7 +1825,7 @@ article .field-name-body {
   font-weight: 700;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 .region-sidebar-first .recent-posts .views-row a:hover {
   text-decoration: none;
@@ -1958,7 +2003,7 @@ article .field-name-body {
 .node-type-case-study .third-row p,
 .node-type-case-study .fifth-row p {
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   line-height: 1.5em;
 }
 .node-type-case-study .first-row blockquote,
@@ -2009,7 +2054,7 @@ article .field-name-body {
 .view-case-studies h2.block-title {
   text-align: center;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 3px;
   background: transparent url(../images/double-line-title.png) no-repeat center 3px;
@@ -2168,7 +2213,7 @@ article .field-name-body {
   background: transparent url(../images/black-overlay-70.png);
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 .node-feature-page .row.programs .program {
   padding: 30px 30px 20px;
@@ -2274,7 +2319,7 @@ article .field-name-body {
   font-family: 'Permanent Marker', sans-serif;
   font-weight: 400;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -2339,7 +2384,7 @@ article .field-name-body {
 }
 .section-services .contact .block-content {
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   max-width: 600px;
 }
 .section-services .region-sidebar-first .block-menu-block li.first {
@@ -2394,7 +2439,7 @@ article .field-name-body {
 }
 .section-services .design-thinking-programs .block-content h2 {
   font-size: 2.2em;
-  line-height: 1.25em;
+  line-height: 1.15em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin-bottom: 0.5em;
@@ -2405,7 +2450,7 @@ article .field-name-body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   color: #000000;
 }
 .section-services .design-thinking-programs .block-content .indent {
@@ -2485,7 +2530,7 @@ article .field-name-body {
   font-weight: 700;
   font-family: inherit;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 .latest-blog .views-field-field-author {
   font-family: 'Raleway', sans-serif;
@@ -2530,7 +2575,7 @@ article .field-name-body {
   text-align: center;
   color: #ffffff;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Raleway', sans-serif;
@@ -2614,7 +2659,7 @@ article .field-name-body {
 .team-members h2.block-title {
   text-align: center;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 3px;
   background: transparent url(../images/double-line-title.png) no-repeat center 3px;
@@ -2635,7 +2680,7 @@ article .field-name-body {
   font-weight: 500;
   color: #000000;
   font-size: 1.75em;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 .team-members .views-field-body {
   margin: 0 20px 30px 175px;
@@ -2650,7 +2695,7 @@ article .field-name-body {
   width: 45%;
   float: left;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 .page-node-25 #content .block-webform {
   width: 45%;
@@ -2666,7 +2711,7 @@ article .field-name-body {
   padding: 5px 15px;
   letter-spacing: 1px;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   border: none;
 }
 .page-node-25 #content .block-webform input.form-submit:hover {
@@ -2941,7 +2986,7 @@ article .field-name-body {
     text-align: center;
     color: #ffffff;
     font-size: 1.33em;
-    line-height: 1.3em;
+    line-height: 1.2em;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-family: 'Raleway', sans-serif;
@@ -3030,45 +3075,6 @@ article .field-name-body {
   body.front .node-page h2,
   body.front .node-page h3 {
     margin-bottom: 5px;
-  }
-  body.front .view-case-studies {
-    background: #000;
-  }
-  body.front .view-case-studies .view-content {
-    width: 300px;
-    margin: 0 auto;
-  }
-  body.front .view-case-studies .view-content .views-row {
-    width: 100%;
-    float: none;
-    height: 160px;
-    margin: 0px 0px 10px;
-  }
-  body.front .view-case-studies .view-content .views-row .views-field-nothing {
-    width: 304px;
-    margin: 0 auto;
-    height: 160px;
-    position: relative;
-  }
-  body.front .view-case-studies .view-content .views-row .views-field-nothing img {
-    height: 160px;
-    width: auto;
-  }
-  body.front .view-case-studies .view-content .case-study-teaser {
-    height: 160px;
-    width: 300px;
-  }
-  body.front .view-case-studies .view-content .case-study-teaser .overlay {
-    width: 132px;
-    right: 0px;
-    bottom: auto;
-    height: 120px;
-    padding: 20px 10px;
-    color: #ffffff;
-    background: #47a9e1;
-  }
-  body.front .view-case-studies .view-content .case-study-teaser .highlight {
-    display: none;
   }
   body.front .mobile {
     display: block;
@@ -3179,7 +3185,7 @@ article .field-name-body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 1.33em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
