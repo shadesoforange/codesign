@@ -1363,6 +1363,11 @@ body.front .view-case-studies .view-footer .btn:hover {
     background: #47a9e1;
   }
   body.front .view-case-studies .view-content .case-study-teaser .highlight {
+    width: 132px;
+    right: 0px;
+    bottom: auto;
+    height: 120px;
+    padding: 20px 10px;
     display: none;
   }
 }
