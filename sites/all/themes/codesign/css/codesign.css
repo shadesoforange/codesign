@@ -1422,7 +1422,7 @@ body.front .bricks-lamp table td {
     display: none;
   }
 }
-body.front .video.mobile {
+body.front .video.mobile .block-content {
   width: 94%;
   margin: 0 3%;
 }
