@@ -7,13 +7,10 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-<?php include_once ($_SERVER['DOCUMENT_ROOT'].'/sites/all/themes/codesign/mobile-detect/Mobile_Detect.php');
-	  $detect = new Mobile_Detect;
-	  ?>
 	  
 <div id="page">
 
-  <header class="header <?php if ($detect->isMobile()){ print "mobile"; } ?>" id="header" role="banner">
+  <header class="header" id="header" role="banner">
 
     <?php print render($page['header']); ?>
 
@@ -22,7 +19,7 @@
   <?php 
 	  	$nav = render($page['navigation']);
 	  	if($nav): ?>
-  	<div id="navigation" <?php if ($detect->isMobile()){ print 'class="mobile"'; } ?>>
+  	<div id="navigation">
 
       <?php print $nav; ?>
 
@@ -30,10 +27,10 @@
     
     <?php endif; ?>
   
-  <div id="main" <?php if ($detect->isMobile()){ print 'class="mobile"'; } ?>>
+  <div id="main">
 
   	
-    <div id="content" class="column <?php if ($detect->isMobile()){ print 'mobile'; } ?>" role="main">
+    <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <!-- <?php print $breadcrumb; ?> -->
       <a id="main-content"></a>
@@ -79,7 +76,7 @@
   	
 </div>
 
-<div id="footer-wrapper" <?php if ($detect->isMobile()){ print 'class="mobile"'; } ?>>
+<div id="footer-wrapper">
   <?php print render($page['footer']); ?>
 </div>
 
