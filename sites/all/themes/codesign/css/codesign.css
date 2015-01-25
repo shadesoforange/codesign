@@ -2462,6 +2462,18 @@ article .field-name-body {
 .section-services.page-node-42 blockquote {
   background: url(../images/quote-orange.png) no-repeat bottom left;
 }
+@media (max-width: 860px) {
+  .section-services .services-one .block-content {
+    width: 100%;
+  }
+  .section-services .services-one .indent {
+    margin-left: 105px;
+  }
+  .section-services .services-two .block-content {
+    width: 94%;
+    margin: 0 3%;
+  }
+}
 @media (max-width: 480px) {
   .section-services #header .region {
     height: 180px;
