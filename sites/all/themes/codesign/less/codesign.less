@@ -4,7 +4,7 @@
 // Basics
 
 html, body { .raleway; .black; .lh(1.3em); .size(14px); 
-	@media (max-width: 480px) {
+	@media (max-width: 640px) {
 		.size(13px); 
 		.regular, .reg { .size(1.0em); .lh(1.3em); }
 		.med { .size(1.1 em); .lh(1.3em); }
@@ -132,7 +132,7 @@ a { .blue;
 			ul.menu li a { .p(0px 8px); .size(13px); }
 		}
 	}
-	@media (max-width: 744px) { .h(420px);
+	@media (max-width: 744px) { min-height: 420px;
 		#block-views-homepage-slides-block { .h(420px); 
 			.view-content { .h(420px); }
 			.slide, .views_slideshow_slide { .h(420px); }
@@ -173,7 +173,7 @@ a { .blue;
 			}
 		}
 	}
-	@media (max-width: 480px) { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 1000px auto; .h(70px); min-height: 70px; 
+	@media (max-width: 480px) { background: #000 url(../images/header-default.jpg) no-repeat center center; background-size: 1000px auto; .h(auto); min-height: 70px; 
 		.region { .h(auto); }
 		.main-menu { .hide; }
 		.mobile-main-menu { .show; .tc; .rel;
@@ -332,7 +332,16 @@ blockquote { .size(22px); .lh(27px); .white; .em; .raleway-med; .m(0 1.5em 1em -
 	h2.block-title { .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
 }
 input.form-text { background: #f0f0f0; border: 1px solid @ltgrey; .size(14px); .p(8px); }
-article .field-name-body { max-width: 900px; .auto; }
+article {
+	.field-name-body { max-width: 900px; .auto; }
+	@media (max-width:920px) {
+		.field-name-body { .w(94%); .m(0 3%); }
+	}
+	@media (max-width:480px) {
+		.field-name-body { .w(94%); .m(0 3%); }
+		h1 { .mt(15px); }
+	}
+}
 
 
 // Blocks
@@ -571,39 +580,53 @@ article .field-name-body { max-width: 900px; .auto; }
 		.block-content { .med; max-width: 600px; }
 	}
 	.region-sidebar-first .block-menu-block li.first { .hide; }
+	.services-one { background: #fff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom; background-size: 100% auto; .p(30px 0 100px); .mb(0px);
+		h2 { .m(0px 0px 1em); }
+		.block-content { .w(860px); }
+		.indent { .ml(115px); }
+		.column-half { .w(44%); .fl; .m(0 3% 40px); } 
+	}
+	.services-two { background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center; .white; .p(60px 0 80px); .mb(0px);
+		h2 { .m(0px 0px 1em); }
+		.block-content { .w(740px); }
+		.indent { .ml(115px); }
+		.column-half { .w(44%); .fl; .m(0 3% 40px); }
+	}
+	.design-thinking-programs { .p(20px 0); .mb(80px);
+		.block-content { .w100; 
+			h2 { .xlarge; .raleway-light; .mb(0.5em); }
+			#programmes {  }
+			.inner-sidebar { .w(150px); .fl; .raleway-med; .med; .black; }
+			.indent { .ml(175px); }
+		}
+	}
+	&.page-node-41 {
+		#main { .w100; }
+	}
+	&.page-node-42 blockquote { background: url(../images/quote-orange.png) no-repeat bottom left; }
 	@media (max-width: 480px) {
-		#header {  
+		#header {
+			.region { .h(180px); }
 			#block-views-header-image-block-1 { 
 				.views-row { .m(30px 20px); }
 				.views-field-title { .size(30px); .lh(33px); .mb(10px); }
 			}
 		}
+		.services-one { .pt(0px); .bricks-mobile; .pb(35px);
+			.block-content { .w100; 
+				.flag { .w(80px); }
+				.indent { .ml(90px); }
+			}
+		}
+		.services-two { 
+			.block-content { .w100;
+				.flag { .w(80px); }
+				.indent { .ml(90px); }
+			}
+		}
 	}
 }
-.page-node-41 {
-	#main { .w100; }
-}
-.services-one { background: #fff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom; background-size: 100% auto; .p(30px 0 100px); .mb(0px);
-	h2 { .m(0px 0px 1em); }
-	.block-content { .w(860px); }
-	.indent { .ml(115px); }
-	.column-half { .w(44%); .fl; .m(0 3% 40px); } 
-}
-.services-two { background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center; .white; .p(60px 0 80px); .mb(0px);
-	h2 { .m(0px 0px 1em); }
-	.block-content { .w(740px); }
-	.indent { .ml(115px); }
-	.column-half { .w(44%); .fl; .m(0 3% 40px); }
-}
-.design-thinking-programs { .p(20px 0); .mb(80px);
-	.block-content { .w100; 
-		h2 { .xlarge; .raleway-light; .mb(0.5em); }
-		#programmes {  }
-		.inner-sidebar { .w(150px); .fl; .raleway-med; .med; .black; }
-		.indent { .ml(175px); }
-	}
-}
-.page-node-42 blockquote { background: url(../images/quote-orange.png) no-repeat bottom left; }
+
 
 
 
@@ -739,18 +762,7 @@ body {
 		&.desktop { .hide; }
 		&.mobile { .show; }
 	}
-	.services-one { .pt(0px); .bricks-mobile; .pb(35px);
-		.block-content { .w100; 
-			.flag { .w(80px); }
-			.indent { .ml(90px); }
-		}
-	}
-	.services-two { 
-		.block-content { .w100;
-			.flag { .w(80px); }
-			.indent { .ml(90px); }
-		}
-	}
+	
 	&.sidebar-first {
 		#content { .w(90%); .p(25px 5%); .m0; }
 	}

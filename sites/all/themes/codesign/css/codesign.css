@@ -450,7 +450,7 @@ body {
   line-height: 1.3em;
   font-size: 14px;
 }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   html,
   body {
     font-size: 13px;
@@ -926,7 +926,7 @@ a:hover {
 }
 @media (max-width: 744px) {
   #header {
-    height: 420px;
+    min-height: 420px;
   }
   #header #block-views-homepage-slides-block {
     height: 420px;
@@ -1053,7 +1053,7 @@ a:hover {
   #header {
     background: #000000 url(../images/header-default.jpg) no-repeat center center;
     background-size: 1000px auto;
-    height: 70px;
+    height: auto;
     min-height: 70px;
   }
   #header .region {
@@ -1665,6 +1665,21 @@ input.form-text {
 article .field-name-body {
   max-width: 900px;
   margin: 0 auto;
+}
+@media (max-width: 920px) {
+  article .field-name-body {
+    width: 94%;
+    margin: 0 3%;
+  }
+}
+@media (max-width: 480px) {
+  article .field-name-body {
+    width: 94%;
+    margin: 0 3%;
+  }
+  article h1 {
+    margin-top: 15px;
+  }
 }
 .block-block {
   margin-bottom: 0px;
@@ -2330,74 +2345,61 @@ article .field-name-body {
 .section-services .region-sidebar-first .block-menu-block li.first {
   display: none;
 }
-@media (max-width: 480px) {
-  .section-services #header #block-views-header-image-block-1 .views-row {
-    margin: 30px 20px;
-  }
-  .section-services #header #block-views-header-image-block-1 .views-field-title {
-    font-size: 30px;
-    line-height: 33px;
-    margin-bottom: 10px;
-  }
-}
-.page-node-41 #main {
-  width: 100%;
-}
-.services-one {
+.section-services .services-one {
   background: #ffffff url(../images/bg-bricks-lamp.jpg) no-repeat center bottom;
   background-size: 100% auto;
   padding: 30px 0 100px;
   margin-bottom: 0px;
 }
-.services-one h2 {
+.section-services .services-one h2 {
   margin: 0px 0px 1em;
 }
-.services-one .block-content {
+.section-services .services-one .block-content {
   width: 860px;
 }
-.services-one .indent {
+.section-services .services-one .indent {
   margin-left: 115px;
 }
-.services-one .column-half {
+.section-services .services-one .column-half {
   width: 44%;
   float: left;
   margin: 0 3% 40px;
 }
-.services-two {
+.section-services .services-two {
   background: #606060 url(../images/bg-services-dark.jpg) no-repeat left center;
   color: #ffffff;
   padding: 60px 0 80px;
   margin-bottom: 0px;
 }
-.services-two h2 {
+.section-services .services-two h2 {
   margin: 0px 0px 1em;
 }
-.services-two .block-content {
+.section-services .services-two .block-content {
   width: 740px;
 }
-.services-two .indent {
+.section-services .services-two .indent {
   margin-left: 115px;
 }
-.services-two .column-half {
+.section-services .services-two .column-half {
   width: 44%;
   float: left;
   margin: 0 3% 40px;
 }
-.design-thinking-programs {
+.section-services .design-thinking-programs {
   padding: 20px 0;
   margin-bottom: 80px;
 }
-.design-thinking-programs .block-content {
+.section-services .design-thinking-programs .block-content {
   width: 100%;
 }
-.design-thinking-programs .block-content h2 {
+.section-services .design-thinking-programs .block-content h2 {
   font-size: 2.2em;
   line-height: 1.25em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin-bottom: 0.5em;
 }
-.design-thinking-programs .block-content .inner-sidebar {
+.section-services .design-thinking-programs .block-content .inner-sidebar {
   width: 150px;
   float: left;
   font-family: 'Raleway', sans-serif;
@@ -2406,11 +2408,51 @@ article .field-name-body {
   line-height: 1.3em;
   color: #000000;
 }
-.design-thinking-programs .block-content .indent {
+.section-services .design-thinking-programs .block-content .indent {
   margin-left: 175px;
 }
-.page-node-42 blockquote {
+.section-services.page-node-41 #main {
+  width: 100%;
+}
+.section-services.page-node-42 blockquote {
   background: url(../images/quote-orange.png) no-repeat bottom left;
+}
+@media (max-width: 480px) {
+  .section-services #header .region {
+    height: 180px;
+  }
+  .section-services #header #block-views-header-image-block-1 .views-row {
+    margin: 30px 20px;
+  }
+  .section-services #header #block-views-header-image-block-1 .views-field-title {
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  .section-services .services-one {
+    padding-top: 0px;
+    background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
+    background-size: 720px auto;
+    padding-bottom: 35px;
+  }
+  .section-services .services-one .block-content {
+    width: 100%;
+  }
+  .section-services .services-one .block-content .flag {
+    width: 80px;
+  }
+  .section-services .services-one .block-content .indent {
+    margin-left: 90px;
+  }
+  .section-services .services-two .block-content {
+    width: 100%;
+  }
+  .section-services .services-two .block-content .flag {
+    width: 80px;
+  }
+  .section-services .services-two .block-content .indent {
+    margin-left: 90px;
+  }
 }
 .node-type-article #page {
   /* background: #fff url(../images/bg-blog.jpg) no-repeat center bottom; background-size: 100% auto; background-attachment: fixed; */
@@ -2806,30 +2848,6 @@ article .field-name-body {
   }
   body .view-case-studies.mobile {
     display: block;
-  }
-  body .services-one {
-    padding-top: 0px;
-    background: #ffffff url(../images/bg-bricks-bottom.jpg) no-repeat bottom;
-    background-size: 720px auto;
-    padding-bottom: 35px;
-  }
-  body .services-one .block-content {
-    width: 100%;
-  }
-  body .services-one .block-content .flag {
-    width: 80px;
-  }
-  body .services-one .block-content .indent {
-    margin-left: 90px;
-  }
-  body .services-two .block-content {
-    width: 100%;
-  }
-  body .services-two .block-content .flag {
-    width: 80px;
-  }
-  body .services-two .block-content .indent {
-    margin-left: 90px;
   }
   body.sidebar-first #content {
     width: 90%;
