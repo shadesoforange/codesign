@@ -17,15 +17,13 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   
-  <?php include_once ($_SERVER['DOCUMENT_ROOT'].'/sites/all/themes/codesign/mobile-detect/Mobile_Detect.php');
-	  $detect = new Mobile_Detect;
-	  if($detect->isMobile()): ?>
+  
 	  	
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-  <?php endif; ?>
+  
   <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
@@ -54,7 +52,7 @@
   <script>try{Typekit.load();}catch(e){}</script>-->
   
 </head>
-<body class="<?php print $classes; if($detect->isMobile()){ print " mobile"; } else { print " desktop"; } ?>" <?php print $attributes;?>>
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
       <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
