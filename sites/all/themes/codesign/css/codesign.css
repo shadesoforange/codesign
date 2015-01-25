@@ -1414,6 +1414,18 @@ body.front .bricks-lamp table td {
   vertical-align: top;
   border: 0px;
 }
+@media (max-width: 800px) {
+  body.front .video.mobile {
+    display: block;
+  }
+  body.front .video.desktop {
+    display: none;
+  }
+}
+body.front .video.mobile {
+  width: 94%;
+  margin: 0 3%;
+}
 body.front #block-views-articles-block {
   clear: both;
   background: transparent url(../images/bg-newspaper.jpg) no-repeat center center;

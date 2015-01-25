@@ -266,6 +266,13 @@ body.front {
 			td { .p(15px); vertical-align: top; border: 0px; }
 		}
 	}
+	.video {
+		@media (max-width: 800px) {
+			&.mobile { .show; }
+			&.desktop { .hide; }
+		}
+		&.mobile { .w(94%); .m(0 3%); }
+	}
 	#block-views-articles-block { .cb; background: transparent url(../images/bg-newspaper.jpg) no-repeat center center; background-size: cover; background-attachment: fixed; .p(80px 0 100px); .mb(0px);
 		.block-content { .w(960px); .auto; }
 		h2.block-title { .tc; .white; .med; .upper; .ls(4px); .raleway-med; .normal; .mb(30px); }
